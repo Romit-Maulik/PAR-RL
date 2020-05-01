@@ -1,0 +1,37 @@
+04/30/2020 12:27:20 AM | Waiting for broadcast...
+04/30/2020 12:27:20 AM | Waiting for broadcast...
+04/30/2020 12:27:20 AM | Waiting for broadcast...
+04/30/2020 12:27:20 AM | Waiting for broadcast...
+04/30/2020 12:27:20 AM | Ready to run ray head
+04/30/2020 12:27:21 AM | Head started at: 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Broadcast done...
+04/30/2020 12:27:21 AM | Waiting for workers to start...
+04/30/2020 12:27:21 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Worker on rank 4 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 12:27:21 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 12:27:21 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 12:27:21 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 12:27:21 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 12:27:22 AM | Workers are all running!
+04/30/2020 12:27:22 AM | Ready to start driver!
+04/30/2020 12:29:21 AM | RL LIB invoked. Exiting.
+04/30/2020 06:30:39 PM | Waiting for broadcast...
+04/30/2020 06:30:39 PM | Waiting for broadcast...
+04/30/2020 06:30:39 PM | Waiting for broadcast...
+04/30/2020 06:30:39 PM | Ready to run ray head
+04/30/2020 06:30:40 PM | Head started at: 127.0.1.1:10100
+04/30/2020 06:30:40 PM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+04/30/2020 06:30:40 PM | Broadcast done...
+04/30/2020 06:30:40 PM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 06:30:40 PM | Waiting for workers to start...
+04/30/2020 06:30:40 PM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 06:30:40 PM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+04/30/2020 06:30:40 PM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 06:30:40 PM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 06:30:40 PM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+04/30/2020 06:30:41 PM | Workers are all running!
+04/30/2020 06:30:41 PM | Ready to start driver!
+04/30/2020 06:32:06 PM | RL LIB invoked successfully. Exiting.
