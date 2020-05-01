@@ -1,6 +1,8 @@
 import os
 import sys
 import subprocess
+from subprocess import Popen
+
 import socket
 import signal
 import logging
@@ -20,7 +22,7 @@ NODE_MANAGER_PORT   = 30300
 OBJECT_MANAGER_PORT = 40400
 
 comm = MPI.COMM_WORLD
-RANK = rank = comm.Get_rank()
+rank = comm.Get_rank()
 
 # EXIT
 def on_exit(signum, stack):
@@ -133,8 +135,7 @@ def worker():
 
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} will connect to head-redis-address={head_redis_address}")
     run_ray_worker(head_redis_address)
-
-    comm.barrier() # waiting for all workers to start
+    logging.info(f"Worker on rank {rank} with ip {fetch_ip()} is connected!")
 
 if __name__ == "__main__":
 
@@ -143,8 +144,6 @@ if __name__ == "__main__":
         format='%(asctime)s | %(message)s',
         datefmt='%m/%d/%Y %I:%M:%S %p',
         level=logging.INFO)
-
-    # print(rank)
 
     if rank == 0: 
         head_redis_address = master()
@@ -160,15 +159,16 @@ if __name__ == "__main__":
             subprocess.run(
                         exec_string,
                         shell=True,
+                        check=True,
                         stdout=fp,
                         stderr=subprocess.STDOUT,
-                        check=True,
         )
+
         logging.info("RL LIB invoked successfully. Exiting.")
+        exit()
 
     comm.barrier()
-    os.system('ray stop')
-    
-    print('Successful exit')
+    print(str(rank)+' rank worker here')
+    print('Successfully exited')
 
 
