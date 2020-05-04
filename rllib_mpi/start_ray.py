@@ -117,7 +117,7 @@ def master():
 
     logging.info('Waiting for workers to start...')
 
-    comm.barrier() # waiting for ray_workers to start
+    comm.barrier() # waiting for ray_workers to start - this barrier synchronizes with line 120
 
     logging.info('Workers are all running!')
 
@@ -133,6 +133,8 @@ def worker():
     head_redis_address = comm.bcast(head_redis_address, root=0)
     logging.info(f'Broadcast done... received head_redis_address= {head_redis_address}')
 
+    comm.barrier() # This barrier synchronizes with line 120
+
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} will connect to head-redis-address={head_redis_address}")
     run_ray_worker(head_redis_address)
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} is connected!")
@@ -147,6 +149,11 @@ if __name__ == "__main__":
 
     if rank == 0: 
         head_redis_address = master()
+        
+        # with open('head_redis_address.txt','w') as fp:
+        #     fp.write(head_redis_address)
+        # fp.close()
+    
     else: 
         worker()
 
@@ -165,10 +172,15 @@ if __name__ == "__main__":
         )
 
         logging.info("RL LIB invoked successfully. Exiting.")
-        exit()
 
     comm.barrier()
     print(str(rank)+' rank worker here')
+
+    # Stop all ranks of ray
+    ray_stop()
+    comm.barrier()
+    
+    # All finished
     print('Successfully exited')
 
 

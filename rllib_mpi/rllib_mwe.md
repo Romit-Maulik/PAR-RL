@@ -33,6 +33,8 @@ which lets you call the script (in our following MWE this will be `train_ppo.py`
 import os
 import sys
 import subprocess
+from subprocess import Popen
+
 import socket
 import signal
 import logging
@@ -52,7 +54,7 @@ NODE_MANAGER_PORT   = 30300
 OBJECT_MANAGER_PORT = 40400
 
 comm = MPI.COMM_WORLD
-RANK = rank = comm.Get_rank()
+rank = comm.Get_rank()
 
 # EXIT
 def on_exit(signum, stack):
@@ -74,6 +76,20 @@ signal.signal(signal.SIGTERM, on_exit)
 
 def run_ray_head(head_ip):
     with open('ray.log.head', 'wb') as fp:
+        # subprocess.run(
+        #     f'ray start --head \
+        #             --num-cpus 1 \
+        #             --node-ip-address={head_ip} \
+        #             --redis-port={REDIS_PORT} \
+        #             --redis-shard-ports={REDIS_SHARD_PORTS} \
+        #             --node-manager-port={NODE_MANAGER_PORT} \
+        #             --object-manager-port={OBJECT_MANAGER_PORT}',
+        #     shell=True,
+        #     check=True,
+        #     stdout=fp,
+        #     stderr=subprocess.STDOUT
+        # )
+
         subprocess.run(
             f'ray start --head --num-cpus 1 --redis-port={REDIS_PORT}',
             shell=True,
@@ -85,6 +101,20 @@ def run_ray_head(head_ip):
 
 def run_ray_worker(head_redis_address):
     with open(f'ray.log.{rank}', 'wb') as fp:
+        # --node-manager-port={NODE_MANAGER_PORT} \
+        # --object-manager-port={OBJECT_MANAGER_PORT}',
+        # subprocess.run(
+        #     f'ray start --address={head_redis_address} \
+        #             --num-cpus 1 \
+        #             --node-ip-address={fetch_ip()} \
+        #             --node-manager-port={NODE_MANAGER_PORT} \
+        #             --object-manager-port={OBJECT_MANAGER_PORT}',
+        #     shell=True,
+        #     check=True,
+        #     stdout=fp,
+        #     stderr=subprocess.STDOUT
+        # )
+
         subprocess.run(
             f'ray start --num-cpus 1 --address={head_redis_address}',
             shell=True,
@@ -119,7 +149,7 @@ def master():
 
     logging.info('Waiting for workers to start...')
 
-    comm.barrier() # waiting for ray_workers to start
+    comm.barrier() # waiting for ray_workers to start - this barrier synchronizes with line 120
 
     logging.info('Workers are all running!')
 
@@ -135,10 +165,11 @@ def worker():
     head_redis_address = comm.bcast(head_redis_address, root=0)
     logging.info(f'Broadcast done... received head_redis_address= {head_redis_address}')
 
+    comm.barrier() # This barrier synchronizes with line 120
+
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} will connect to head-redis-address={head_redis_address}")
     run_ray_worker(head_redis_address)
-
-    comm.barrier() # waiting for all workers to start
+    logging.info(f"Worker on rank {rank} with ip {fetch_ip()} is connected!")
 
 if __name__ == "__main__":
 
@@ -148,10 +179,13 @@ if __name__ == "__main__":
         datefmt='%m/%d/%Y %I:%M:%S %p',
         level=logging.INFO)
 
-    # print(rank)
-
     if rank == 0: 
         head_redis_address = master()
+        
+        # with open('head_redis_address.txt','w') as fp:
+        #     fp.write(head_redis_address)
+        # fp.close()
+    
     else: 
         worker()
 
@@ -164,17 +198,22 @@ if __name__ == "__main__":
             subprocess.run(
                         exec_string,
                         shell=True,
+                        check=True,
                         stdout=fp,
                         stderr=subprocess.STDOUT,
-                        check=True,
         )
+
         logging.info("RL LIB invoked successfully. Exiting.")
 
     comm.barrier()
-    os.system('ray stop')
-    
-    print('Successful exit')
+    print(str(rank)+' rank worker here')
 
+    # Stop all ranks of ray
+    ray_stop()
+    comm.barrier()
+    
+    # All finished
+    print('Successfully exited')
 ```
 
 where `train_ppo.py` is given by 
@@ -328,32 +367,28 @@ When I try to execute the same procedure by running an interactive job on Theta 
 ```
 qsub -A datascience -t 30 -q debug-cache-quad -n 1 -I
 ```
-and using aprun as `aprun -n 4 -N 4 python start_ray.py`, this code stalls with the following message in `rllib_log.out` which records logs from starting `train_ppo.py` via subprocess indicating a significant bottleneck in getting all the workers going (this btw is instantaneous on my laptop)
+and using aprun as `aprun -n 8 -N 8 python start_ray.py`. The logs for starting ray (at `start_ray.log`) show success:
 
 ```
-2020-04-30 22:54:33,280 WARNING worker.py:1072 -- The actor or task with ID ffffffffffffffffef0a6c220100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.236.16.120: 1.000000}, {CPU: 1.000000}, {memory: 122.558594 GiB}, {object_store_memory: 38.964844 GiB}. In total there are 0 pending tasks and 2 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
-2020-04-30 22:55:51,180 INFO trainable.py:180 -- _setup took 105.961 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
-2020-04-30 22:55:51,218 INFO trainable.py:217 -- Getting current IP.
-2020-04-30 22:55:51,219 WARNING util.py:37 -- Install gputil for GPU system monitoring.
-2020-04-30 22:57:24,347 WARNING worker.py:1072 -- The actor or task with ID fffffffffffffffff66d17ba0100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.236.16.120: 1.000000}, {memory: 122.558594 GiB}, {object_store_memory: 38.964844 GiB}. In total there are 0 pending tasks and 1 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
-```
-However the logs for starting ray show success
-
-```
-04/30/2020 09:58:21 PM | Waiting for broadcast...
-04/30/2020 09:58:21 PM | Waiting for broadcast...
-04/30/2020 09:58:21 PM | Waiting for broadcast...
-04/30/2020 09:58:21 PM | Ready to run ray head
-04/30/2020 09:58:32 PM | Head started at: 10.128.15.27:6379
-04/30/2020 09:58:32 PM | Ready to broadcast head_redis_address: 10.128.15.27:6379
-04/30/2020 09:58:32 PM | Broadcast done... received head_redis_address= 10.128.15.27:6379
-04/30/2020 09:58:32 PM | Broadcast done... received head_redis_address= 10.128.15.27:6379
-04/30/2020 09:58:32 PM | Broadcast done...
-04/30/2020 09:58:32 PM | Broadcast done... received head_redis_address= 10.128.15.27:6379
-04/30/2020 09:58:32 PM | Waiting for workers to start...
-04/30/2020 09:58:32 PM | Worker on rank 3 with ip 10.128.15.27 will connect to head-redis-address=10.128.15.27:6379
-04/30/2020 09:58:32 PM | Worker on rank 2 with ip 10.128.15.27 will connect to head-redis-address=10.128.15.27:6379
-04/30/2020 09:58:32 PM | Worker on rank 1 with ip 10.128.15.27 will connect to head-redis-address=10.128.15.27:6379
+05/01/2020 07:36:14 PM | Waiting for broadcast...
+05/01/2020 07:36:14 PM | Waiting for broadcast...
+05/01/2020 07:36:14 PM | Waiting for broadcast...
+05/01/2020 07:36:14 PM | Ready to run ray head
+05/01/2020 07:36:25 PM | Head started at: 10.128.15.16:6379
+05/01/2020 07:36:25 PM | Ready to broadcast head_redis_address: 10.128.15.16:6379
+05/01/2020 07:36:25 PM | Broadcast done... received head_redis_address= 10.128.15.16:6379
+05/01/2020 07:36:25 PM | Broadcast done... received head_redis_address= 10.128.15.16:6379
+05/01/2020 07:36:25 PM | Broadcast done...
+05/01/2020 07:36:25 PM | Broadcast done... received head_redis_address= 10.128.15.16:6379
+05/01/2020 07:36:25 PM | Waiting for workers to start...
+05/01/2020 07:36:25 PM | Worker on rank 3 with ip 10.128.15.16 will connect to head-redis-address=10.128.15.16:6379
+05/01/2020 07:36:25 PM | Worker on rank 2 with ip 10.128.15.16 will connect to head-redis-address=10.128.15.16:6379
+05/01/2020 07:36:25 PM | Worker on rank 1 with ip 10.128.15.16 will connect to head-redis-address=10.128.15.16:6379
+05/01/2020 07:36:32 PM | Worker on rank 3 with ip 10.128.15.16 is connected!
+05/01/2020 07:36:32 PM | Worker on rank 2 with ip 10.128.15.16 is connected!
+05/01/2020 07:36:33 PM | Worker on rank 1 with ip 10.128.15.16 is connected!
+05/01/2020 07:36:33 PM | Workers are all running!
+05/01/2020 07:36:33 PM | Ready to start driver!
 ```
 
-Any ideas for why this slow behavior is happening?
+currently we are debugging the `rllib_log.out` logs to see if the MWE runs successfully
