@@ -106,9 +106,9 @@ if __name__ == "__main__":
     ModelCatalog.register_custom_model("my_model", CustomModel)
 
     config = ppo.DEFAULT_CONFIG.copy()
-    config["log_level"] = "WARN"
-    config["num_gpus"] = 0
-    config["num_workers"] = 2
+    #config["log_level"] = "WARN"
+    #config["num_gpus"] = 0
+    config["num_workers"] = 16
     config["lr"] = 1e-4
 
     # Add custom model for policy

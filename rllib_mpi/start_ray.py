@@ -59,7 +59,7 @@ def run_ray_head(head_ip):
         # )
 
         subprocess.run(
-            f'ray start --head --num-cpus 1 --redis-port={REDIS_PORT}',
+            f'ray start --head --num-cpus 16 --redis-port={REDIS_PORT}',
             shell=True,
             check=True,
             stdout=fp,
@@ -84,7 +84,7 @@ def run_ray_worker(head_redis_address):
         # )
 
         subprocess.run(
-            f'ray start --num-cpus 1 --address={head_redis_address}',
+            f'ray start --num-cpus 16 --address={head_redis_address}',
             shell=True,
             check=True,
             stdout=fp,
@@ -117,7 +117,7 @@ def master():
 
     logging.info('Waiting for workers to start...')
 
-    comm.barrier() # waiting for ray_workers to start - this barrier synchronizes with line 120
+    comm.barrier() # waiting for ray_workers to start
 
     logging.info('Workers are all running!')
 
@@ -133,7 +133,7 @@ def worker():
     head_redis_address = comm.bcast(head_redis_address, root=0)
     logging.info(f'Broadcast done... received head_redis_address= {head_redis_address}')
 
-    comm.barrier() # This barrier synchronizes with line 120
+    comm.barrier()
 
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} will connect to head-redis-address={head_redis_address}")
     run_ray_worker(head_redis_address)
@@ -147,13 +147,10 @@ if __name__ == "__main__":
         datefmt='%m/%d/%Y %I:%M:%S %p',
         level=logging.INFO)
 
+    #ranks_to_use = [1,2,3]
+
     if rank == 0: 
         head_redis_address = master()
-        
-        # with open('head_redis_address.txt','w') as fp:
-        #     fp.write(head_redis_address)
-        # fp.close()
-    
     else: 
         worker()
 
@@ -182,5 +179,3 @@ if __name__ == "__main__":
     
     # All finished
     print('Successfully exited')
-
-
