@@ -1,4 +1,4 @@
-# Minimum working example to reproduce Ray error on Theta:
+# Minimum working example to run Ray error on Theta:
 
 ## Introduction to Ray and distributed RL
 
@@ -367,7 +367,7 @@ When I try to execute the same procedure by running an interactive job on Theta 
 ```
 qsub -A datascience -t 60 -q debug-cache-quad -n 2 -I
 ```
-and using aprun as `aprun -n 32 -N 16 python start_ray.py`. The logs for starting ray (at `start_ray.log`) show success:
+and using aprun as `aprun -n 4 -N 2 python start_ray.py`. The logs for starting ray (at `start_ray.log`) show success:
 
 ```
 05/01/2020 07:36:14 PM | Waiting for broadcast...
