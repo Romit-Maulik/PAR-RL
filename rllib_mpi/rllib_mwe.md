@@ -365,9 +365,9 @@ if __name__ == "__main__":
 
 When I try to execute the same procedure by running an interactive job on Theta using
 ```
-qsub -A datascience -t 30 -q debug-cache-quad -n 1 -I
+qsub -A datascience -t 60 -q debug-cache-quad -n 2 -I
 ```
-and using aprun as `aprun -n 8 -N 8 python start_ray.py`. The logs for starting ray (at `start_ray.log`) show success:
+and using aprun as `aprun -n 32 -N 16 python start_ray.py`. The logs for starting ray (at `start_ray.log`) show success:
 
 ```
 05/01/2020 07:36:14 PM | Waiting for broadcast...
@@ -391,4 +391,4 @@ and using aprun as `aprun -n 8 -N 8 python start_ray.py`. The logs for starting 
 05/01/2020 07:36:33 PM | Ready to start driver!
 ```
 
-currently we are debugging the `rllib_log.out` logs to see if the MWE runs successfully
+currently we are debugging the `rllib_log.out` logs to see if the MWE runs successfully and scales appropriately
