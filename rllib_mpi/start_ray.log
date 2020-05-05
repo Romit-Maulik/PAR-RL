@@ -1,0 +1,132 @@
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Waiting for broadcast...
+05/05/2020 05:39:56 PM | Ready to run ray head
+05/05/2020 05:40:03 PM | Head started at: 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Ready to broadcast head_redis_address: 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done...
+05/05/2020 05:40:03 PM | Waiting for workers to start...
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Broadcast done... received head_redis_address= 10.128.13.249:10100
+05/05/2020 05:40:03 PM | Workers are all running!
+05/05/2020 05:40:03 PM | Ready to start driver!
+05/05/2020 05:40:03 PM | Worker on rank 27 with ip 10.128.16.116 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 30 with ip 10.128.16.235 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 19 with ip 10.128.16.108 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 15 with ip 10.128.15.28 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 9 with ip 10.128.15.19 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 31 with ip 10.128.16.241 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 14 with ip 10.128.15.27 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 22 with ip 10.128.16.111 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 2 with ip 10.128.13.251 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 29 with ip 10.128.16.233 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 13 with ip 10.128.15.24 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 8 with ip 10.128.15.17 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 23 with ip 10.128.16.112 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 16 with ip 10.128.16.7 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 28 with ip 10.128.16.120 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 4 with ip 10.128.14.3 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 7 with ip 10.128.15.16 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 10 with ip 10.128.15.20 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 26 with ip 10.128.16.115 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 3 with ip 10.128.13.252 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 6 with ip 10.128.15.15 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 18 with ip 10.128.16.107 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 17 with ip 10.128.16.13 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 20 with ip 10.128.16.109 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 11 with ip 10.128.15.22 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 5 with ip 10.128.14.4 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 1 with ip 10.128.13.250 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 12 with ip 10.128.15.23 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 24 with ip 10.128.16.113 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 25 with ip 10.128.16.114 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:03 PM | Worker on rank 21 with ip 10.128.16.110 will connect to head-redis-address=10.128.13.249:10100
+05/05/2020 05:40:08 PM | Worker on rank 9 with ip 10.128.15.19 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 30 with ip 10.128.16.235 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 27 with ip 10.128.16.116 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 31 with ip 10.128.16.241 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 15 with ip 10.128.15.28 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 19 with ip 10.128.16.108 is connected!
+05/05/2020 05:40:08 PM | Worker on rank 22 with ip 10.128.16.111 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 2 with ip 10.128.13.251 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 14 with ip 10.128.15.27 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 13 with ip 10.128.15.24 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 29 with ip 10.128.16.233 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 28 with ip 10.128.16.120 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 8 with ip 10.128.15.17 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 4 with ip 10.128.14.3 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 16 with ip 10.128.16.7 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 23 with ip 10.128.16.112 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 7 with ip 10.128.15.16 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 18 with ip 10.128.16.107 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 3 with ip 10.128.13.252 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 10 with ip 10.128.15.20 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 26 with ip 10.128.16.115 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 25 with ip 10.128.16.114 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 5 with ip 10.128.14.4 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 11 with ip 10.128.15.22 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 24 with ip 10.128.16.113 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 6 with ip 10.128.15.15 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 17 with ip 10.128.16.13 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 12 with ip 10.128.15.23 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 20 with ip 10.128.16.109 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 1 with ip 10.128.13.250 is connected!
+05/05/2020 05:40:09 PM | Worker on rank 21 with ip 10.128.16.110 is connected!
+05/05/2020 05:44:49 PM | RL LIB invoked successfully. Exiting.

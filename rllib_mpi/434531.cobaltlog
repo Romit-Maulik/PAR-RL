@@ -1,0 +1,62 @@
+Jobid: 434531
+qsub --mode script -t 30 -n 32 -q Comp_Perf_Workshop -A Comp_Perf_Workshop --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Tue May 05 17:38:44 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/rllib_mpi
+jobid 434531 submitted from terminal /dev/pts/36
+2020-05-05 17:39:18,686 INFO: Starting Resource_Prologue
+2020-05-05 17:39:18,817 DEBUG: found enable_ssh enabling attribute
+2020-05-05 17:39:19,553 DEBUG: Reply (complete) from nid03550 exit code: 0
+2020-05-05 17:39:19,616 DEBUG: Reply (complete) from nid03551 exit code: 0
+2020-05-05 17:39:19,678 DEBUG: Reply (complete) from nid03552 exit code: 0
+2020-05-05 17:39:19,741 DEBUG: Reply (complete) from nid03553 exit code: 0
+2020-05-05 17:39:19,801 DEBUG: Reply (complete) from nid03558 exit code: 0
+2020-05-05 17:39:19,862 DEBUG: Reply (complete) from nid03559 exit code: 0
+2020-05-05 17:39:19,867 DEBUG: Reply (complete) from nid03824 exit code: 0
+2020-05-05 17:39:19,871 DEBUG: Reply (complete) from nid03826 exit code: 0
+2020-05-05 17:39:19,875 DEBUG: Reply (complete) from nid03825 exit code: 0
+2020-05-05 17:39:19,929 DEBUG: Reply (complete) from nid03828 exit code: 0
+2020-05-05 17:39:19,935 DEBUG: Reply (complete) from nid03829 exit code: 0
+2020-05-05 17:39:19,939 DEBUG: Reply (complete) from nid03832 exit code: 0
+2020-05-05 17:39:19,942 DEBUG: Reply (complete) from nid03831 exit code: 0
+2020-05-05 17:39:19,946 DEBUG: Reply (complete) from nid03833 exit code: 0
+2020-05-05 17:39:19,950 DEBUG: Reply (complete) from nid03837 exit code: 0
+2020-05-05 17:39:19,954 DEBUG: Reply (complete) from nid03836 exit code: 0
+2020-05-05 17:39:19,984 DEBUG: Reply (complete) from nid04070 exit code: 0
+2020-05-05 17:39:19,990 DEBUG: Reply (complete) from nid04076 exit code: 0
+2020-05-05 17:39:19,994 DEBUG: Reply (complete) from nid04170 exit code: 0
+2020-05-05 17:39:19,997 DEBUG: Reply (complete) from nid04172 exit code: 0
+2020-05-05 17:39:20,001 DEBUG: Reply (complete) from nid04171 exit code: 0
+2020-05-05 17:39:20,005 DEBUG: Reply (complete) from nid04173 exit code: 0
+2020-05-05 17:39:20,009 DEBUG: Reply (complete) from nid04175 exit code: 0
+2020-05-05 17:39:20,012 DEBUG: Reply (complete) from nid04174 exit code: 0
+2020-05-05 17:39:20,015 DEBUG: Reply (complete) from nid04176 exit code: 0
+2020-05-05 17:39:20,019 DEBUG: Reply (complete) from nid04177 exit code: 0
+2020-05-05 17:39:20,022 DEBUG: Reply (complete) from nid04179 exit code: 0
+2020-05-05 17:39:20,026 DEBUG: Reply (complete) from nid04178 exit code: 0
+2020-05-05 17:39:20,029 DEBUG: Reply (complete) from nid04183 exit code: 0
+2020-05-05 17:39:20,033 DEBUG: Reply (complete) from nid04298 exit code: 0
+2020-05-05 17:39:20,037 DEBUG: Reply (complete) from nid04296 exit code: 0
+2020-05-05 17:39:20,043 DEBUG: Reply (complete) from nid04304 exit code: 0
+2020-05-05 17:39:20,049 INFO: Resource_Prologue finished with exit code 0
+Tue May 05 17:39:45 2020 +0000 (UTC) 
+Tue May 05 17:39:45 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/rllib_mpi/submission_script.sh'
+Tue May 05 17:39:45 2020 +0000 (UTC) 
+Tue May 05 17:39:45 2020 +0000 (UTC) Environment:
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_RESID=719
+Tue May 05 17:39:45 2020 +0000 (UTC) SHELL=/bin/bash
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_PROJECT=Comp_Perf_Workshop
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_PARTCORES=64
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_PARTNAME=3550-3553,3558-3559,3824-3826,3828-3829,3831-3833,3836-3837,4070,4076,4170-4179,4183,4296,4298,4304
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_JOBID=434531
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_STARTTIME=1588700340
+Tue May 05 17:39:45 2020 +0000 (UTC) LOGNAME=rmaulik
+Tue May 05 17:39:45 2020 +0000 (UTC) USER=rmaulik
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_ENDTIME=1588702140
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_PARTSIZE=32
+Tue May 05 17:39:45 2020 +0000 (UTC) HOME=/home/rmaulik
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_JOBSIZE=32
+Tue May 05 17:39:45 2020 +0000 (UTC) COBALT_QUEUE=Comp_Perf_Workshop
+Tue May 05 17:39:45 2020 +0000 (UTC) 
+Tue May 05 17:39:45 2020 +0000 (UTC) Info: stdin received from /dev/null
+Tue May 05 17:39:45 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/rllib_mpi/434531.output
+Tue May 05 17:39:45 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/rllib_mpi/434531.error
+Tue May 05 17:39:45 2020 +0000 (UTC) 
