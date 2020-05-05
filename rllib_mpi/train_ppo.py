@@ -108,7 +108,7 @@ if __name__ == "__main__":
     config = ppo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
-    config["num_workers"] = 3
+    config["num_workers"] = 2
     config["lr"] = 1e-4
 
     # Add custom model for policy
