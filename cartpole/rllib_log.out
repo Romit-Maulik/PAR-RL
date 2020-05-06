@@ -1,559 +1,89 @@
-2020-05-06 02:39:27,573	WARNING worker.py:673 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
-2020-05-06 02:39:27,642	INFO trainer.py:371 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
-2020-05-06 02:39:27,644	INFO trainer.py:512 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
-2020-05-06 02:39:27,645	WARNING ppo.py:168 -- Using the simple minibatch optimizer. This will significantly reduce performance, consider simple_optimizer=False.
-2020-05-06 02:39:28,365	WARNING util.py:45 -- Install gputil for GPU system monitoring.
-********************************************
-Nodes used: 3
-********************************************
-[2m[33m(pid=raylet)[0m E0506 02:39:28.148958 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:28.148958 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:28.148958 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:28.148958 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-Iteration:  0
-[2m[33m(pid=raylet)[0m E0506 02:39:29.148984 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:29.148984 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:29.148984 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:29.148984 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:30.148967 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:30.148967 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:30.148967 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:30.148967 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:31.148974 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:31.148974 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:31.148974 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:31.148974 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:32.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:32.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:32.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:32.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:33.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:33.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:33.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:33.148962 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:34.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:34.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:34.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:34.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:35.148985 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:35.148985 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:35.148985 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:35.148985 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:36.148998 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:36.148998 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:36.148998 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:36.148998 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:37.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:37.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:37.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:37.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:38.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:38.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:38.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:38.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
+2020-05-06 20:28:53,890	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2020-05-06 20:28:54,249	INFO trainer.py:345 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+2020-05-06 20:30:06,320	INFO trainable.py:102 -- _setup took 71.945 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2020-05-06 20:30:06,367	WARNING util.py:45 -- Install gputil for GPU system monitoring.
+***********************************************************
+Nodes used: 4
+Available resources: {'object_store_memory': 1052.0, 'memory': 13717.0, 'CPU': 4.0}
+***********************************************************
+Performing iteration: 0
+Iteration time: 76.25819802284241
+Performing iteration: 1
+Iteration time: 61.54239797592163
+Performing iteration: 2
+Iteration time: 60.5745587348938
+Performing iteration: 3
+Iteration time: 60.76571846008301
+Performing iteration: 4
+Iteration time: 60.71509885787964
+Performing iteration: 5
+Iteration time: 60.87652802467346
+Performing iteration: 6
+Iteration time: 60.91092777252197
+Performing iteration: 7
+Iteration time: 60.82016134262085
+Performing iteration: 8
+Iteration time: 60.74005150794983
+Performing iteration: 9
+Iteration time: 60.91761064529419
 custom_metrics: {}
-date: 2020-05-06_02-39-38
+date: 2020-05-06_20-40-30
 done: false
-episode_len_mean: 21.788359788359788
-episode_reward_max: 67.0
-episode_reward_mean: 21.788359788359788
-episode_reward_min: 8.0
-episodes_this_iter: 189
-episodes_total: 189
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
-info:
-  grad_time_ms: 4921.417
-  learner:
-    cur_kl_coeff: 0.20000000298023224
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.6601638793945312
-    entropy_coeff: 0.0
-    kl: 0.03340882807970047
-    policy_loss: -0.047631192952394485
-    total_loss: 80.41378021240234
-    vf_explained_var: 0.21579785645008087
-    vf_loss: 80.45472717285156
-  num_steps_sampled: 4200
-  num_steps_trained: 4200
-  opt_peak_throughput: 853.413
-  opt_samples: 4200.0
-  sample_peak_throughput: 834.907
-  sample_time_ms: 5030.499
-  update_time_ms: 183.66
-iterations_since_restore: 1
-node_ip: 10.0.0.194
-num_healthy_workers: 3
-off_policy_estimator: {}
-perf:
-  cpu_util_percent: 77.4
-  ram_util_percent: 64.63999999999997
-pid: 30728
-policy_reward_max: {}
-policy_reward_mean: {}
-policy_reward_min: {}
-sampler_perf:
-  mean_env_wait_ms: 0.061122407748937256
-  mean_inference_ms: 0.7440901859153023
-  mean_processing_ms: 0.17237957793049719
-time_since_restore: 10.168956756591797
-time_this_iter_s: 10.168956756591797
-time_total_s: 10.168956756591797
-timestamp: 1588750778
-timesteps_since_restore: 4200
-timesteps_this_iter: 4200
-timesteps_total: 4200
-training_iteration: 1
-
-Iteration:  1
-[2m[33m(pid=raylet)[0m E0506 02:39:39.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:39.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:39.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:39.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:40.149092 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:40.149092 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:40.149092 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:40.149092 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:41.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:41.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:41.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:41.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:42.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:42.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:42.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:42.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:43.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:43.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:43.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:43.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:44.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:44.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:44.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:44.148993 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:45.149020 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:45.149020 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:45.149020 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:45.149020 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:46.149009 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:46.149009 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:46.149009 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:46.149009 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-custom_metrics: {}
-date: 2020-05-06_02-39-46
-done: false
-episode_len_mean: 44.56
-episode_reward_max: 191.0
-episode_reward_mean: 44.56
-episode_reward_min: 8.0
-episodes_this_iter: 82
-episodes_total: 271
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
-info:
-  grad_time_ms: 5106.705
-  learner:
-    cur_kl_coeff: 0.30000001192092896
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.5974483489990234
-    entropy_coeff: 0.0
-    kl: 0.02120968885719776
-    policy_loss: -0.030825108289718628
-    total_loss: 264.2588806152344
-    vf_explained_var: 0.1579226851463318
-    vf_loss: 264.28338623046875
-  num_steps_sampled: 8400
-  num_steps_trained: 8400
-  opt_peak_throughput: 822.448
-  opt_samples: 4200.0
-  sample_peak_throughput: 1130.064
-  sample_time_ms: 3716.604
-  update_time_ms: 94.6
-iterations_since_restore: 2
-node_ip: 10.0.0.194
-num_healthy_workers: 3
-off_policy_estimator: {}
-perf:
-  cpu_util_percent: 83.91818181818181
-  ram_util_percent: 65.3
-pid: 30728
-policy_reward_max: {}
-policy_reward_mean: {}
-policy_reward_min: {}
-sampler_perf:
-  mean_env_wait_ms: 0.07683743016814107
-  mean_inference_ms: 0.9559373372409646
-  mean_processing_ms: 0.2076593883991919
-time_since_restore: 17.878124475479126
-time_this_iter_s: 7.709167718887329
-time_total_s: 17.878124475479126
-timestamp: 1588750786
-timesteps_since_restore: 8400
-timesteps_this_iter: 4200
-timesteps_total: 8400
-training_iteration: 2
-
-Iteration:  2
-[2m[33m(pid=raylet)[0m E0506 02:39:47.148999 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:47.148999 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:47.148999 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:47.148999 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:48.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:48.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:48.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:48.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:49.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:49.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:49.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:49.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:50.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:50.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:50.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:50.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:51.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:51.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:51.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:51.149005 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:52.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:52.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:52.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:52.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-custom_metrics: {}
-date: 2020-05-06_02-39-53
-done: false
-episode_len_mean: 72.79
+episode_len_mean: 190.42
 episode_reward_max: 200.0
-episode_reward_mean: 72.79
-episode_reward_min: 11.0
-episodes_this_iter: 37
-episodes_total: 308
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
+episode_reward_mean: 190.42
+episode_reward_min: 113.0
+episodes_this_iter: 20
+episodes_total: 444
+experiment_id: 98d7c67b405047f6bc15d5b4ef354692
+hostname: nid03395
 info:
-  grad_time_ms: 4936.078
+  grad_time_ms: 48859.693
   learner:
-    cur_kl_coeff: 0.44999998807907104
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.5734866857528687
-    entropy_coeff: 0.0
-    kl: 0.0070477379485964775
-    policy_loss: -0.013771566562354565
-    total_loss: 604.0580444335938
-    vf_explained_var: 0.1690530776977539
-    vf_loss: 604.0686645507812
-  num_steps_sampled: 12600
-  num_steps_trained: 12600
-  opt_peak_throughput: 850.878
-  opt_samples: 4200.0
-  sample_peak_throughput: 1311.186
-  sample_time_ms: 3203.206
-  update_time_ms: 64.948
-iterations_since_restore: 3
-node_ip: 10.0.0.194
-num_healthy_workers: 3
+    default_policy:
+      cur_kl_coeff: 0.11249999701976776
+      cur_lr: 9.999999747378752e-05
+      entropy: 0.5542864799499512
+      entropy_coeff: 0.0
+      kl: 0.0029327585361897945
+      policy_loss: -0.0034314775839447975
+      total_loss: 225.1952362060547
+      vf_explained_var: 0.6629782915115356
+      vf_loss: 225.19834899902344
+  load_time_ms: 61.078
+  num_steps_sampled: 40000
+  num_steps_trained: 39680
+  sample_time_ms: 12382.728
+  update_time_ms: 830.805
+iterations_since_restore: 10
+node_ip: 10.236.16.140
+num_healthy_workers: 4
 off_policy_estimator: {}
 perf:
-  cpu_util_percent: 81.79
-  ram_util_percent: 65.22
-pid: 30728
+  cpu_util_percent: 0.3883720930232557
+  ram_util_percent: 2.5
+pid: 52253
 policy_reward_max: {}
 policy_reward_mean: {}
 policy_reward_min: {}
 sampler_perf:
-  mean_env_wait_ms: 0.08258294112686271
-  mean_inference_ms: 1.0229330707226054
-  mean_processing_ms: 0.21611788249872674
-time_since_restore: 24.671985864639282
-time_this_iter_s: 6.793861389160156
-time_total_s: 24.671985864639282
-timestamp: 1588750793
-timesteps_since_restore: 12600
-timesteps_this_iter: 4200
-timesteps_total: 12600
-training_iteration: 3
+  mean_env_wait_ms: 0.45574158946480636
+  mean_inference_ms: 9.427364054937398
+  mean_processing_ms: 1.2802454293363636
+time_since_restore: 622.9443655014038
+time_this_iter_s: 60.86428475379944
+time_total_s: 622.9443655014038
+timestamp: 1588797630
+timesteps_since_restore: 40000
+timesteps_this_iter: 4000
+timesteps_total: 40000
+training_iteration: 10
 
-Iteration:  3
-[2m[33m(pid=raylet)[0m E0506 02:39:53.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:53.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:53.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:53.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:54.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:54.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:54.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:54.149003 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:55.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:55.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:55.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:55.148979 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:56.149053 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:56.149053 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:56.149053 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:56.149053 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:57.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:57.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:57.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:57.149010 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:58.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:58.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:58.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:58.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:59.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:59.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:59.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:39:59.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:00.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:00.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:00.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:00.148995 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-custom_metrics: {}
-date: 2020-05-06_02-40-00
-done: false
-episode_len_mean: 103.01
-episode_reward_max: 200.0
-episode_reward_mean: 103.01
-episode_reward_min: 11.0
-episodes_this_iter: 24
-episodes_total: 332
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
-info:
-  grad_time_ms: 4847.414
-  learner:
-    cur_kl_coeff: 0.44999998807907104
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.5737002491950989
-    entropy_coeff: 0.0
-    kl: 0.0035191865172237158
-    policy_loss: -0.007019112817943096
-    total_loss: 608.2561645507812
-    vf_explained_var: 0.272428035736084
-    vf_loss: 608.261474609375
-  num_steps_sampled: 16800
-  num_steps_trained: 16800
-  opt_peak_throughput: 866.441
-  opt_samples: 4200.0
-  sample_peak_throughput: 1354.432
-  sample_time_ms: 3100.931
-  update_time_ms: 50.517
-iterations_since_restore: 4
-node_ip: 10.0.0.194
-num_healthy_workers: 3
-off_policy_estimator: {}
-perf:
-  cpu_util_percent: 84.02000000000001
-  ram_util_percent: 65.18
-pid: 30728
-policy_reward_max: {}
-policy_reward_mean: {}
-policy_reward_min: {}
-sampler_perf:
-  mean_env_wait_ms: 0.08500037218120818
-  mean_inference_ms: 1.061946458763876
-  mean_processing_ms: 0.21922321615013285
-time_since_restore: 32.06200695037842
-time_this_iter_s: 7.390021085739136
-time_total_s: 32.06200695037842
-timestamp: 1588750800
-timesteps_since_restore: 16800
-timesteps_this_iter: 4200
-timesteps_total: 16800
-training_iteration: 4
-
-Iteration:  4
-[2m[33m(pid=raylet)[0m E0506 02:40:01.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:01.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:01.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:01.148990 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:02.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:02.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:02.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:02.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:03.148981 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:03.148981 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:03.148981 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:03.148981 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:04.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:04.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:04.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:04.148988 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:05.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:05.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:05.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:05.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:06.149008 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:06.149008 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:06.149008 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:06.149008 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:07.149013 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:07.149013 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:07.149013 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:07.149013 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-custom_metrics: {}
-date: 2020-05-06_02-40-07
-done: false
-episode_len_mean: 132.59
-episode_reward_max: 200.0
-episode_reward_mean: 132.59
-episode_reward_min: 11.0
-episodes_this_iter: 22
-episodes_total: 354
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
-info:
-  grad_time_ms: 4833.57
-  learner:
-    cur_kl_coeff: 0.22499999403953552
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.549420952796936
-    entropy_coeff: 0.0
-    kl: 0.005394290667027235
-    policy_loss: -0.005652594845741987
-    total_loss: 391.0186462402344
-    vf_explained_var: 0.35051241517066956
-    vf_loss: 391.0230712890625
-  num_steps_sampled: 21000
-  num_steps_trained: 21000
-  opt_peak_throughput: 868.923
-  opt_samples: 4200.0
-  sample_peak_throughput: 1414.405
-  sample_time_ms: 2969.446
-  update_time_ms: 41.277
-iterations_since_restore: 5
-node_ip: 10.0.0.194
-num_healthy_workers: 3
-off_policy_estimator: {}
-perf:
-  cpu_util_percent: 82.04545454545456
-  ram_util_percent: 65.30909090909091
-pid: 30728
-policy_reward_max: {}
-policy_reward_mean: {}
-policy_reward_min: {}
-sampler_perf:
-  mean_env_wait_ms: 0.08803049149148048
-  mean_inference_ms: 1.1062328421181982
-  mean_processing_ms: 0.2231620672916501
-time_since_restore: 39.30081868171692
-time_this_iter_s: 7.238811731338501
-time_total_s: 39.30081868171692
-timestamp: 1588750807
-timesteps_since_restore: 21000
-timesteps_this_iter: 4200
-timesteps_total: 21000
-training_iteration: 5
-
-Iteration:  5
-[2m[33m(pid=raylet)[0m E0506 02:40:08.149025 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:08.149025 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:08.149025 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:08.149025 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:09.150045 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:09.150045 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:09.150045 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:09.150045 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:10.149085 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:10.149085 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:10.149085 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:10.149085 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:11.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:11.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:11.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:11.148986 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:12.149000 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:12.149000 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:12.149000 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:12.149000 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:13.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:13.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:13.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:13.148989 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:14.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:14.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:14.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:14.149001 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-custom_metrics: {}
-date: 2020-05-06_02-40-15
-done: false
-episode_len_mean: 161.8
-episode_reward_max: 200.0
-episode_reward_mean: 161.8
-episode_reward_min: 20.0
-episodes_this_iter: 21
-episodes_total: 375
-experiment_id: f84e0cdffc3c4b86baa3d91ea08c9e2d
-hostname: rmlans
-info:
-  grad_time_ms: 4849.462
-  learner:
-    cur_kl_coeff: 0.22499999403953552
-    cur_lr: 9.999999747378752e-05
-    entropy: 0.562479555606842
-    entropy_coeff: 0.0
-    kl: 0.005736802704632282
-    policy_loss: -0.004119148012250662
-    total_loss: 266.9024353027344
-    vf_explained_var: 0.4924393892288208
-    vf_loss: 266.9052734375
-  num_steps_sampled: 25200
-  num_steps_trained: 25200
-  opt_peak_throughput: 866.075
-  opt_samples: 4200.0
-  sample_peak_throughput: 1461.109
-  sample_time_ms: 2874.528
-  update_time_ms: 35.304
-iterations_since_restore: 6
-node_ip: 10.0.0.194
-num_healthy_workers: 3
-off_policy_estimator: {}
-perf:
-  cpu_util_percent: 81.74000000000001
-  ram_util_percent: 65.41
-pid: 30728
-policy_reward_max: {}
-policy_reward_mean: {}
-policy_reward_min: {}
-sampler_perf:
-  mean_env_wait_ms: 0.09124663084881321
-  mean_inference_ms: 1.1495087378680777
-  mean_processing_ms: 0.2271809946154646
-time_since_restore: 46.64260649681091
-time_this_iter_s: 7.341787815093994
-time_total_s: 46.64260649681091
-timestamp: 1588750815
-timesteps_since_restore: 25200
-timesteps_this_iter: 4200
-timesteps_total: 25200
-training_iteration: 6
-
-Iteration:  6
-[2m[33m(pid=raylet)[0m E0506 02:40:15.148978 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:15.148978 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:15.148978 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:15.148978 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:16.149006 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:16.149006 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:16.149006 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:16.149006 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:17.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:17.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:17.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:17.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:18.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:18.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:18.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:18.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:19.149114 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:19.149114 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:19.149114 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:19.149114 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:20.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:20.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:20.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:20.148980 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:21.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:21.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:21.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:21.148996 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:22.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:22.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:22.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
-[2m[33m(pid=raylet)[0m E0506 02:40:22.148983 30562 node_manager.cc:1468] Ignoring object ids report from failed / unknown worker.
+Final checkpoint saved at /home/rmaulik/ray_results/PPO_CartPole-v0_2020-05-06_20-28-54svqqaw3_/checkpoint_10/checkpoint-10
+Breakdown of times in this experiment
+Time to connect: 0.2531421184539795
+Time to register environment: 0.009238719940185547
+Time to setup PPO trainer: 72.2443950176239
+Time for total iterations: 624.1218366622925
+Time to save checkpoint: 0.49512410163879395
+Total time to solution: 697.157767534256

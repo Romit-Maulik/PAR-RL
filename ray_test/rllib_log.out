@@ -1,3 +1,4 @@
-2020-05-06 02:07:59,093	WARNING worker.py:673 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
-Nodes: 3
+2020-05-06 19:55:09,336	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+Nodes: 4
+Available resources: {'object_store_memory': 1052.0, 'memory': 13713.0, 'CPU': 4.0}
 [0, 1, 4, 9, 16, 25]

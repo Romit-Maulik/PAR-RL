@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 ray.init(redis_address=args.ray_address)
 print('Nodes:',len(ray.nodes()))
-# print('Resources:',ray.Resources())
+print('Available resources:',ray.available_resources())
 
 @ray.remote
 def f(x):

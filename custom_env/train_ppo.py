@@ -108,17 +108,13 @@ if __name__ == "__main__":
     print('Available resources:',ray.available_resources())
     print('***********************************************************')
 
-    # Wait for workers to start up
-    time.sleep(10*len(ray.nodes()))
-
     ModelCatalog.register_custom_model("my_model", CustomModel)
-
 
     config = ppo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
-    config["num_workers"] = len(ray.nodes())
-    config["eager"] = False
+    #config["num_workers"] = len(ray.nodes())
+    config["num_workers"] = int(ray.available_resources()['CPU'])
     config["lr"] = 1e-4
 
     # Add custom model for policy
@@ -137,8 +133,10 @@ if __name__ == "__main__":
     # Can optionally call trainer.restore(path) to load a checkpoint.
     for i in range(10):
         # Perform one iteration of training the policy with PPO
+        print('Performing iteration:',i)
         result = trainer.train()
-        print(pretty_print(result))
+        
+    print(pretty_print(result))
 
     # Final save
     checkpoint = trainer.save()

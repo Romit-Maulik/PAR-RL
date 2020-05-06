@@ -455,3 +455,126 @@
 05/06/2020 02:07:57 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
 05/06/2020 02:07:58 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
 05/06/2020 02:07:59 AM | RL LIB invoked successfully. Exiting.
+05/06/2020 04:35:42 PM | Waiting for broadcast...
+05/06/2020 04:35:42 PM | Ready to run ray head
+05/06/2020 04:35:50 PM | Head started at: 10.128.14.169:10100
+05/06/2020 04:35:50 PM | Ready to broadcast head_redis_address: 10.128.14.169:10100
+05/06/2020 04:35:50 PM | Broadcast done...
+05/06/2020 04:35:50 PM | Waiting for workers to start...
+05/06/2020 04:35:50 PM | Broadcast done... received head_redis_address= 10.128.14.169:10100
+05/06/2020 04:35:50 PM | Workers are all running!
+05/06/2020 04:35:50 PM | Ready to start driver!
+05/06/2020 04:35:50 PM | Worker on rank 1 with ip 10.128.15.217 will connect to head-redis-address=10.128.14.169:10100
+05/06/2020 04:35:56 PM | Worker on rank 1 with ip 10.128.15.217 is connected!
+05/06/2020 04:36:18 PM | RL LIB invoked successfully. Exiting.
+05/06/2020 04:36:59 PM | Waiting for broadcast...
+05/06/2020 04:36:59 PM | Ready to run ray head
+05/06/2020 04:37:06 PM | Head started at: 10.128.14.169:10100
+05/06/2020 04:37:06 PM | Ready to broadcast head_redis_address: 10.128.14.169:10100
+05/06/2020 04:37:06 PM | Broadcast done...
+05/06/2020 04:37:06 PM | Waiting for workers to start...
+05/06/2020 04:37:06 PM | Broadcast done... received head_redis_address= 10.128.14.169:10100
+05/06/2020 04:37:06 PM | Workers are all running!
+05/06/2020 04:37:06 PM | Ready to start driver!
+05/06/2020 04:37:06 PM | Worker on rank 1 with ip 10.128.15.217 will connect to head-redis-address=10.128.14.169:10100
+05/06/2020 04:37:12 PM | Worker on rank 1 with ip 10.128.15.217 is connected!
+05/06/2020 04:37:41 PM | RL LIB invoked successfully. Exiting.
+05/06/2020 07:41:38 PM | Waiting for broadcast...
+05/06/2020 07:41:38 PM | Waiting for broadcast...
+05/06/2020 07:41:38 PM | Waiting for broadcast...
+05/06/2020 07:41:38 PM | Ready to run ray head
+05/06/2020 07:41:47 PM | Head started at: 10.128.13.94:10100
+05/06/2020 07:41:47 PM | Ready to broadcast head_redis_address: 10.128.13.94:10100
+05/06/2020 07:41:47 PM | Broadcast done...
+05/06/2020 07:41:47 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:41:47 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:41:47 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:41:47 PM | Waiting for workers to start...
+05/06/2020 07:41:47 PM | Workers are all running!
+05/06/2020 07:41:47 PM | Ready to start driver!
+05/06/2020 07:41:47 PM | Worker on rank 1 with ip 10.128.15.249 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:41:47 PM | Worker on rank 2 with ip 10.128.16.162 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:41:47 PM | Worker on rank 3 with ip 10.128.16.164 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:41:55 PM | Worker on rank 2 with ip 10.128.16.162 is connected!
+05/06/2020 07:41:55 PM | Worker on rank 1 with ip 10.128.15.249 is connected!
+05/06/2020 07:41:55 PM | Worker on rank 3 with ip 10.128.16.164 is connected!
+05/06/2020 07:42:57 PM | RL LIB invoked successfully. Exiting.
+05/06/2020 07:44:44 PM | Waiting for broadcast...
+05/06/2020 07:44:44 PM | Waiting for broadcast...
+05/06/2020 07:44:44 PM | Waiting for broadcast...
+05/06/2020 07:44:44 PM | Ready to run ray head
+05/06/2020 07:44:51 PM | Head started at: 10.128.13.94:10100
+05/06/2020 07:44:51 PM | Ready to broadcast head_redis_address: 10.128.13.94:10100
+05/06/2020 07:44:51 PM | Broadcast done...
+05/06/2020 07:44:51 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:44:51 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:44:51 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:44:51 PM | Waiting for workers to start...
+05/06/2020 07:44:51 PM | Workers are all running!
+05/06/2020 07:44:51 PM | Ready to start driver!
+05/06/2020 07:44:51 PM | Worker on rank 3 with ip 10.128.16.164 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:44:51 PM | Worker on rank 1 with ip 10.128.15.249 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:44:51 PM | Worker on rank 2 with ip 10.128.16.162 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:44:57 PM | Worker on rank 3 with ip 10.128.16.164 is connected!
+05/06/2020 07:44:57 PM | Worker on rank 1 with ip 10.128.15.249 is connected!
+05/06/2020 07:44:57 PM | Worker on rank 2 with ip 10.128.16.162 is connected!
+05/06/2020 07:45:20 PM | RL LIB invoked successfully. Exiting.
+05/06/2020 07:47:43 PM | Waiting for broadcast...
+05/06/2020 07:47:43 PM | Waiting for broadcast...
+05/06/2020 07:47:43 PM | Waiting for broadcast...
+05/06/2020 07:47:43 PM | Ready to run ray head
+05/06/2020 07:47:58 PM | Head started at: 10.128.13.94:10100
+05/06/2020 07:47:58 PM | Ready to broadcast head_redis_address: 10.128.13.94:10100
+05/06/2020 07:47:58 PM | Broadcast done...
+05/06/2020 07:47:58 PM | Waiting for workers to start...
+05/06/2020 07:47:58 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:47:58 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:47:58 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:47:58 PM | Workers are all running!
+05/06/2020 07:47:58 PM | Ready to start driver!
+05/06/2020 07:47:58 PM | Worker on rank 1 with ip 10.128.15.249 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:47:58 PM | Worker on rank 2 with ip 10.128.16.162 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:47:58 PM | Worker on rank 3 with ip 10.128.16.164 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:48:09 PM | Worker on rank 1 with ip 10.128.15.249 is connected!
+05/06/2020 07:48:09 PM | Worker on rank 2 with ip 10.128.16.162 is connected!
+05/06/2020 07:48:09 PM | Worker on rank 3 with ip 10.128.16.164 is connected!
+05/06/2020 07:51:00 PM | Waiting for broadcast...
+05/06/2020 07:51:00 PM | Waiting for broadcast...
+05/06/2020 07:51:00 PM | Waiting for broadcast...
+05/06/2020 07:51:00 PM | Ready to run ray head
+05/06/2020 07:51:14 PM | Head started at: 10.128.13.94:10100
+05/06/2020 07:51:14 PM | Ready to broadcast head_redis_address: 10.128.13.94:10100
+05/06/2020 07:51:14 PM | Broadcast done...
+05/06/2020 07:51:14 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:51:14 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:51:14 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:51:14 PM | Waiting for workers to start...
+05/06/2020 07:51:14 PM | Workers are all running!
+05/06/2020 07:51:14 PM | Ready to start driver!
+05/06/2020 07:51:14 PM | Worker on rank 3 with ip 10.128.16.164 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:51:14 PM | Worker on rank 2 with ip 10.128.16.162 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:51:14 PM | Worker on rank 1 with ip 10.128.15.249 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:51:25 PM | Worker on rank 2 with ip 10.128.16.162 is connected!
+05/06/2020 07:51:25 PM | Worker on rank 1 with ip 10.128.15.249 is connected!
+05/06/2020 07:51:25 PM | Worker on rank 3 with ip 10.128.16.164 is connected!
+05/06/2020 07:51:46 PM | RL LIB invoked successfully. Exiting.
+05/06/2020 07:54:34 PM | Waiting for broadcast...
+05/06/2020 07:54:34 PM | Waiting for broadcast...
+05/06/2020 07:54:34 PM | Waiting for broadcast...
+05/06/2020 07:54:34 PM | Ready to run ray head
+05/06/2020 07:54:42 PM | Head started at: 10.128.13.94:10100
+05/06/2020 07:54:42 PM | Ready to broadcast head_redis_address: 10.128.13.94:10100
+05/06/2020 07:54:42 PM | Broadcast done...
+05/06/2020 07:54:42 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:54:42 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:54:42 PM | Broadcast done... received head_redis_address= 10.128.13.94:10100
+05/06/2020 07:54:42 PM | Waiting for workers to start...
+05/06/2020 07:54:42 PM | Workers are all running!
+05/06/2020 07:54:42 PM | Ready to start driver!
+05/06/2020 07:54:42 PM | Worker on rank 1 with ip 10.128.15.249 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:54:42 PM | Worker on rank 2 with ip 10.128.16.162 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:54:42 PM | Worker on rank 3 with ip 10.128.16.164 will connect to head-redis-address=10.128.13.94:10100
+05/06/2020 07:54:48 PM | Worker on rank 1 with ip 10.128.15.249 is connected!
+05/06/2020 07:54:48 PM | Worker on rank 2 with ip 10.128.16.162 is connected!
+05/06/2020 07:54:48 PM | Worker on rank 3 with ip 10.128.16.164 is connected!
+05/06/2020 07:55:13 PM | RL LIB invoked successfully. Exiting.

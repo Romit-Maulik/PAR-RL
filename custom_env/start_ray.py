@@ -158,6 +158,8 @@ if __name__ == "__main__":
                         stderr=subprocess.STDOUT,
         )
 
+        # subprocess.run(exec_string,shell=True,check=True)
+
         logging.info("RL LIB invoked successfully. Exiting.")
 
     comm.barrier()
