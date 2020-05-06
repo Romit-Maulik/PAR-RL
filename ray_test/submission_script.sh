@@ -1,6 +1,6 @@
 #!/bin/bash
 #COBALT -t 30
-#COBALT -n 8
+#COBALT -n 32
 #COBALT -q Comp_Perf_Workshop
 #COBALT -A Comp_Perf_Workshop
 #COBALT --attrs enable_ssh=1:ssds=required:ssd_size=128

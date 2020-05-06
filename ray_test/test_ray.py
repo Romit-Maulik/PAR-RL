@@ -11,11 +11,13 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--ray-address")
 args = parser.parse_args()
 
-ray.init(address=args.ray_address)
+ray.init(redis_address=args.ray_address)
+print('Nodes:',len(ray.nodes()))
+# print('Resources:',ray.Resources())
 
 @ray.remote
 def f(x):
     return x * x
 
-futures = [f.remote(i) for i in range(8)]
+futures = [f.remote(i) for i in range(6)]
 print(ray.get(futures))

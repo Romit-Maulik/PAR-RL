@@ -46,7 +46,8 @@ def run_ray_head(head_ip):
     with open('ray.log.head', 'wb') as fp:
         subprocess.run(
             f'ray start --head \
-                    --num-cpus 4 \
+                    --num-cpus 1 \
+                    --node-ip-address={head_ip} \
                     --redis-port={REDIS_PORT}',
             shell=True,
             check=True,
@@ -57,7 +58,8 @@ def run_ray_head(head_ip):
 def run_ray_worker(head_redis_address):
     with open(f'ray.log.{rank}', 'wb') as fp:
         subprocess.run(
-            f'ray start --num-cpus 4 --address={head_redis_address}',
+            f'ray start --redis-address={head_redis_address} \
+                    --num-cpus 1',
             shell=True,
             check=True,
             stdout=fp,
@@ -65,6 +67,9 @@ def run_ray_worker(head_redis_address):
         )
 
 def fetch_ip():
+    # import urllib.request
+    # external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
+    # return external_ip
     return socket.gethostbyname(socket.gethostname())
 
 
