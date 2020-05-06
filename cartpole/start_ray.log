@@ -150,3 +150,269 @@
 05/06/2020 01:53:07 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
 05/06/2020 01:53:08 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
 05/06/2020 01:53:08 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:09:03 AM | Waiting for broadcast...
+05/06/2020 02:09:03 AM | Waiting for broadcast...
+05/06/2020 02:09:03 AM | Waiting for broadcast...
+05/06/2020 02:09:03 AM | Ready to run ray head
+05/06/2020 02:09:04 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:09:04 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:09:04 AM | Broadcast done...
+05/06/2020 02:09:04 AM | Waiting for workers to start...
+05/06/2020 02:09:04 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:09:04 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:09:04 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:09:04 AM | Workers are all running!
+05/06/2020 02:09:04 AM | Ready to start driver!
+05/06/2020 02:09:04 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:09:04 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:09:04 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:09:05 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:09:05 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:09:05 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:10:28 AM | Waiting for broadcast...
+05/06/2020 02:10:28 AM | Waiting for broadcast...
+05/06/2020 02:10:28 AM | Waiting for broadcast...
+05/06/2020 02:10:28 AM | Ready to run ray head
+05/06/2020 02:10:29 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:10:29 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:10:29 AM | Broadcast done...
+05/06/2020 02:10:29 AM | Waiting for workers to start...
+05/06/2020 02:10:29 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:10:29 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:10:29 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:10:29 AM | Workers are all running!
+05/06/2020 02:10:29 AM | Ready to start driver!
+05/06/2020 02:10:29 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:10:29 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:10:29 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:10:31 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:10:31 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:10:31 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:12:40 AM | Waiting for broadcast...
+05/06/2020 02:12:40 AM | Waiting for broadcast...
+05/06/2020 02:12:40 AM | Waiting for broadcast...
+05/06/2020 02:12:40 AM | Ready to run ray head
+05/06/2020 02:12:41 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:12:41 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:12:41 AM | Broadcast done...
+05/06/2020 02:12:41 AM | Waiting for workers to start...
+05/06/2020 02:12:41 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:12:41 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:12:41 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:12:41 AM | Workers are all running!
+05/06/2020 02:12:41 AM | Ready to start driver!
+05/06/2020 02:12:41 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:12:41 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:12:41 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:12:43 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:12:43 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:12:43 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:14:24 AM | Waiting for broadcast...
+05/06/2020 02:14:24 AM | Waiting for broadcast...
+05/06/2020 02:14:24 AM | Waiting for broadcast...
+05/06/2020 02:14:24 AM | Ready to run ray head
+05/06/2020 02:14:25 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:14:25 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:14:25 AM | Broadcast done...
+05/06/2020 02:14:25 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:14:25 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:14:25 AM | Waiting for workers to start...
+05/06/2020 02:14:25 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:14:25 AM | Workers are all running!
+05/06/2020 02:14:25 AM | Ready to start driver!
+05/06/2020 02:14:25 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:14:25 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:14:25 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:14:27 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:14:27 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:14:27 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:16:22 AM | Waiting for broadcast...
+05/06/2020 02:16:22 AM | Waiting for broadcast...
+05/06/2020 02:16:22 AM | Waiting for broadcast...
+05/06/2020 02:16:22 AM | Ready to run ray head
+05/06/2020 02:16:23 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:16:23 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:16:23 AM | Broadcast done...
+05/06/2020 02:16:23 AM | Waiting for workers to start...
+05/06/2020 02:16:23 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:16:23 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:16:23 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:16:23 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:16:23 AM | Workers are all running!
+05/06/2020 02:16:23 AM | Ready to start driver!
+05/06/2020 02:16:23 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:16:23 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:16:25 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:16:25 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:16:25 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:23 AM | Waiting for broadcast...
+05/06/2020 02:18:23 AM | Waiting for broadcast...
+05/06/2020 02:18:23 AM | Waiting for broadcast...
+05/06/2020 02:18:23 AM | Ready to run ray head
+05/06/2020 02:18:24 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:18:24 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:18:24 AM | Broadcast done...
+05/06/2020 02:18:24 AM | Waiting for workers to start...
+05/06/2020 02:18:24 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:24 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:24 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:24 AM | Workers are all running!
+05/06/2020 02:18:24 AM | Ready to start driver!
+05/06/2020 02:18:24 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:24 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:24 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:26 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:26 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:27 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:43 AM | Waiting for broadcast...
+05/06/2020 02:18:43 AM | Waiting for broadcast...
+05/06/2020 02:18:43 AM | Waiting for broadcast...
+05/06/2020 02:18:43 AM | Ready to run ray head
+05/06/2020 02:18:44 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:18:44 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:18:44 AM | Broadcast done...
+05/06/2020 02:18:44 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:44 AM | Waiting for workers to start...
+05/06/2020 02:18:44 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:44 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:18:44 AM | Workers are all running!
+05/06/2020 02:18:44 AM | Ready to start driver!
+05/06/2020 02:18:44 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:44 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:44 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:18:46 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:46 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:18:47 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:22:27 AM | Waiting for broadcast...
+05/06/2020 02:22:27 AM | Waiting for broadcast...
+05/06/2020 02:22:27 AM | Waiting for broadcast...
+05/06/2020 02:22:27 AM | Ready to run ray head
+05/06/2020 02:22:28 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:22:28 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:22:28 AM | Broadcast done...
+05/06/2020 02:22:28 AM | Waiting for workers to start...
+05/06/2020 02:22:28 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:22:28 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:22:28 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:22:28 AM | Workers are all running!
+05/06/2020 02:22:28 AM | Ready to start driver!
+05/06/2020 02:22:28 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:22:28 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:22:28 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:22:29 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:22:30 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:22:30 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:25:59 AM | Waiting for broadcast...
+05/06/2020 02:25:59 AM | Waiting for broadcast...
+05/06/2020 02:25:59 AM | Waiting for broadcast...
+05/06/2020 02:25:59 AM | Ready to run ray head
+05/06/2020 02:26:00 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:26:00 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:26:00 AM | Broadcast done...
+05/06/2020 02:26:00 AM | Waiting for workers to start...
+05/06/2020 02:26:00 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:00 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:00 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:00 AM | Workers are all running!
+05/06/2020 02:26:00 AM | Ready to start driver!
+05/06/2020 02:26:00 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:00 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:00 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:01 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:26:01 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:26:01 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:26:18 AM | Waiting for broadcast...
+05/06/2020 02:26:18 AM | Waiting for broadcast...
+05/06/2020 02:26:18 AM | Waiting for broadcast...
+05/06/2020 02:26:18 AM | Ready to run ray head
+05/06/2020 02:26:20 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:26:20 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:26:20 AM | Broadcast done...
+05/06/2020 02:26:20 AM | Waiting for workers to start...
+05/06/2020 02:26:20 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:20 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:20 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:26:20 AM | Workers are all running!
+05/06/2020 02:26:20 AM | Ready to start driver!
+05/06/2020 02:26:20 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:20 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:20 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:26:22 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:26:22 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:26:22 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:28:05 AM | Waiting for broadcast...
+05/06/2020 02:28:05 AM | Waiting for broadcast...
+05/06/2020 02:28:05 AM | Waiting for broadcast...
+05/06/2020 02:28:05 AM | Ready to run ray head
+05/06/2020 02:28:06 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:28:06 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:28:06 AM | Broadcast done...
+05/06/2020 02:28:06 AM | Waiting for workers to start...
+05/06/2020 02:28:06 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:28:06 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:28:06 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:28:06 AM | Workers are all running!
+05/06/2020 02:28:06 AM | Ready to start driver!
+05/06/2020 02:28:06 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:28:06 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:28:06 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:28:07 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:28:07 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:28:07 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:34:07 AM | Waiting for broadcast...
+05/06/2020 02:34:07 AM | Waiting for broadcast...
+05/06/2020 02:34:07 AM | Waiting for broadcast...
+05/06/2020 02:34:07 AM | Ready to run ray head
+05/06/2020 02:34:08 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:34:08 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:34:08 AM | Broadcast done...
+05/06/2020 02:34:08 AM | Waiting for workers to start...
+05/06/2020 02:34:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:34:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:34:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:34:08 AM | Workers are all running!
+05/06/2020 02:34:08 AM | Ready to start driver!
+05/06/2020 02:34:08 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:34:08 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:34:08 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:34:09 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:34:09 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:34:09 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:36:07 AM | Waiting for broadcast...
+05/06/2020 02:36:07 AM | Waiting for broadcast...
+05/06/2020 02:36:07 AM | Waiting for broadcast...
+05/06/2020 02:36:07 AM | Ready to run ray head
+05/06/2020 02:36:08 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:36:08 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:36:08 AM | Broadcast done...
+05/06/2020 02:36:08 AM | Waiting for workers to start...
+05/06/2020 02:36:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:36:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:36:08 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:36:08 AM | Workers are all running!
+05/06/2020 02:36:08 AM | Ready to start driver!
+05/06/2020 02:36:08 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:36:08 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:36:08 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:36:10 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:36:10 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:36:10 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:38:42 AM | Waiting for broadcast...
+05/06/2020 02:38:42 AM | Waiting for broadcast...
+05/06/2020 02:38:42 AM | Waiting for broadcast...
+05/06/2020 02:38:42 AM | Ready to run ray head
+05/06/2020 02:38:43 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:38:43 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:38:43 AM | Broadcast done...
+05/06/2020 02:38:43 AM | Waiting for workers to start...
+05/06/2020 02:38:43 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:38:43 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:38:43 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:38:43 AM | Workers are all running!
+05/06/2020 02:38:43 AM | Ready to start driver!
+05/06/2020 02:38:43 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:38:43 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:38:43 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:38:45 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:38:45 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:38:45 AM | Worker on rank 3 with ip 127.0.1.1 is connected!

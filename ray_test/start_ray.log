@@ -435,3 +435,23 @@
 05/06/2020 01:33:20 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
 05/06/2020 01:33:20 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
 05/06/2020 01:33:22 AM | RL LIB invoked successfully. Exiting.
+05/06/2020 02:07:55 AM | Waiting for broadcast...
+05/06/2020 02:07:55 AM | Waiting for broadcast...
+05/06/2020 02:07:55 AM | Waiting for broadcast...
+05/06/2020 02:07:55 AM | Ready to run ray head
+05/06/2020 02:07:56 AM | Head started at: 127.0.1.1:10100
+05/06/2020 02:07:56 AM | Ready to broadcast head_redis_address: 127.0.1.1:10100
+05/06/2020 02:07:56 AM | Broadcast done...
+05/06/2020 02:07:56 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:07:56 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:07:56 AM | Waiting for workers to start...
+05/06/2020 02:07:56 AM | Broadcast done... received head_redis_address= 127.0.1.1:10100
+05/06/2020 02:07:56 AM | Workers are all running!
+05/06/2020 02:07:56 AM | Ready to start driver!
+05/06/2020 02:07:56 AM | Worker on rank 2 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:07:56 AM | Worker on rank 3 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:07:56 AM | Worker on rank 1 with ip 127.0.1.1 will connect to head-redis-address=127.0.1.1:10100
+05/06/2020 02:07:57 AM | Worker on rank 1 with ip 127.0.1.1 is connected!
+05/06/2020 02:07:57 AM | Worker on rank 2 with ip 127.0.1.1 is connected!
+05/06/2020 02:07:58 AM | Worker on rank 3 with ip 127.0.1.1 is connected!
+05/06/2020 02:07:59 AM | RL LIB invoked successfully. Exiting.

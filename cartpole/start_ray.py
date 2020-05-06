@@ -134,8 +134,6 @@ if __name__ == "__main__":
         datefmt='%m/%d/%Y %I:%M:%S %p',
         level=logging.INFO)
 
-    #ranks_to_use = [1,2,3]
-
     if rank == 0: 
         head_redis_address = master()
     else: 

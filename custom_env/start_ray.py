@@ -7,6 +7,15 @@ import socket
 import signal
 import logging
 import psutil
+import os
+import sys
+import subprocess
+from subprocess import Popen
+
+import socket
+import signal
+import logging
+import psutil
 from pprint import pformat
 import ray
 import time
@@ -44,55 +53,32 @@ signal.signal(signal.SIGTERM, on_exit)
 
 def run_ray_head(head_ip):
     with open('ray.log.head', 'wb') as fp:
-        # subprocess.run(
-        #     f'ray start --head \
-        #             --num-cpus 1 \
-        #             --node-ip-address={head_ip} \
-        #             --redis-port={REDIS_PORT} \
-        #             --redis-shard-ports={REDIS_SHARD_PORTS} \
-        #             --node-manager-port={NODE_MANAGER_PORT} \
-        #             --object-manager-port={OBJECT_MANAGER_PORT}',
-        #     shell=True,
-        #     check=True,
-        #     stdout=fp,
-        #     stderr=subprocess.STDOUT
-        # )
-
         subprocess.run(
-            f'ray start --head --num-cpus 16 --redis-port={REDIS_PORT}',
+            f'ray start --head \
+                    --num-cpus 1 \
+                    --node-ip-address={head_ip} \
+                    --redis-port={REDIS_PORT}',
             shell=True,
             check=True,
             stdout=fp,
             stderr=subprocess.STDOUT
         )
-
 
 def run_ray_worker(head_redis_address):
     with open(f'ray.log.{rank}', 'wb') as fp:
-        # --node-manager-port={NODE_MANAGER_PORT} \
-        # --object-manager-port={OBJECT_MANAGER_PORT}',
-        # subprocess.run(
-        #     f'ray start --address={head_redis_address} \
-        #             --num-cpus 1 \
-        #             --node-ip-address={fetch_ip()} \
-        #             --node-manager-port={NODE_MANAGER_PORT} \
-        #             --object-manager-port={OBJECT_MANAGER_PORT}',
-        #     shell=True,
-        #     check=True,
-        #     stdout=fp,
-        #     stderr=subprocess.STDOUT
-        # )
-
         subprocess.run(
-            f'ray start --num-cpus 16 --address={head_redis_address}',
+            f'ray start --redis-address={head_redis_address} \
+                    --num-cpus 1',
             shell=True,
             check=True,
             stdout=fp,
             stderr=subprocess.STDOUT
         )
 
-
 def fetch_ip():
+    # import urllib.request
+    # external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
+    # return external_ip
     return socket.gethostbyname(socket.gethostname())
 
 
@@ -139,6 +125,7 @@ def worker():
     run_ray_worker(head_redis_address)
     logging.info(f"Worker on rank {rank} with ip {fetch_ip()} is connected!")
 
+
 if __name__ == "__main__":
 
     logging.basicConfig(
@@ -155,6 +142,9 @@ if __name__ == "__main__":
         worker()
 
     comm.barrier()
+
+    # # Wait for workers to start up
+    # time.sleep(10*comm.Get_size())
 
     if rank == 0:
         # Run the python script to do RL

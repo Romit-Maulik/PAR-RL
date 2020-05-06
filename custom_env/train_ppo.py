@@ -22,6 +22,7 @@ from ray.rllib.utils import try_import_tf
 from ray.tune import grid_search
 from ray.tune.registry import register_env
 from ray.tune.logger import pretty_print
+import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--ray-address")
@@ -79,7 +80,6 @@ class my_environment(gym.Env):
 
 register_env("myenv", lambda config: my_environment(config))
 
-
 #debugging by following example code 
 class CustomModel(TFModelV2):
     """Example of a custom model that just delegates to a fc-net."""
@@ -102,13 +102,22 @@ class CustomModel(TFModelV2):
 if __name__ == "__main__":
     # Can also register the env creator function explicitly with:
     # register_env("corridor", lambda config: SimpleCorridor(config))
-    ray.init(address=args.ray_address)
+    ray.init(redis_address=args.ray_address)
+    print('***********************************************************')
+    print('Nodes used:',len(ray.nodes()))
+    print('Available resources:',ray.available_resources())
+    print('***********************************************************')
+
+    # Wait for workers to start up
+    time.sleep(10*len(ray.nodes()))
+
     ModelCatalog.register_custom_model("my_model", CustomModel)
 
+
     config = ppo.DEFAULT_CONFIG.copy()
-    #config["log_level"] = "WARN"
-    #config["num_gpus"] = 0
-    config["num_workers"] = 16
+    config["log_level"] = "WARN"
+    config["num_gpus"] = 0
+    config["num_workers"] = len(ray.nodes())
     config["eager"] = False
     config["lr"] = 1e-4
 

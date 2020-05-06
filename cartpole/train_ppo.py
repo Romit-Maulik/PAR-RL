@@ -52,25 +52,31 @@ class CustomModel(TFModelV2):
 if __name__ == "__main__":
     # Can also register the env creator function explicitly with:
     ray.init(redis_address=args.ray_address)
+    print('***********************************************************')
+    print('Nodes used:',len(ray.nodes()))
+    print('Available resources:',ray.available_resources())
+    print('***********************************************************')
+
+
     ModelCatalog.register_custom_model("my_model", CustomModel)
 
     config = ppo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
-    config["num_workers"] = 4
+    config["num_workers"] = len(ray.nodes())
     config["lr"] = 1e-4
     config["simple_optimizer"] = True
 
-    # # Add custom model for policy
-    # model={}
-    # model["custom_model"] = "my_model"
-    # config["model"] = model
+    # Add custom model for policy
+    model={}
+    model["custom_model"] = "my_model"
+    config["model"] = model
 
     # Trainer
     trainer = ppo.PPOTrainer(config=config, env="CartPole-v0")
 
     # Can optionally call trainer.restore(path) to load a checkpoint.
-    for i in range(100):
+    for i in range(10):
         print('Iteration: ',i)
         # Perform one iteration of training the policy with PPO
         result = trainer.train()

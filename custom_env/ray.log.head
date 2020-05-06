@@ -1,6 +1,6 @@
-2020-05-06 02:07:56,230	INFO scripts.py:319 -- Using IP address 127.0.1.1 for this node.
-2020-05-06 02:07:56,231	INFO resource_spec.py:216 -- Starting Ray with 1.27 GiB memory available for workers and up to 0.66 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
-2020-05-06 02:07:56,473	INFO scripts.py:350 -- 
+2020-05-06 03:21:50,873	INFO scripts.py:319 -- Using IP address 127.0.1.1 for this node.
+2020-05-06 03:21:50,874	INFO resource_spec.py:216 -- Starting Ray with 1.12 GiB memory available for workers and up to 0.58 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-05-06 03:21:51,123	INFO scripts.py:350 -- 
 Started Ray on this node. You can add additional nodes to the cluster by calling
 
     ray start --redis-address 127.0.1.1:10100

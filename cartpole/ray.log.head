@@ -1,12 +1,6 @@
-2020-05-06 01:53:06,858	INFO scripts.py:289 -- Using IP address 127.0.1.1 for this node.
-2020-05-06 01:53:06,858	INFO node.py:498 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2020-05-06_01-53-06_858487_19714/logs.
-2020-05-06 01:53:06,961	INFO services.py:409 -- Waiting for redis server at 127.0.0.1:10100 to respond...
-2020-05-06 01:53:07,066	INFO services.py:409 -- Waiting for redis server at 127.0.0.1:43791 to respond...
-2020-05-06 01:53:07,068	INFO services.py:809 -- Starting Redis shard with 3.33 GB max memory.
-2020-05-06 01:53:07,074	INFO node.py:512 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2020-05-06_01-53-06_858487_19714/logs.
-2020-05-06 01:53:07,074	WARNING services.py:1330 -- WARNING: The default object store size of 4.99 GB will use more than 50% of the available memory on this node (7.62 GB). Consider setting the object store memory manually to a smaller size to avoid memory contention with other applications.
-2020-05-06 01:53:07,075	INFO services.py:1475 -- Starting the Plasma object store with 4.99 GB memory using /dev/shm.
-2020-05-06 01:53:07,085	INFO scripts.py:319 -- 
+2020-05-06 02:38:43,328	INFO scripts.py:319 -- Using IP address 127.0.1.1 for this node.
+2020-05-06 02:38:43,329	INFO resource_spec.py:216 -- Starting Ray with 1.51 GiB memory available for workers and up to 0.77 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-05-06 02:38:43,576	INFO scripts.py:350 -- 
 Started Ray on this node. You can add additional nodes to the cluster by calling
 
     ray start --redis-address 127.0.1.1:10100
