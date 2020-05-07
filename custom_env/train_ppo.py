@@ -22,7 +22,7 @@ from ray.rllib.utils import try_import_tf
 from ray.tune import grid_search
 from ray.tune.registry import register_env
 from ray.tune.logger import pretty_print
-import time
+from time import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--ray-address")
@@ -101,6 +101,7 @@ class CustomModel(TFModelV2):
 
 if __name__ == "__main__":
     # Can also register the env creator function explicitly with:
+    zero_time = time()
     # register_env("corridor", lambda config: SimpleCorridor(config))
     ray.init(redis_address=args.ray_address)
     print('***********************************************************')
@@ -108,7 +109,9 @@ if __name__ == "__main__":
     print('Available resources:',ray.available_resources())
     print('***********************************************************')
 
+    connect_time = time()
     ModelCatalog.register_custom_model("my_model", CustomModel)
+    register_time = time()
 
     config = ppo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
@@ -129,19 +132,35 @@ if __name__ == "__main__":
 
     # Trainer
     trainer = ppo.PPOTrainer(config=config, env="myenv")
+    trainer_time = time()
 
     # Can optionally call trainer.restore(path) to load a checkpoint.
     for i in range(10):
         # Perform one iteration of training the policy with PPO
         print('Performing iteration:',i)
+        init_time = time()
         result = trainer.train()
+        print('Iteration time:',time()-init_time)
         
+    iterations_time = time()
     print(pretty_print(result))
 
     # Final save
+    init_time = time()
     checkpoint = trainer.save()
     print("Final checkpoint saved at", checkpoint)
 
     f = open("rl_checkpoint",'w')
     f.write(checkpoint)
     f.close()
+
+    final_time = time()
+
+    print('Breakdown of times in this experiment')
+    print('Time to connect:',connect_time - zero_time)
+    print('Time to register environment:',register_time - connect_time)
+    print('Time to setup PPO trainer:',trainer_time - register_time)
+    print('Time for total iterations:',iterations_time - trainer_time)
+    print('Time to save checkpoint:',final_time - init_time)
+    print('Total time to solution:',final_time - zero_time)
+

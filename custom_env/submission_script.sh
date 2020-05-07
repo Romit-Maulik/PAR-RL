@@ -26,5 +26,4 @@ export PATH=/soft/datascience/anaconda3/bin:$PATH
 export PATH=/soft/libraries/mpi/mvapich2/gcc/bin/:$PATH
 source activate rllib_env
 
-#aprun -n 2 -N 1 -cc none --env OMP_NUM_THREADS=4 python start_ray.py
-aprun -n $COBALT_JOBSIZE -N 1 --cc none python start_ray.py
+aprun -n $COBALT_JOBSIZE -N 1 -d 1 -j 1 --cc depth python start_ray.py

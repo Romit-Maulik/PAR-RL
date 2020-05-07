@@ -1,6 +1,6 @@
 #!/bin/bash
-#COBALT -t 30
-#COBALT -n 32
+#COBALT -t 180
+#COBALT -n 128
 #COBALT -q Comp_Perf_Workshop
 #COBALT -A Comp_Perf_Workshop
 #COBALT --attrs enable_ssh=1:ssds=required:ssd_size=128
@@ -26,5 +26,4 @@ export PATH=/soft/datascience/anaconda3/bin:$PATH
 export PATH=/soft/libraries/mpi/mvapich2/gcc/bin/:$PATH
 source activate rllib_env
 
-#aprun -n 2 -N 1 -cc none --env OMP_NUM_THREADS=4 python start_ray.py
-aprun -n $COBALT_JOBSIZE -N 1 --cc none python start_ray.py
+aprun -n $COBALT_JOBSIZE -N 1 -d 1 -j 1 --cc depth python start_ray.py

@@ -1,7 +1,7 @@
 import os
 import sys
 import subprocess
-from subprocess import Popen
+from subprocess import Popen, PIPE, CalledProcessError
 
 import socket
 import signal
@@ -144,15 +144,7 @@ if __name__ == "__main__":
     if rank == 0:
         # Run the python script to do RL
         exec_string = "python train_ppo.py --ray-address='"+str(head_redis_address)+r"'"
-        with open('rllib_log.out', 'wb') as fp:
-            subprocess.run(
-                        exec_string,
-                        shell=True,
-                        check=True,
-                        stdout=fp,
-                        stderr=subprocess.STDOUT,
-        )
-
+        subprocess.run(exec_string,shell=True,check=True)
         logging.info("RL LIB invoked successfully. Exiting.")
 
     comm.barrier()
