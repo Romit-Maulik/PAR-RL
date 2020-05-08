@@ -1,0 +1,4 @@
+Jobid: 435877
+qsub --mode script -t 180 -n 8 -q Comp_Perf_Workshop -A Comp_Perf_Workshop --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Fri May 08 03:16:04 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole
+jobid 435877 submitted from terminal /dev/pts/53

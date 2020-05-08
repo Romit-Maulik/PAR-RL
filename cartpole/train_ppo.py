@@ -37,10 +37,11 @@ if __name__ == "__main__":
     ray.init(redis_address=args.ray_address)
 
     with open('Resources.txt','w') as f:
-        print('***********************************************************')
-        print('Nodes used:',len(ray.nodes()),file=f)
-        print('Available resources:',ray.available_resources(),file=f)
-        print('***********************************************************')
+        f.write('Nodes used: '+str(len(ray.nodes()))+'\n')
+        f.write('Available resources:'+'\n'),
+        f.write(str(ray.available_resources())+'\n')
+        f.flush()
+        os.fsync(f)
     f.close()
 
     connect_time = time()
@@ -51,26 +52,32 @@ if __name__ == "__main__":
     config["num_workers"] = int(ray.available_resources()['CPU'])
     config["lr"] = 1e-4
 
-    # Trainer
-    def make_async_optimizer(workers, config):
-        return AsyncGradientsOptimizer(workers, grads_per_step=10)
-
-    CustomTrainer = ppo.PPOTrainer.with_updates(
-        make_policy_optimizer=make_async_optimizer)
-
     trainer = ppo.PPOTrainer(config=config, env="CartPole-v0")
     trainer_time = time()
 
     # Can optionally call trainer.restore(path) to load a checkpoint.
-    with open('Training_iterations.txt','w+') as f:
+    with open('Training_iterations.txt','wb',0) as f:
         for i in range(10):
             # Perform one iteration of training the policy with PPO
-            f.write('Performing iteration: '+str(i)+'\n')
+            o_string = 'Performing iteration: '+str(i)+'\n'
+            o_string = o_string.encode('utf-8')
+            f.write(o_string)
+            f.flush()
+            os.fsync(f)
+
             init_time = time()
             result = trainer.train()
-            f.write('Iteration time: '+str(time()-init_time)+'\n')
-            f.write(pretty_print(result)+'\n')
+            o_string = ('Iteration time: '+str(time()-init_time)+'\n').encode('utf-8')
+            f.write(o_string)
             f.flush()
+            os.fsync(f)
+
+            epoch_info = (str(pretty_print(result))+'\n').encode('utf-8')
+
+            f.write(epoch_info)
+            f.flush()
+            os.fsync(f)
+
     f.close()
 
     iterations_time = time()
