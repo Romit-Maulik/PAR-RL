@@ -4,7 +4,7 @@ Scaling RLLib for generic simulation environments on Theta. Built on [setup](htt
 ## Dependencies
 1. Tensorflow 1.14.0
 2. Gym 0.17.1
-3. Ray 0.7.6
+3. Ray 0.7.6 - Install with `pip install ray[rllib]==0.7.6`
 4. Numpy 1.16.1
 
 ### To do - funnel system calls to OpenFoam through subprocess within gym custom environment
