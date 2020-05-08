@@ -1,2 +1,3 @@
-Nodes used: 32
-Available resources: {'object_store_memory': 8416.0, 'memory': 111040.0, 'CPU': 256.0}
+Nodes used: 128
+Available resources:
+{'object_store_memory': 33664.0, 'memory': 444737.0, 'CPU': 128.0}

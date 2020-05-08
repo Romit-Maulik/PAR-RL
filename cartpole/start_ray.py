@@ -55,7 +55,7 @@ def run_ray_head(head_ip):
     with open('ray.log.head', 'wb') as fp:
         subprocess.run(
             f'ray start --head \
-                    --num-cpus 12 \
+                    --num-cpus 1 \
                     --node-ip-address={head_ip} \
                     --redis-port={REDIS_PORT}',
             shell=True,
@@ -68,7 +68,7 @@ def run_ray_worker(head_redis_address):
     with open(f'ray.log.{rank}', 'wb') as fp:
         subprocess.run(
             f'ray start --redis-address={head_redis_address} \
-                    --num-cpus 12',
+                    --num-cpus 1',
             shell=True,
             check=True,
             stdout=fp,

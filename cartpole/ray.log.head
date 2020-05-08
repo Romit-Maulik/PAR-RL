@@ -1,14 +1,14 @@
-2020-05-08 01:52:56,492	INFO scripts.py:303 -- Using IP address 10.128.2.13 for this node.
-2020-05-08 01:52:56,500	INFO resource_spec.py:205 -- Starting Ray with 160.4 GiB memory available for workers and up to 18.63 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
-2020-05-08 01:52:57,220	INFO scripts.py:333 -- 
+2020-05-08 18:15:48,024	INFO scripts.py:303 -- Using IP address 10.128.0.111 for this node.
+2020-05-08 18:15:48,033	INFO resource_spec.py:205 -- Starting Ray with 160.4 GiB memory available for workers and up to 18.63 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-05-08 18:15:48,619	INFO scripts.py:333 -- 
 Started Ray on this node. You can add additional nodes to the cluster by calling
 
-    ray start --redis-address 10.128.2.13:10100
+    ray start --redis-address 10.128.0.111:10100
 
 from the node you wish to add. You can connect a driver to the cluster from Python by running
 
     import ray
-    ray.init(redis_address="10.128.2.13:10100")
+    ray.init(redis_address="10.128.0.111:10100")
 
 If you have trouble connecting from a different machine, check that your firewall is configured properly. If you wish to terminate the processes that have been started, run
 

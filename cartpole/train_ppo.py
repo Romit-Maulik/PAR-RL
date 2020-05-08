@@ -14,8 +14,11 @@ from gym import spaces
 from ray.rllib.models import ModelCatalog
 from ray.rllib.models.tf.tf_modelv2 import TFModelV2
 from ray.rllib.models.tf.fcnet_v2 import FullyConnectedNetwork
+
+# Algorithms
 import ray.rllib.agents.ppo as ppo
-from ray.rllib.optimizers import AsyncGradientsOptimizer
+import ray.rllib.agents.ppo.appo as appo
+import ray.rllib.agents.a3c.a3c as a3c
 
 import ray
 from ray import tune
@@ -46,13 +49,13 @@ if __name__ == "__main__":
 
     connect_time = time()
 
-    config = ppo.DEFAULT_CONFIG.copy()
+    config = appo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
     config["num_workers"] = int(ray.available_resources()['CPU'])
     config["lr"] = 1e-4
 
-    trainer = ppo.PPOTrainer(config=config, env="CartPole-v0")
+    trainer = appo.APPOTrainer(config=config, env="CartPole-v0")
     trainer_time = time()
 
     # Can optionally call trainer.restore(path) to load a checkpoint.
