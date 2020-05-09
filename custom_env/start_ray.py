@@ -1,7 +1,7 @@
 import os
 import sys
 import subprocess
-from subprocess import Popen
+from subprocess import Popen, PIPE, CalledProcessError
 
 import socket
 import signal
@@ -55,7 +55,7 @@ def run_ray_head(head_ip):
     with open('ray.log.head', 'wb') as fp:
         subprocess.run(
             f'ray start --head \
-                    --num-cpus 1 \
+                    --num-cpus 8 \
                     --node-ip-address={head_ip} \
                     --redis-port={REDIS_PORT}',
             shell=True,
@@ -68,7 +68,7 @@ def run_ray_worker(head_redis_address):
     with open(f'ray.log.{rank}', 'wb') as fp:
         subprocess.run(
             f'ray start --redis-address={head_redis_address} \
-                    --num-cpus 1',
+                    --num-cpus 8',
             shell=True,
             check=True,
             stdout=fp,
@@ -134,8 +134,6 @@ if __name__ == "__main__":
         datefmt='%m/%d/%Y %I:%M:%S %p',
         level=logging.INFO)
 
-    #ranks_to_use = [1,2,3]
-
     if rank == 0: 
         head_redis_address = master()
     else: 
@@ -143,23 +141,10 @@ if __name__ == "__main__":
 
     comm.barrier()
 
-    # # Wait for workers to start up
-    # time.sleep(10*comm.Get_size())
-
     if rank == 0:
         # Run the python script to do RL
         exec_string = "python train_ppo.py --ray-address='"+str(head_redis_address)+r"'"
-        with open('rllib_log.out', 'wb') as fp:
-            subprocess.run(
-                        exec_string,
-                        shell=True,
-                        check=True,
-                        stdout=fp,
-                        stderr=subprocess.STDOUT,
-        )
-
-        # subprocess.run(exec_string,shell=True,check=True)
-
+        subprocess.run(exec_string,shell=True,check=True)
         logging.info("RL LIB invoked successfully. Exiting.")
 
     comm.barrier()

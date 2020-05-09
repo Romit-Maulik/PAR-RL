@@ -1,8 +1,8 @@
 #!/bin/bash
-#COBALT -t 30
-#COBALT -n 2
-#COBALT -q Comp_Perf_Workshop
-#COBALT -A Comp_Perf_Workshop
+#COBALT -t 60
+#COBALT -n 128
+#COBALT -q default
+#COBALT -A datascience
 #COBALT --attrs enable_ssh=1:ssds=required:ssd_size=128
 
 echo "Running Cobalt Job $COBALT_JOBID."
@@ -26,4 +26,4 @@ export PATH=/soft/datascience/anaconda3/bin:$PATH
 export PATH=/soft/libraries/mpi/mvapich2/gcc/bin/:$PATH
 source activate rllib_env
 
-aprun -n $COBALT_JOBSIZE -N 1 -d 1 -j 1 --cc depth python start_ray.py
+aprun -n $COBALT_JOBSIZE -N 1 --cc none python start_ray.py

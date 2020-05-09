@@ -1,20 +1,14 @@
-2020-05-06 19:27:46,119	INFO scripts.py:289 -- Using IP address 10.128.13.94 for this node.
-2020-05-06 19:27:46,121	INFO node.py:498 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2020-05-06_19-27-46_120445_48601/logs.
-2020-05-06 19:27:46,270	INFO services.py:409 -- Waiting for redis server at 127.0.0.1:10100 to respond...
-2020-05-06 19:27:46,446	INFO services.py:409 -- Waiting for redis server at 127.0.0.1:45551 to respond...
-2020-05-06 19:27:46,454	INFO services.py:809 -- Starting Redis shard with 10.0 GB max memory.
-2020-05-06 19:27:46,567	INFO node.py:512 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2020-05-06_19-27-46_120445_48601/logs.
-2020-05-06 19:27:46,571	WARNING services.py:1301 -- Warning: Capping object memory store to 20.0GB. To increase this further, specify `object_store_memory` when calling ray.init() or ray start.
-2020-05-06 19:27:46,573	INFO services.py:1475 -- Starting the Plasma object store with 20.0 GB memory using /dev/shm.
-2020-05-06 19:27:46,836	INFO scripts.py:319 -- 
+2020-05-09 20:51:34,443	INFO scripts.py:303 -- Using IP address 10.128.15.23 for this node.
+2020-05-09 20:51:34,450	INFO resource_spec.py:205 -- Starting Ray with 160.45 GiB memory available for workers and up to 18.63 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-05-09 20:51:34,970	INFO scripts.py:333 -- 
 Started Ray on this node. You can add additional nodes to the cluster by calling
 
-    ray start --redis-address 10.128.13.94:10100
+    ray start --redis-address 10.128.15.23:10100
 
 from the node you wish to add. You can connect a driver to the cluster from Python by running
 
     import ray
-    ray.init(redis_address="10.128.13.94:10100")
+    ray.init(redis_address="10.128.15.23:10100")
 
 If you have trouble connecting from a different machine, check that your firewall is configured properly. If you wish to terminate the processes that have been started, run
 

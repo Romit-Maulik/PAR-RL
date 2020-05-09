@@ -1,0 +1,4 @@
+Jobid: 436360
+qsub --mode script -t 60 -n 128 -q default -A datascience --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Sat May 09 20:58:56 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/custom_env
+jobid 436360 submitted from terminal /dev/pts/19

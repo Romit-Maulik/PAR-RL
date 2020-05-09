@@ -14,7 +14,11 @@ from gym import spaces
 from ray.rllib.models import ModelCatalog
 from ray.rllib.models.tf.tf_modelv2 import TFModelV2
 from ray.rllib.models.tf.fcnet_v2 import FullyConnectedNetwork
+
+# Algorithms
 import ray.rllib.agents.ppo as ppo
+import ray.rllib.agents.ppo.appo as appo
+import ray.rllib.agents.a3c.a3c as a3c
 
 import ray
 from ray import tune
@@ -57,7 +61,7 @@ class my_environment(gym.Env):
         self.intvector[0] += 1
 
     def step(self, action):
-
+         # Need to call a simulation here using a further subprocess
         self._take_action(action)
 
         self.current_step += 1
@@ -100,23 +104,24 @@ class CustomModel(TFModelV2):
 
 
 if __name__ == "__main__":
-    # Can also register the env creator function explicitly with:
     zero_time = time()
-    # register_env("corridor", lambda config: SimpleCorridor(config))
     ray.init(redis_address=args.ray_address)
-    print('***********************************************************')
-    print('Nodes used:',len(ray.nodes()))
-    print('Available resources:',ray.available_resources())
-    print('***********************************************************')
+
+    with open('Resources.txt','w') as f:
+        f.write('Nodes used: '+str(len(ray.nodes()))+'\n')
+        f.write('Available resources:'+'\n'),
+        f.write(str(ray.available_resources())+'\n')
+        f.flush()
+        os.fsync(f)
+    f.close()
 
     connect_time = time()
     ModelCatalog.register_custom_model("my_model", CustomModel)
     register_time = time()
 
-    config = ppo.DEFAULT_CONFIG.copy()
+    config = appo.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
-    #config["num_workers"] = len(ray.nodes())
     config["num_workers"] = int(ray.available_resources()['CPU'])
     config["lr"] = 1e-4
 
@@ -131,19 +136,35 @@ if __name__ == "__main__":
     config["env_config"] = env_params
 
     # Trainer
-    trainer = ppo.PPOTrainer(config=config, env="myenv")
+    trainer = appo.APPOTrainer(config=config, env="myenv")
     trainer_time = time()
 
     # Can optionally call trainer.restore(path) to load a checkpoint.
-    for i in range(10):
-        # Perform one iteration of training the policy with PPO
-        print('Performing iteration:',i)
-        init_time = time()
-        result = trainer.train()
-        print('Iteration time:',time()-init_time)
-        
+    with open('Training_iterations.txt','wb',0) as f:
+        for i in range(10):
+            # Perform one iteration of training the policy with PPO
+            o_string = 'Performing iteration: '+str(i)+'\n'
+            o_string = o_string.encode('utf-8')
+            f.write(o_string)
+            f.flush()
+            os.fsync(f)
+
+            init_time = time()
+            result = trainer.train()
+            o_string = ('Iteration time: '+str(time()-init_time)+'\n').encode('utf-8')
+            f.write(o_string)
+            f.flush()
+            os.fsync(f)
+
+            epoch_info = (str(pretty_print(result))+'\n').encode('utf-8')
+
+            f.write(epoch_info)
+            f.flush()
+            os.fsync(f)
+
+    f.close()
+
     iterations_time = time()
-    print(pretty_print(result))
 
     # Final save
     init_time = time()
@@ -156,11 +177,13 @@ if __name__ == "__main__":
 
     final_time = time()
 
-    print('Breakdown of times in this experiment')
-    print('Time to connect:',connect_time - zero_time)
-    print('Time to register environment:',register_time - connect_time)
-    print('Time to setup PPO trainer:',trainer_time - register_time)
-    print('Time for total iterations:',iterations_time - trainer_time)
-    print('Time to save checkpoint:',final_time - init_time)
-    print('Total time to solution:',final_time - zero_time)
+    with open('Compute_breakdown.txt','w') as f:
+        print('Breakdown of times in this experiment',file=f)
+        print('Time to connect:',connect_time-zero_time,file=f)
+        print('Time to register environment:',register_time - connect_time,file=f)
+        print('Time to setup PPO trainer:',trainer_time - connect_time,file=f)
+        print('Time for total iterations:',iterations_time - trainer_time,file=f)
+        print('Time to save checkpoint:',final_time - init_time,file=f)
+        print('Total time to solution:',final_time - zero_time,file=f)
+    f.close()
 
