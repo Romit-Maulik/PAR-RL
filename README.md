@@ -12,9 +12,6 @@ Scaling RLLib for generic simulation environments on Theta. Built on [setup](htt
 ### To do - assess scaling of both on Theta (OpenFoam5, intel compiler)
 
 # How to run
-# Minimum working example to run Ray error on Theta:
-
-## Introduction to Ray and distributed RL
 
 The idea is as follows:
 
