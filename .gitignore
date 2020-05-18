@@ -1,1 +1,2 @@
-*.ray.log
+ray.log.*
+
