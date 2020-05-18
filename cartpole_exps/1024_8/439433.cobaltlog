@@ -1,0 +1,4 @@
+Jobid: 439433
+qsub --mode script -t 180 -n 1024 -q default -A datascience --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Sat May 16 21:26:14 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole_exps/1024_8
+jobid 439433 submitted from terminal /dev/pts/7

@@ -1,0 +1,680 @@
+Performing iteration: 0
+Iteration time: 193.10160303115845
+custom_metrics: {}
+date: 2020-05-09_07-17-46
+done: false
+episode_len_mean: 21.235714285714284
+episode_reward_max: 88.0
+episode_reward_mean: 21.235714285714284
+episode_reward_min: 8.0
+episodes_this_iter: 1400
+episodes_total: 1400
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6854697465896606
+    model: {}
+    policy_loss: -11.443687438964844
+    var_gnorm: 22.63863754272461
+    vf_explained_var: -0.00046312808990478516
+    vf_loss: 104.93899536132812
+  learner_queue:
+    size_count: 17
+    size_mean: 5.352941176470588
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 5.0
+    - 10.4
+    - 12.0
+    size_std: 3.9098845547962044
+  num_steps_replayed: 0
+  num_steps_sampled: 8500
+  num_steps_trained: 8500
+  num_weight_syncs: 171
+  sample_throughput: 43.722
+  timing_breakdown:
+    learner_dequeue_time_ms: 8.771
+    learner_grad_time_ms: 22.616
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 199.445
+  train_throughput: 43.722
+iterations_since_restore: 1
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.8105839416058395
+  ram_util_percent: 2.393795620437956
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3840461800697179
+  mean_inference_ms: 5.320495631467082
+  mean_processing_ms: 1.062836372308038
+time_since_restore: 192.6759102344513
+time_this_iter_s: 192.6759102344513
+time_total_s: 192.6759102344513
+timestamp: 1589008666
+timesteps_since_restore: 8500
+timesteps_this_iter: 8500
+timesteps_total: 8500
+training_iteration: 1
+
+Performing iteration: 1
+Iteration time: 192.99474573135376
+custom_metrics: {}
+date: 2020-05-09_07-20-59
+done: false
+episode_len_mean: 38.2640350877193
+episode_reward_max: 135.0
+episode_reward_mean: 38.2640350877193
+episode_reward_min: 9.0
+episodes_this_iter: 1140
+episodes_total: 2540
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.5205133557319641
+    model: {}
+    policy_loss: -15.839705467224121
+    var_gnorm: 22.810056686401367
+    vf_explained_var: 0.013496875762939453
+    vf_loss: 170.1823272705078
+  learner_queue:
+    size_count: 114
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 57000
+  num_steps_trained: 57000
+  num_weight_syncs: 1143
+  sample_throughput: 251.113
+  timing_breakdown:
+    learner_dequeue_time_ms: 67.775
+    learner_grad_time_ms: 19.642
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 1137.512
+  train_throughput: 251.113
+iterations_since_restore: 2
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7974358974358974
+  ram_util_percent: 2.4
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3896489200561
+  mean_inference_ms: 4.7158885790274025
+  mean_processing_ms: 1.027787434095199
+time_since_restore: 385.4366948604584
+time_this_iter_s: 192.76078462600708
+time_total_s: 385.4366948604584
+timestamp: 1589008859
+timesteps_since_restore: 57000
+timesteps_this_iter: 48500
+timesteps_total: 57000
+training_iteration: 2
+
+Performing iteration: 2
+Iteration time: 192.59597420692444
+custom_metrics: {}
+date: 2020-05-09_07-24-12
+done: false
+episode_len_mean: 85.5
+episode_reward_max: 200.0
+episode_reward_mean: 85.5
+episode_reward_min: 14.0
+episodes_this_iter: 464
+episodes_total: 3004
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.530590832233429
+    model: {}
+    policy_loss: -18.810121536254883
+    var_gnorm: 22.984973907470703
+    vf_explained_var: 0.0028616786003112793
+    vf_loss: 230.46649169921875
+  learner_queue:
+    size_count: 211
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 105500
+  num_steps_trained: 105500
+  num_weight_syncs: 2115
+  sample_throughput: 251.66
+  timing_breakdown:
+    learner_dequeue_time_ms: 64.049
+    learner_grad_time_ms: 18.265
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 2078.962
+  train_throughput: 251.66
+iterations_since_restore: 3
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7838827838827839
+  ram_util_percent: 2.4
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3905157410127585
+  mean_inference_ms: 4.527984759730383
+  mean_processing_ms: 0.997200026097405
+time_since_restore: 577.8060431480408
+time_this_iter_s: 192.3693482875824
+time_total_s: 577.8060431480408
+timestamp: 1589009052
+timesteps_since_restore: 105500
+timesteps_this_iter: 48500
+timesteps_total: 105500
+training_iteration: 3
+
+Performing iteration: 3
+Iteration time: 192.05652379989624
+custom_metrics: {}
+date: 2020-05-09_07-27-24
+done: false
+episode_len_mean: 144.45110410094637
+episode_reward_max: 200.0
+episode_reward_mean: 144.45110410094637
+episode_reward_min: 34.0
+episodes_this_iter: 317
+episodes_total: 3321
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.5567200183868408
+    model: {}
+    policy_loss: -18.65890121459961
+    var_gnorm: 23.35837173461914
+    vf_explained_var: -0.028218746185302734
+    vf_loss: 208.58621215820312
+  learner_queue:
+    size_count: 308
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 154000
+  num_steps_trained: 154000
+  num_weight_syncs: 3087
+  sample_throughput: 252.339
+  timing_breakdown:
+    learner_dequeue_time_ms: 69.646
+    learner_grad_time_ms: 17.666
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 2978.928
+  train_throughput: 252.339
+iterations_since_restore: 4
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7841911764705882
+  ram_util_percent: 2.4
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.39218872381217823
+  mean_inference_ms: 4.454079973356799
+  mean_processing_ms: 0.9840109515011208
+time_since_restore: 769.6587171554565
+time_this_iter_s: 191.85267400741577
+time_total_s: 769.6587171554565
+timestamp: 1589009244
+timesteps_since_restore: 154000
+timesteps_this_iter: 48500
+timesteps_total: 154000
+training_iteration: 4
+
+Performing iteration: 4
+Iteration time: 192.42601561546326
+custom_metrics: {}
+date: 2020-05-09_07-30-36
+done: false
+episode_len_mean: 150.62848297213623
+episode_reward_max: 200.0
+episode_reward_mean: 150.62848297213623
+episode_reward_min: 24.0
+episodes_this_iter: 323
+episodes_total: 3644
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.5908294320106506
+    model: {}
+    policy_loss: -18.360458374023438
+    var_gnorm: 23.81901741027832
+    vf_explained_var: -0.09536099433898926
+    vf_loss: 208.97747802734375
+  learner_queue:
+    size_count: 405
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 202500
+  num_steps_trained: 202500
+  num_weight_syncs: 4059
+  sample_throughput: 251.933
+  timing_breakdown:
+    learner_dequeue_time_ms: 74.874
+    learner_grad_time_ms: 18.574
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 3861.929
+  train_throughput: 251.933
+iterations_since_restore: 5
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7871794871794873
+  ram_util_percent: 2.497802197802198
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.39190527143240184
+  mean_inference_ms: 4.406742101657759
+  mean_processing_ms: 0.9741617753789573
+time_since_restore: 961.8706960678101
+time_this_iter_s: 192.21197891235352
+time_total_s: 961.8706960678101
+timestamp: 1589009436
+timesteps_since_restore: 202500
+timesteps_this_iter: 48500
+timesteps_total: 202500
+training_iteration: 5
+
+Performing iteration: 5
+Iteration time: 192.4337375164032
+custom_metrics: {}
+date: 2020-05-09_07-33-49
+done: false
+episode_len_mean: 150.440625
+episode_reward_max: 200.0
+episode_reward_mean: 150.440625
+episode_reward_min: 21.0
+episodes_this_iter: 320
+episodes_total: 3964
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6107255816459656
+    model: {}
+    policy_loss: -17.884679794311523
+    var_gnorm: 24.329565048217773
+    vf_explained_var: 0.049098968505859375
+    vf_loss: 192.73928833007812
+  learner_queue:
+    size_count: 502
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 251000
+  num_steps_trained: 251000
+  num_weight_syncs: 5029
+  sample_throughput: 251.715
+  timing_breakdown:
+    learner_dequeue_time_ms: 71.393
+    learner_grad_time_ms: 20.112
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 4729.267
+  train_throughput: 251.715
+iterations_since_restore: 6
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7926470588235294
+  ram_util_percent: 2.4830882352941175
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3935441040102118
+  mean_inference_ms: 4.3918255108392215
+  mean_processing_ms: 0.9711891846368168
+time_since_restore: 1154.111214876175
+time_this_iter_s: 192.24051880836487
+time_total_s: 1154.111214876175
+timestamp: 1589009629
+timesteps_since_restore: 251000
+timesteps_this_iter: 48500
+timesteps_total: 251000
+training_iteration: 6
+
+Performing iteration: 6
+Iteration time: 192.8665120601654
+custom_metrics: {}
+date: 2020-05-09_07-37-02
+done: false
+episode_len_mean: 120.92410714285714
+episode_reward_max: 200.0
+episode_reward_mean: 120.92410714285714
+episode_reward_min: 11.0
+episodes_this_iter: 448
+episodes_total: 4412
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6426066756248474
+    model: {}
+    policy_loss: -17.15108871459961
+    var_gnorm: 24.905120849609375
+    vf_explained_var: -0.044193148612976074
+    vf_loss: 173.01219177246094
+  learner_queue:
+    size_count: 600
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 300000
+  num_steps_trained: 300000
+  num_weight_syncs: 6001
+  sample_throughput: 253.969
+  timing_breakdown:
+    learner_dequeue_time_ms: 69.29
+    learner_grad_time_ms: 20.657
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 4718.808
+  train_throughput: 253.969
+iterations_since_restore: 7
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7934306569343065
+  ram_util_percent: 2.4996350364963504
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3929906238231144
+  mean_inference_ms: 4.367698507208527
+  mean_processing_ms: 0.9683915413701865
+time_since_restore: 1346.7603240013123
+time_this_iter_s: 192.64910912513733
+time_total_s: 1346.7603240013123
+timestamp: 1589009822
+timesteps_since_restore: 300000
+timesteps_this_iter: 49000
+timesteps_total: 300000
+training_iteration: 7
+
+Performing iteration: 7
+Iteration time: 192.69462060928345
+custom_metrics: {}
+date: 2020-05-09_07-40-15
+done: false
+episode_len_mean: 85.36106489184692
+episode_reward_max: 200.0
+episode_reward_mean: 85.36106489184692
+episode_reward_min: 10.0
+episodes_this_iter: 601
+episodes_total: 5013
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6343369483947754
+    model: {}
+    policy_loss: -11.76451587677002
+    var_gnorm: 25.503063201904297
+    vf_explained_var: -0.07676422595977783
+    vf_loss: 124.87708282470703
+  learner_queue:
+    size_count: 697
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 348500
+  num_steps_trained: 348500
+  num_weight_syncs: 6973
+  sample_throughput: 251.577
+  timing_breakdown:
+    learner_dequeue_time_ms: 72.756
+    learner_grad_time_ms: 19.455
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 4718.117
+  train_throughput: 251.577
+iterations_since_restore: 8
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7948529411764705
+  ram_util_percent: 2.5
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3933054700515212
+  mean_inference_ms: 4.352463747762358
+  mean_processing_ms: 0.9683392673216625
+time_since_restore: 1539.1978070735931
+time_this_iter_s: 192.43748307228088
+time_total_s: 1539.1978070735931
+timestamp: 1589010015
+timesteps_since_restore: 348500
+timesteps_this_iter: 48500
+timesteps_total: 348500
+training_iteration: 8
+
+Performing iteration: 8
+Iteration time: 192.6786253452301
+custom_metrics: {}
+date: 2020-05-09_07-43-28
+done: false
+episode_len_mean: 65.97207446808511
+episode_reward_max: 200.0
+episode_reward_mean: 65.97207446808511
+episode_reward_min: 10.0
+episodes_this_iter: 752
+episodes_total: 5765
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6170112490653992
+    model: {}
+    policy_loss: -5.663870811462402
+    var_gnorm: 26.033781051635742
+    vf_explained_var: 0.04638099670410156
+    vf_loss: 88.13724517822266
+  learner_queue:
+    size_count: 793
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 396500
+  num_steps_trained: 396500
+  num_weight_syncs: 7937
+  sample_throughput: 248.828
+  timing_breakdown:
+    learner_dequeue_time_ms: 77.169
+    learner_grad_time_ms: 18.749
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 4751.99
+  train_throughput: 248.828
+iterations_since_restore: 9
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7919413919413919
+  ram_util_percent: 2.5
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.3939733209489677
+  mean_inference_ms: 4.345519660559971
+  mean_processing_ms: 0.9702563096644375
+time_since_restore: 1731.69269490242
+time_this_iter_s: 192.4948878288269
+time_total_s: 1731.69269490242
+timestamp: 1589010208
+timesteps_since_restore: 396500
+timesteps_this_iter: 48000
+timesteps_total: 396500
+training_iteration: 9
+
+Performing iteration: 9
+Iteration time: 193.22380900382996
+custom_metrics: {}
+date: 2020-05-09_07-46-41
+done: false
+episode_len_mean: 68.80886850152905
+episode_reward_max: 200.0
+episode_reward_mean: 68.80886850152905
+episode_reward_min: 11.0
+episodes_this_iter: 654
+episodes_total: 6419
+experiment_id: 721fefc5a35a4a6e815df7d9da67db3a
+hostname: nid00024
+info:
+  learner:
+    cur_lr: 9.999999747378752e-05
+    entropy: 0.6239057183265686
+    model: {}
+    policy_loss: -9.641496658325195
+    var_gnorm: 26.4139347076416
+    vf_explained_var: 0.019357383251190186
+    vf_loss: 118.39983367919922
+  learner_queue:
+    size_count: 890
+    size_mean: 0.0
+    size_quantiles:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    size_std: 0.0
+  num_steps_replayed: 0
+  num_steps_sampled: 445000
+  num_steps_trained: 445000
+  num_weight_syncs: 8909
+  sample_throughput: 250.91
+  timing_breakdown:
+    learner_dequeue_time_ms: 72.156
+    learner_grad_time_ms: 20.69
+    learner_load_time_ms: .nan
+    learner_load_wait_time_ms: .nan
+    optimizer_step_time_ms: 4839.076
+  train_throughput: 250.91
+iterations_since_restore: 10
+node_ip: 10.236.16.120
+num_healthy_workers: 256
+off_policy_estimator: {}
+perf:
+  cpu_util_percent: 0.7839416058394161
+  ram_util_percent: 2.5087591240875913
+pid: 116020
+policy_reward_max: {}
+policy_reward_mean: {}
+policy_reward_min: {}
+sampler_perf:
+  mean_env_wait_ms: 0.39368082941345256
+  mean_inference_ms: 4.33680614443539
+  mean_processing_ms: 0.9707988297619635
+time_since_restore: 1924.7136795520782
+time_this_iter_s: 193.0209846496582
+time_total_s: 1924.7136795520782
+timestamp: 1589010401
+timesteps_since_restore: 445000
+timesteps_this_iter: 48500
+timesteps_total: 445000
+training_iteration: 10
+

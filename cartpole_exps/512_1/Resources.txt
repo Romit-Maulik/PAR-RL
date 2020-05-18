@@ -1,0 +1,3 @@
+Nodes used: 512
+Available resources:
+{'object_store_memory': 134656.0, 'memory': 1779521.0, 'CPU': 512.0}

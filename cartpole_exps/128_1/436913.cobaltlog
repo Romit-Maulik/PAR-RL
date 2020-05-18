@@ -1,0 +1,158 @@
+Jobid: 436913
+qsub --mode script -t 180 -n 128 -q default -A datascience --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Tue May 12 00:56:28 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole_exps/128_1
+jobid 436913 submitted from terminal /dev/pts/12
+2020-05-12 08:05:42,703 INFO: Starting Resource_Prologue
+2020-05-12 08:05:42,714 DEBUG: found enable_ssh enabling attribute
+2020-05-12 08:05:43,454 DEBUG: Reply (complete) from nid00646 exit code: 0
+2020-05-12 08:05:43,511 DEBUG: Reply (complete) from nid00648 exit code: 0
+2020-05-12 08:05:43,573 DEBUG: Reply (complete) from nid00870 exit code: 0
+2020-05-12 08:05:43,636 DEBUG: Reply (complete) from nid00871 exit code: 0
+2020-05-12 08:05:43,698 DEBUG: Reply (complete) from nid00872 exit code: 0
+2020-05-12 08:05:43,761 DEBUG: Reply (complete) from nid00874 exit code: 0
+2020-05-12 08:05:43,824 DEBUG: Reply (complete) from nid00875 exit code: 0
+2020-05-12 08:05:43,887 DEBUG: Reply (complete) from nid00876 exit code: 0
+2020-05-12 08:05:43,893 DEBUG: Reply (complete) from nid00877 exit code: 0
+2020-05-12 08:05:43,897 DEBUG: Reply (complete) from nid00890 exit code: 0
+2020-05-12 08:05:43,901 DEBUG: Reply (complete) from nid00878 exit code: 0
+2020-05-12 08:05:43,948 DEBUG: Reply (complete) from nid00891 exit code: 0
+2020-05-12 08:05:43,954 DEBUG: Reply (complete) from nid00892 exit code: 0
+2020-05-12 08:05:43,958 DEBUG: Reply (complete) from nid00894 exit code: 0
+2020-05-12 08:05:43,963 DEBUG: Reply (complete) from nid00893 exit code: 0
+2020-05-12 08:05:43,967 DEBUG: Reply (complete) from nid00896 exit code: 0
+2020-05-12 08:05:43,971 DEBUG: Reply (complete) from nid00898 exit code: 0
+2020-05-12 08:05:43,975 DEBUG: Reply (complete) from nid00897 exit code: 0
+2020-05-12 08:05:44,002 DEBUG: Reply (complete) from nid00899 exit code: 0
+2020-05-12 08:05:44,009 DEBUG: Reply (complete) from nid00960 exit code: 0
+2020-05-12 08:05:44,013 DEBUG: Reply (complete) from nid00961 exit code: 0
+2020-05-12 08:05:44,018 DEBUG: Reply (complete) from nid00963 exit code: 0
+2020-05-12 08:05:44,022 DEBUG: Reply (complete) from nid00962 exit code: 0
+2020-05-12 08:05:44,026 DEBUG: Reply (complete) from nid00964 exit code: 0
+2020-05-12 08:05:44,031 DEBUG: Reply (complete) from nid00966 exit code: 0
+2020-05-12 08:05:44,035 DEBUG: Reply (complete) from nid00965 exit code: 0
+2020-05-12 08:05:44,039 DEBUG: Reply (complete) from nid00967 exit code: 0
+2020-05-12 08:05:44,043 DEBUG: Reply (complete) from nid00968 exit code: 0
+2020-05-12 08:05:44,047 DEBUG: Reply (complete) from nid01240 exit code: 0
+2020-05-12 08:05:44,052 DEBUG: Reply (complete) from nid00969 exit code: 0
+2020-05-12 08:05:44,056 DEBUG: Reply (complete) from nid01241 exit code: 0
+2020-05-12 08:05:44,060 DEBUG: Reply (complete) from nid01243 exit code: 0
+2020-05-12 08:05:44,064 DEBUG: Reply (complete) from nid01242 exit code: 0
+2020-05-12 08:05:44,074 DEBUG: Reply (complete) from nid01244 exit code: 0
+2020-05-12 08:05:44,083 DEBUG: Reply (complete) from nid01245 exit code: 0
+2020-05-12 08:05:44,087 DEBUG: Reply (complete) from nid01247 exit code: 0
+2020-05-12 08:05:44,091 DEBUG: Reply (complete) from nid01249 exit code: 0
+2020-05-12 08:05:44,095 DEBUG: Reply (complete) from nid01861 exit code: 0
+2020-05-12 08:05:44,100 DEBUG: Reply (complete) from nid01860 exit code: 0
+2020-05-12 08:05:44,104 DEBUG: Reply (complete) from nid01862 exit code: 0
+2020-05-12 08:05:44,108 DEBUG: Reply (complete) from nid01864 exit code: 0
+2020-05-12 08:05:44,112 DEBUG: Reply (complete) from nid01863 exit code: 0
+2020-05-12 08:05:44,117 DEBUG: Reply (complete) from nid01865 exit code: 0
+2020-05-12 08:05:44,121 DEBUG: Reply (complete) from nid01866 exit code: 0
+2020-05-12 08:05:44,125 DEBUG: Reply (complete) from nid01868 exit code: 0
+2020-05-12 08:05:44,129 DEBUG: Reply (complete) from nid01867 exit code: 0
+2020-05-12 08:05:44,134 DEBUG: Reply (complete) from nid01869 exit code: 0
+2020-05-12 08:05:44,138 DEBUG: Reply (complete) from nid02031 exit code: 0
+2020-05-12 08:05:44,142 DEBUG: Reply (complete) from nid02030 exit code: 0
+2020-05-12 08:05:44,146 DEBUG: Reply (complete) from nid02032 exit code: 0
+2020-05-12 08:05:44,150 DEBUG: Reply (complete) from nid02033 exit code: 0
+2020-05-12 08:05:44,155 DEBUG: Reply (complete) from nid02035 exit code: 0
+2020-05-12 08:05:44,159 DEBUG: Reply (complete) from nid02037 exit code: 0
+2020-05-12 08:05:44,163 DEBUG: Reply (complete) from nid02036 exit code: 0
+2020-05-12 08:05:44,167 DEBUG: Reply (complete) from nid02039 exit code: 0
+2020-05-12 08:05:44,172 DEBUG: Reply (complete) from nid02101 exit code: 0
+2020-05-12 08:05:44,176 DEBUG: Reply (complete) from nid02100 exit code: 0
+2020-05-12 08:05:44,180 DEBUG: Reply (complete) from nid02102 exit code: 0
+2020-05-12 08:05:44,184 DEBUG: Reply (complete) from nid02103 exit code: 0
+2020-05-12 08:05:44,189 DEBUG: Reply (complete) from nid02105 exit code: 0
+2020-05-12 08:05:44,193 DEBUG: Reply (complete) from nid02104 exit code: 0
+2020-05-12 08:05:44,197 DEBUG: Reply (complete) from nid02106 exit code: 0
+2020-05-12 08:05:44,201 DEBUG: Reply (complete) from nid02108 exit code: 0
+2020-05-12 08:05:44,205 DEBUG: Reply (complete) from nid02107 exit code: 0
+2020-05-12 08:05:44,210 DEBUG: Reply (complete) from nid02109 exit code: 0
+2020-05-12 08:05:44,214 DEBUG: Reply (complete) from nid02360 exit code: 0
+2020-05-12 08:05:44,218 DEBUG: Reply (complete) from nid02361 exit code: 0
+2020-05-12 08:05:44,222 DEBUG: Reply (complete) from nid02362 exit code: 0
+2020-05-12 08:05:44,227 DEBUG: Reply (complete) from nid02363 exit code: 0
+2020-05-12 08:05:44,231 DEBUG: Reply (complete) from nid02365 exit code: 0
+2020-05-12 08:05:44,235 DEBUG: Reply (complete) from nid02364 exit code: 0
+2020-05-12 08:05:44,239 DEBUG: Reply (complete) from nid02366 exit code: 0
+2020-05-12 08:05:44,243 DEBUG: Reply (complete) from nid02368 exit code: 0
+2020-05-12 08:05:44,248 DEBUG: Reply (complete) from nid02367 exit code: 0
+2020-05-12 08:05:44,252 DEBUG: Reply (complete) from nid02369 exit code: 0
+2020-05-12 08:05:44,256 DEBUG: Reply (complete) from nid02560 exit code: 0
+2020-05-12 08:05:44,260 DEBUG: Reply (complete) from nid02562 exit code: 0
+2020-05-12 08:05:44,265 DEBUG: Reply (complete) from nid02561 exit code: 0
+2020-05-12 08:05:44,269 DEBUG: Reply (complete) from nid02563 exit code: 0
+2020-05-12 08:05:44,273 DEBUG: Reply (complete) from nid02565 exit code: 0
+2020-05-12 08:05:44,277 DEBUG: Reply (complete) from nid02564 exit code: 0
+2020-05-12 08:05:44,281 DEBUG: Reply (complete) from nid02566 exit code: 0
+2020-05-12 08:05:44,286 DEBUG: Reply (complete) from nid02567 exit code: 0
+2020-05-12 08:05:44,290 DEBUG: Reply (complete) from nid02568 exit code: 0
+2020-05-12 08:05:44,294 DEBUG: Reply (complete) from nid02580 exit code: 0
+2020-05-12 08:05:44,298 DEBUG: Reply (complete) from nid02569 exit code: 0
+2020-05-12 08:05:44,302 DEBUG: Reply (complete) from nid02581 exit code: 0
+2020-05-12 08:05:44,307 DEBUG: Reply (complete) from nid02583 exit code: 0
+2020-05-12 08:05:44,311 DEBUG: Reply (complete) from nid02582 exit code: 0
+2020-05-12 08:05:44,315 DEBUG: Reply (complete) from nid02584 exit code: 0
+2020-05-12 08:05:44,319 DEBUG: Reply (complete) from nid02585 exit code: 0
+2020-05-12 08:05:44,323 DEBUG: Reply (complete) from nid02587 exit code: 0
+2020-05-12 08:05:44,328 DEBUG: Reply (complete) from nid02586 exit code: 0
+2020-05-12 08:05:44,332 DEBUG: Reply (complete) from nid02588 exit code: 0
+2020-05-12 08:05:44,336 DEBUG: Reply (complete) from nid02630 exit code: 0
+2020-05-12 08:05:44,340 DEBUG: Reply (complete) from nid02589 exit code: 0
+2020-05-12 08:05:44,344 DEBUG: Reply (complete) from nid02631 exit code: 0
+2020-05-12 08:05:44,349 DEBUG: Reply (complete) from nid02632 exit code: 0
+2020-05-12 08:05:44,353 DEBUG: Reply (complete) from nid02633 exit code: 0
+2020-05-12 08:05:44,357 DEBUG: Reply (complete) from nid02634 exit code: 0
+2020-05-12 08:05:44,361 DEBUG: Reply (complete) from nid02636 exit code: 0
+2020-05-12 08:05:44,365 DEBUG: Reply (complete) from nid02635 exit code: 0
+2020-05-12 08:05:44,370 DEBUG: Reply (complete) from nid02637 exit code: 0
+2020-05-12 08:05:44,374 DEBUG: Reply (complete) from nid02639 exit code: 0
+2020-05-12 08:05:44,378 DEBUG: Reply (complete) from nid02638 exit code: 0
+2020-05-12 08:05:44,382 DEBUG: Reply (complete) from nid03406 exit code: 0
+2020-05-12 08:05:44,386 DEBUG: Reply (complete) from nid03438 exit code: 0
+2020-05-12 08:05:44,391 DEBUG: Reply (complete) from nid03484 exit code: 0
+2020-05-12 08:05:44,395 DEBUG: Reply (complete) from nid03483 exit code: 0
+2020-05-12 08:05:44,399 DEBUG: Reply (complete) from nid03527 exit code: 0
+2020-05-12 08:05:44,403 DEBUG: Reply (complete) from nid03541 exit code: 0
+2020-05-12 08:05:44,407 DEBUG: Reply (complete) from nid03540 exit code: 0
+2020-05-12 08:05:44,411 DEBUG: Reply (complete) from nid03544 exit code: 0
+2020-05-12 08:05:44,415 DEBUG: Reply (complete) from nid03545 exit code: 0
+2020-05-12 08:05:44,420 DEBUG: Reply (complete) from nid03546 exit code: 0
+2020-05-12 08:05:44,424 DEBUG: Reply (complete) from nid03651 exit code: 0
+2020-05-12 08:05:44,428 DEBUG: Reply (complete) from nid03547 exit code: 0
+2020-05-12 08:05:44,432 DEBUG: Reply (complete) from nid03720 exit code: 0
+2020-05-12 08:05:44,436 DEBUG: Reply (complete) from nid03723 exit code: 0
+2020-05-12 08:05:44,441 DEBUG: Reply (complete) from nid03721 exit code: 0
+2020-05-12 08:05:44,445 DEBUG: Reply (complete) from nid03726 exit code: 0
+2020-05-12 08:05:44,449 DEBUG: Reply (complete) from nid03727 exit code: 0
+2020-05-12 08:05:44,453 DEBUG: Reply (complete) from nid04080 exit code: 0
+2020-05-12 08:05:44,457 DEBUG: Reply (complete) from nid03765 exit code: 0
+2020-05-12 08:05:44,462 DEBUG: Reply (complete) from nid04357 exit code: 0
+2020-05-12 08:05:44,466 DEBUG: Reply (complete) from nid04598 exit code: 0
+2020-05-12 08:05:44,470 DEBUG: Reply (complete) from nid04360 exit code: 0
+2020-05-12 08:05:44,474 DEBUG: Reply (complete) from nid04599 exit code: 0
+2020-05-12 08:05:44,476 INFO: Resource_Prologue finished with exit code 0
+Tue May 12 08:06:16 2020 +0000 (UTC) 
+Tue May 12 08:06:16 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole_exps/128_1/submission_script.sh'
+Tue May 12 08:06:16 2020 +0000 (UTC) 
+Tue May 12 08:06:16 2020 +0000 (UTC) Environment:
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_PARTCORES=64
+Tue May 12 08:06:16 2020 +0000 (UTC) SHELL=/bin/bash
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_PROJECT=datascience
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_PARTNAME=646,648,870-872,874-878,890-894,896-899,960-969,1240-1245,1247,1249,1860-1869,2030-2033,2035-2037,2039,2100-2109,2360-2369,2560-2569,2580-2589,2630-2639,3406,3438,3483-3484,3527,3540-3541,3544-3547,3651,3720-3721,3723,3726-3727,3765,4080,4357,4360,4598-4599
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_JOBID=436913
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_STARTTIME=1589270728
+Tue May 12 08:06:16 2020 +0000 (UTC) LOGNAME=rmaulik
+Tue May 12 08:06:16 2020 +0000 (UTC) USER=rmaulik
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_ENDTIME=1589281528
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_PARTSIZE=128
+Tue May 12 08:06:16 2020 +0000 (UTC) HOME=/home/rmaulik
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_JOBSIZE=128
+Tue May 12 08:06:16 2020 +0000 (UTC) COBALT_QUEUE=default
+Tue May 12 08:06:16 2020 +0000 (UTC) 
+Tue May 12 08:06:16 2020 +0000 (UTC) Info: stdin received from /dev/null
+Tue May 12 08:06:16 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole_exps/128_1/436913.output
+Tue May 12 08:06:16 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/datascience/rmaulik/RLLib_Theta/cartpole_exps/128_1/436913.error
+Tue May 12 08:06:16 2020 +0000 (UTC) 
+Tue May 12 08:41:22 2020 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal

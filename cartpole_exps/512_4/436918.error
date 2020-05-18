@@ -1,0 +1,38 @@
+2020-05-15 11:47:52,374	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2020-05-15 12:05:10,590	WARNING worker.py:1619 -- The monitor failed with the following error:
+Traceback (most recent call last):
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/ray/monitor.py", line 416, in <module>
+    monitor.run()
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/ray/monitor.py", line 361, in run
+    self._run()
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/ray/monitor.py", line 353, in _run
+    self.process_messages()
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/ray/monitor.py", line 249, in process_messages
+    message = subscribe_client.get_message()
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/client.py", line 3565, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/client.py", line 3453, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/client.py", line 3427, in _execute
+    return command(*args, **kwargs)
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 734, in read_response
+    response = self._parser.read_response()
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 356, in read_response
+    response = [self.read_response() for i in xrange(length)]
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 356, in <listcomp>
+    response = [self.read_response() for i in xrange(length)]
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 350, in read_response
+    response = self._buffer.read(length)
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 229, in read
+    self._read_from_socket(length - self.length)
+  File "/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/redis/connection.py", line 193, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+2020-05-15 12:09:37,340	INFO trainer.py:345 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+2020-05-15 12:12:13,993	INFO trainable.py:102 -- _setup took 156.191 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2020-05-15 12:12:13,994	WARNING util.py:45 -- Install gputil for GPU system monitoring.
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3118: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)

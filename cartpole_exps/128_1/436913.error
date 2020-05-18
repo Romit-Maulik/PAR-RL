@@ -1,0 +1,14 @@
+2020-05-12 08:07:26,893	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2020-05-12 08:08:10,798	INFO trainer.py:345 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+2020-05-12 08:08:32,327	INFO trainable.py:102 -- _setup took 21.372 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2020-05-12 08:08:32,328	WARNING util.py:45 -- Install gputil for GPU system monitoring.
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3118: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:140: RuntimeWarning: Degrees of freedom <= 0 for slice
+  keepdims=keepdims)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:110: RuntimeWarning: invalid value encountered in true_divide
+  arrmean, rcount, out=arrmean, casting='unsafe', subok=False)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:132: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)

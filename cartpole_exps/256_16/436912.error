@@ -1,0 +1,8 @@
+2020-05-13 12:41:05,009	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2020-05-13 12:44:41,490	INFO trainer.py:345 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+2020-05-13 12:50:01,268	INFO trainable.py:102 -- _setup took 319.655 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2020-05-13 12:50:01,269	WARNING util.py:45 -- Install gputil for GPU system monitoring.
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3118: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/rmaulik/.conda/envs/rllib_env/lib/python3.6/site-packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)

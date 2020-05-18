@@ -1,0 +1,6 @@
+2020-05-13 11:53:10,149	INFO scripts.py:375 -- Using IP address 10.128.11.5 for this node.
+2020-05-13 11:53:10,212	INFO resource_spec.py:205 -- Starting Ray with 166.55 GiB memory available for workers and up to 18.63 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-05-13 11:53:10,325	INFO scripts.py:383 -- 
+Started Ray on this node. If you wish to terminate the processes that have been started, run
+
+    ray stop
