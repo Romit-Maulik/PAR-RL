@@ -20,7 +20,7 @@ After the head node is initialized, start workers on other nodes by running
 ```
 ray start --num_cpus 1 --address={head_redis_address}
 ```
-where `head_redis_address` was obtained after the head node process was started. The number of CPUs/ranks utilization per node can be changed by changinf the `num_cpus` argument. If this is successfully executed - you may now use Ray for several distributed tasks. 
+where `head_redis_address` was obtained after the head node process was started. The number of "ranks" utilization per node can be increased by changing the `--num_cpus 1` argument. If this is successfully executed - you may now use Ray for several distributed tasks. 
 
 Note that once Ray is started on the head and all workers, a single python script can be executed from the head node and take full advantage of parallelism. For that, your python code that uses Ray should have the following statement
 ```
