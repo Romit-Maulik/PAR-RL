@@ -1,0 +1,31 @@
+Jobid: 446457
+qsub --mode script -t 60 -n 1 -q debug-cache-quad -A datascience -M spawar@anl.gov --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Thu Jun 11 17:25:23 2020 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_1_4
+jobid 446457 submitted from terminal /dev/pts/113
+2020-06-11 17:31:10,189 INFO: Starting Resource_Prologue
+2020-06-11 17:31:10,192 DEBUG: found enable_ssh enabling attribute
+2020-06-11 17:31:10,919 DEBUG: Reply (complete) from nid03825 exit code: 0
+2020-06-11 17:31:10,921 INFO: Resource_Prologue finished with exit code 0
+Thu Jun 11 17:31:32 2020 +0000 (UTC) 
+Thu Jun 11 17:31:32 2020 +0000 (UTC) Command: '/gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_1_4/submission_script.sh'
+Thu Jun 11 17:31:32 2020 +0000 (UTC) 
+Thu Jun 11 17:31:32 2020 +0000 (UTC) Environment:
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_PARTCORES=64
+Thu Jun 11 17:31:32 2020 +0000 (UTC) SHELL=/bin/bash
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_PROJECT=datascience
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_PARTNAME=3825
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_JOBID=446457
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_STARTTIME=1591896651
+Thu Jun 11 17:31:32 2020 +0000 (UTC) LOGNAME=sap1992
+Thu Jun 11 17:31:32 2020 +0000 (UTC) USER=sap1992
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_ENDTIME=1591900251
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_PARTSIZE=1
+Thu Jun 11 17:31:32 2020 +0000 (UTC) HOME=/home/sap1992
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_JOBSIZE=1
+Thu Jun 11 17:31:32 2020 +0000 (UTC) COBALT_QUEUE=debug-cache-quad
+Thu Jun 11 17:31:32 2020 +0000 (UTC) 
+Thu Jun 11 17:31:32 2020 +0000 (UTC) Info: stdin received from /dev/null
+Thu Jun 11 17:31:32 2020 +0000 (UTC) Info: stdout sent to /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_1_4/446457.output
+Thu Jun 11 17:31:32 2020 +0000 (UTC) Info: stderr sent to /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_1_4/446457.error
+Thu Jun 11 17:31:32 2020 +0000 (UTC) 
+Thu Jun 11 18:32:06 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

@@ -1,0 +1,34 @@
+Jobid: 446733
+qsub --mode script -t 60 -n 4 -q debug-cache-quad -A datascience -M spawar@anl.gov --attrs enable_ssh=1:ssds=required:ssd_size=128 submission_script.sh
+Fri Jun 12 18:59:51 2020 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_4_1
+jobid 446733 submitted from terminal /dev/pts/74
+2020-06-12 19:08:42,638 INFO: Starting Resource_Prologue
+2020-06-12 19:08:42,641 DEBUG: found enable_ssh enabling attribute
+2020-06-12 19:08:43,401 DEBUG: Reply (complete) from nid03826 exit code: 0
+2020-06-12 19:08:43,463 DEBUG: Reply (complete) from nid03830 exit code: 0
+2020-06-12 19:08:43,525 DEBUG: Reply (complete) from nid03834 exit code: 0
+2020-06-12 19:08:43,528 DEBUG: Reply (complete) from nid03836 exit code: 0
+2020-06-12 19:08:43,529 INFO: Resource_Prologue finished with exit code 0
+Fri Jun 12 19:09:15 2020 +0000 (UTC) 
+Fri Jun 12 19:09:15 2020 +0000 (UTC) Command: '/gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_4_1/submission_script.sh'
+Fri Jun 12 19:09:15 2020 +0000 (UTC) 
+Fri Jun 12 19:09:15 2020 +0000 (UTC) Environment:
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_PARTCORES=64
+Fri Jun 12 19:09:15 2020 +0000 (UTC) SHELL=/bin/bash
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_PROJECT=datascience
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_PARTNAME=3826,3830,3834,3836
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_JOBID=446733
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_STARTTIME=1591988881
+Fri Jun 12 19:09:15 2020 +0000 (UTC) LOGNAME=sap1992
+Fri Jun 12 19:09:15 2020 +0000 (UTC) USER=sap1992
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_ENDTIME=1591992481
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_PARTSIZE=4
+Fri Jun 12 19:09:15 2020 +0000 (UTC) HOME=/home/sap1992
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_JOBSIZE=4
+Fri Jun 12 19:09:15 2020 +0000 (UTC) COBALT_QUEUE=debug-cache-quad
+Fri Jun 12 19:09:15 2020 +0000 (UTC) 
+Fri Jun 12 19:09:15 2020 +0000 (UTC) Info: stdin received from /dev/null
+Fri Jun 12 19:09:15 2020 +0000 (UTC) Info: stdout sent to /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_4_1/446733.output
+Fri Jun 12 19:09:15 2020 +0000 (UTC) Info: stderr sent to /gpfs/mira-home/sap1992/Suraj/lorenz_chaos_test/Theta_Experiments/APPO_4_1/446733.error
+Fri Jun 12 19:09:15 2020 +0000 (UTC) 
+Fri Jun 12 20:09:45 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

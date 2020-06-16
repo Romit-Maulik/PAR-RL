@@ -1,0 +1,35 @@
+Running Cobalt Job 446779.
+[2m[36m(pid=60508)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=60508)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=203089, ip=10.236.16.140)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=203089, ip=10.236.16.140)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=120877, ip=10.236.16.120)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=120877, ip=10.236.16.120)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=144524, ip=10.236.16.140)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=144524, ip=10.236.16.140)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_10/checkpoint-10
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_20/checkpoint-20
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_30/checkpoint-30
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_40/checkpoint-40
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_50/checkpoint-50
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_60/checkpoint-60
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_70/checkpoint-70
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_80/checkpoint-80
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_90/checkpoint-90
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_100/checkpoint-100
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_110/checkpoint-110
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_120/checkpoint-120
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_130/checkpoint-130
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_140/checkpoint-140
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_150/checkpoint-150
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_160/checkpoint-160
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_170/checkpoint-170
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_180/checkpoint-180
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_190/checkpoint-190
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_200/checkpoint-200
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_210/checkpoint-210
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_220/checkpoint-220
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_230/checkpoint-230
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_240/checkpoint-240
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_250/checkpoint-250
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_21-47-29e3bguj5n/checkpoint_260/checkpoint-260

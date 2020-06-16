@@ -1,0 +1,26 @@
+2020-06-12 21:47:29,208	WARNING worker.py:1268 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2020-06-12 21:47:29,479	INFO trainer.py:345 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2020-06-12 21:47:41,463	INFO trainable.py:102 -- _setup took 11.852 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2020-06-12 21:47:41,464	WARNING util.py:45 -- Install gputil for GPU system monitoring.
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2957: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/_methods.py:80: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/_methods.py:135: RuntimeWarning: Degrees of freedom <= 0 for slice
+  keepdims=keepdims)
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/_methods.py:105: RuntimeWarning: divide by zero encountered in true_divide
+  arrmean, rcount, out=arrmean, casting='unsafe', subok=False)
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/_methods.py:105: RuntimeWarning: invalid value encountered in true_divide
+  arrmean, rcount, out=arrmean, casting='unsafe', subok=False)
+/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/numpy/core/_methods.py:127: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+aprun: Apid 21054885: Caught signal Terminated, sending to application
+Traceback (most recent call last):
+  File "start_ray.py", line 147, in <module>
+    subprocess.run(exec_string,shell=True,check=True)
+  File "/home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'python train_ppo.py --ray-address='10.128.15.21:10100'' died with <Signals.SIGTERM: 15>.
+aprun: Apid 21054885: Caught signal Interrupt, sending to application

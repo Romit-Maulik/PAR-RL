@@ -1,0 +1,60 @@
+Running Cobalt Job 446756.
+[2m[36m(pid=30105)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=30105)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=30104)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=30104)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=30102)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=30102)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=30103)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=30103)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=174456, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=174456, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=174455, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=174455, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=23723, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=23723, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=23724, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=23724, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=23722, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=23722, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=23721, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=23721, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=174457, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=174457, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=174458, ip=10.236.16.130)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=174458, ip=10.236.16.130)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=212193)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=212193)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=212195)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=212195)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=212194)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=212194)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=212192)[0m /home/sap1992/.conda/envs/rllib_env1_fenics/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+[2m[36m(pid=212192)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_10/checkpoint-10
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_20/checkpoint-20
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_30/checkpoint-30
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_40/checkpoint-40
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_50/checkpoint-50
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_60/checkpoint-60
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_70/checkpoint-70
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_80/checkpoint-80
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_90/checkpoint-90
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_100/checkpoint-100
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_110/checkpoint-110
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_120/checkpoint-120
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_130/checkpoint-130
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_140/checkpoint-140
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_150/checkpoint-150
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_160/checkpoint-160
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_170/checkpoint-170
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_180/checkpoint-180
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_190/checkpoint-190
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_200/checkpoint-200
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_210/checkpoint-210
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_220/checkpoint-220
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_230/checkpoint-230
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_240/checkpoint-240
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_250/checkpoint-250
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_260/checkpoint-260
+checkpoint saved at /home/sap1992/ray_results/APPO_myenv_2020-06-12_20-23-26lz15ira7/checkpoint_270/checkpoint-270
