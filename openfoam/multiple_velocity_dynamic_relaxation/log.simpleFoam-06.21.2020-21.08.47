@@ -1,0 +1,1070 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.x-7f7d351b741b
+Exec   : simpleFoam
+Date   : Jun 21 2020
+Time   : 16:08:47
+Host   : "suraj-MS-7B06"
+PID    : 10028
+I/O    : uncollated
+Case   : /media/suraj/My4TBHD1/git_workspace/ANL/RLLib_Theta/openfoam/multiple_velocity_dynamic_relaxation
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 500
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.01
+    field U	 tolerance 0.001
+    field "(k|epsilon|omega|f|v2)"	 tolerance 0.001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    RASModel        kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+
+
+Starting time loop
+
+streamLine streamlines:
+    automatic track length specified through number of sub cycles : 5
+
+Time = 501
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000624761, Final residual = 7.9347e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00318078, Final residual = 5.12662e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0257049, Final residual = 4.50799e-07, No Iterations 13
+time step continuity errors : sum local = 2.15904e-06, global = 2.19047e-07, cumulative = 2.19047e-07
+smoothSolver:  Solving for epsilon, Initial residual = 0.00207429, Final residual = 9.3179e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00358862, Final residual = 6.27819e-07, No Iterations 7
+ExecutionTime = 0.25 s  ClockTime = 1 s
+
+Time = 502
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000624654, Final residual = 7.86813e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00326542, Final residual = 5.16801e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00734823, Final residual = 5.85246e-07, No Iterations 11
+time step continuity errors : sum local = 2.83891e-06, global = 1.21951e-07, cumulative = 3.40998e-07
+smoothSolver:  Solving for epsilon, Initial residual = 0.00205728, Final residual = 9.29056e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00357179, Final residual = 6.26618e-07, No Iterations 7
+ExecutionTime = 0.28 s  ClockTime = 1 s
+
+Time = 503
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626284, Final residual = 7.94496e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00324114, Final residual = 5.16118e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00704452, Final residual = 9.6871e-07, No Iterations 10
+time step continuity errors : sum local = 4.68672e-06, global = -8.92343e-07, cumulative = -5.51345e-07
+smoothSolver:  Solving for epsilon, Initial residual = 0.0020411, Final residual = 9.26061e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00355497, Final residual = 6.25292e-07, No Iterations 7
+ExecutionTime = 0.31 s  ClockTime = 1 s
+
+Time = 504
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627058, Final residual = 7.96278e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00322889, Final residual = 5.16094e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00519724, Final residual = 6.51877e-07, No Iterations 11
+time step continuity errors : sum local = 3.1471e-06, global = 3.32119e-07, cumulative = -2.19226e-07
+smoothSolver:  Solving for epsilon, Initial residual = 0.00202586, Final residual = 9.23226e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00353992, Final residual = 6.24163e-07, No Iterations 7
+ExecutionTime = 0.34 s  ClockTime = 1 s
+
+Time = 505
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626308, Final residual = 7.93652e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00323149, Final residual = 5.17317e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00347757, Final residual = 9.87759e-07, No Iterations 9
+time step continuity errors : sum local = 4.7699e-06, global = 1.24673e-06, cumulative = 1.0275e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00201212, Final residual = 9.20129e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00352502, Final residual = 6.22801e-07, No Iterations 7
+ExecutionTime = 0.37 s  ClockTime = 1 s
+
+Time = 506
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626073, Final residual = 7.93341e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00323336, Final residual = 5.1849e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00253883, Final residual = 9.09161e-07, No Iterations 9
+time step continuity errors : sum local = 4.3951e-06, global = 4.56074e-07, cumulative = 1.48358e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00199848, Final residual = 9.16962e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00351002, Final residual = 6.21307e-07, No Iterations 7
+ExecutionTime = 0.4 s  ClockTime = 1 s
+
+Time = 507
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626244, Final residual = 7.94106e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00323566, Final residual = 5.19205e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00208211, Final residual = 8.87532e-07, No Iterations 10
+time step continuity errors : sum local = 4.29472e-06, global = 1.10261e-06, cumulative = 2.58619e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00198553, Final residual = 9.13971e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00349618, Final residual = 6.20018e-07, No Iterations 7
+ExecutionTime = 0.43 s  ClockTime = 1 s
+
+Time = 508
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626375, Final residual = 7.94191e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00324135, Final residual = 5.19979e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00223252, Final residual = 7.70082e-07, No Iterations 10
+time step continuity errors : sum local = 3.73084e-06, global = 4.60831e-07, cumulative = 3.04702e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00197347, Final residual = 9.10518e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00348219, Final residual = 6.18471e-07, No Iterations 7
+ExecutionTime = 0.45 s  ClockTime = 1 s
+
+Time = 509
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00062643, Final residual = 7.94104e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0032485, Final residual = 5.20898e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00228112, Final residual = 7.26611e-07, No Iterations 10
+time step continuity errors : sum local = 3.52744e-06, global = 4.43353e-07, cumulative = 3.49037e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00196169, Final residual = 9.07249e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00346807, Final residual = 6.16856e-07, No Iterations 7
+ExecutionTime = 0.48 s  ClockTime = 1 s
+
+Time = 510
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626452, Final residual = 7.94191e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00325567, Final residual = 5.21788e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00185456, Final residual = 8.18104e-07, No Iterations 10
+time step continuity errors : sum local = 3.97652e-06, global = 6.35434e-07, cumulative = 4.12581e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.0019506, Final residual = 9.04033e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00345466, Final residual = 6.15434e-07, No Iterations 7
+ExecutionTime = 0.52 s  ClockTime = 1 s
+
+Time = 511
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626616, Final residual = 7.94294e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00326401, Final residual = 5.22543e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00178752, Final residual = 8.48567e-07, No Iterations 10
+time step continuity errors : sum local = 4.13091e-06, global = 5.85621e-07, cumulative = 4.71143e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00193977, Final residual = 9.00338e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00344116, Final residual = 6.13768e-07, No Iterations 7
+ExecutionTime = 0.55 s  ClockTime = 1 s
+
+Time = 512
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626731, Final residual = 7.94427e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00327329, Final residual = 5.23408e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00173369, Final residual = 8.55916e-07, No Iterations 10
+time step continuity errors : sum local = 4.17466e-06, global = 6.06207e-07, cumulative = 5.31764e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00192892, Final residual = 8.97027e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00342743, Final residual = 6.12041e-07, No Iterations 7
+ExecutionTime = 0.58 s  ClockTime = 1 s
+
+Time = 513
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000626858, Final residual = 7.94573e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00328265, Final residual = 5.24263e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00171877, Final residual = 8.40478e-07, No Iterations 10
+time step continuity errors : sum local = 4.10645e-06, global = 6.24886e-07, cumulative = 5.94252e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00191878, Final residual = 8.93619e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00341415, Final residual = 6.10524e-07, No Iterations 7
+ExecutionTime = 0.6 s  ClockTime = 1 s
+
+Time = 514
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627028, Final residual = 7.94626e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00329295, Final residual = 5.25078e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0021117, Final residual = 6.82339e-07, No Iterations 10
+time step continuity errors : sum local = 3.33783e-06, global = 4.23742e-07, cumulative = 6.36626e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00190804, Final residual = 8.8977e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00340071, Final residual = 6.0877e-07, No Iterations 7
+ExecutionTime = 0.63 s  ClockTime = 1 s
+
+Time = 515
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627224, Final residual = 7.94842e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00330324, Final residual = 5.26007e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0023254, Final residual = 6.83512e-07, No Iterations 10
+time step continuity errors : sum local = 3.35146e-06, global = 4.22467e-07, cumulative = 6.78873e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00189737, Final residual = 8.86416e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00338707, Final residual = 6.06974e-07, No Iterations 7
+ExecutionTime = 0.66 s  ClockTime = 1 s
+
+Time = 516
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627342, Final residual = 7.94956e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00331379, Final residual = 5.26945e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00191192, Final residual = 8.56014e-07, No Iterations 10
+time step continuity errors : sum local = 4.20293e-06, global = 6.31134e-07, cumulative = 7.41987e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00188701, Final residual = 8.82833e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00337363, Final residual = 6.05372e-07, No Iterations 7
+ExecutionTime = 0.69 s  ClockTime = 1 s
+
+Time = 517
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627536, Final residual = 7.95104e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00332493, Final residual = 5.27836e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00177436, Final residual = 8.16877e-07, No Iterations 10
+time step continuity errors : sum local = 4.01697e-06, global = 8.40615e-07, cumulative = 8.26048e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00187633, Final residual = 8.78935e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00336047, Final residual = 6.03602e-07, No Iterations 7
+ExecutionTime = 0.72 s  ClockTime = 1 s
+
+Time = 518
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000627738, Final residual = 7.9531e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00333601, Final residual = 5.28769e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0017686, Final residual = 7.78075e-07, No Iterations 10
+time step continuity errors : sum local = 3.83332e-06, global = 1.01156e-06, cumulative = 9.27204e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00186569, Final residual = 8.75479e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00334693, Final residual = 6.01763e-07, No Iterations 7
+ExecutionTime = 0.76 s  ClockTime = 1 s
+
+Time = 519
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000628032, Final residual = 7.95515e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00334776, Final residual = 5.29744e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00227732, Final residual = 8.66071e-07, No Iterations 10
+time step continuity errors : sum local = 4.27368e-06, global = 5.63206e-07, cumulative = 9.83524e-06
+smoothSolver:  Solving for epsilon, Initial residual = 0.00185552, Final residual = 8.71776e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00333346, Final residual = 6.00073e-07, No Iterations 7
+ExecutionTime = 0.78 s  ClockTime = 1 s
+
+Time = 520
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000628254, Final residual = 7.95615e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00336012, Final residual = 5.30728e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00194046, Final residual = 8.49887e-07, No Iterations 10
+time step continuity errors : sum local = 4.20024e-06, global = 9.05436e-07, cumulative = 1.07407e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00184486, Final residual = 8.6785e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.0033205, Final residual = 5.98315e-07, No Iterations 7
+ExecutionTime = 0.81 s  ClockTime = 1 s
+
+Time = 521
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000628472, Final residual = 7.95858e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00337233, Final residual = 5.31653e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00194475, Final residual = 8.79383e-07, No Iterations 10
+time step continuity errors : sum local = 4.35409e-06, global = 9.13936e-07, cumulative = 1.16546e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0018344, Final residual = 8.64336e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.003307, Final residual = 5.96476e-07, No Iterations 7
+ExecutionTime = 0.84 s  ClockTime = 1 s
+
+Time = 522
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000628687, Final residual = 7.96072e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00338439, Final residual = 5.32671e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00168548, Final residual = 7.49714e-07, No Iterations 10
+time step continuity errors : sum local = 3.71747e-06, global = 1.33998e-06, cumulative = 1.29946e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00182432, Final residual = 8.60604e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00329358, Final residual = 5.94738e-07, No Iterations 7
+ExecutionTime = 0.87 s  ClockTime = 1 s
+
+Time = 523
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00062903, Final residual = 7.96235e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00339757, Final residual = 5.3377e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00182221, Final residual = 9.26076e-07, No Iterations 10
+time step continuity errors : sum local = 4.59836e-06, global = 7.52734e-07, cumulative = 1.37473e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00181384, Final residual = 8.56675e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00328056, Final residual = 5.92991e-07, No Iterations 7
+ExecutionTime = 0.9 s  ClockTime = 1 s
+
+Time = 524
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000629302, Final residual = 7.9648e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00341018, Final residual = 5.34858e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00191758, Final residual = 9.40321e-07, No Iterations 10
+time step continuity errors : sum local = 4.67832e-06, global = 6.75516e-07, cumulative = 1.44228e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0018036, Final residual = 8.53143e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00326732, Final residual = 5.91165e-07, No Iterations 7
+ExecutionTime = 0.93 s  ClockTime = 1 s
+
+Time = 525
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000629556, Final residual = 7.9666e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00342327, Final residual = 5.35886e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00168429, Final residual = 9.29862e-07, No Iterations 10
+time step continuity errors : sum local = 4.63248e-06, global = 8.9689e-07, cumulative = 1.53197e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00179364, Final residual = 8.49417e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00325415, Final residual = 5.89449e-07, No Iterations 7
+ExecutionTime = 0.95 s  ClockTime = 1 s
+
+Time = 526
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000629899, Final residual = 7.9692e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0034368, Final residual = 5.37005e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00201974, Final residual = 6.92866e-07, No Iterations 10
+time step continuity errors : sum local = 3.4559e-06, global = 4.26532e-07, cumulative = 1.57463e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0017833, Final residual = 8.45529e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00324106, Final residual = 5.87691e-07, No Iterations 7
+ExecutionTime = 0.98 s  ClockTime = 1 s
+
+Time = 527
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000630264, Final residual = 7.97134e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00345099, Final residual = 5.38184e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00219122, Final residual = 6.57794e-07, No Iterations 10
+time step continuity errors : sum local = 3.28792e-06, global = 3.98126e-07, cumulative = 1.61444e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00177293, Final residual = 8.41992e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.0032282, Final residual = 5.85872e-07, No Iterations 7
+ExecutionTime = 1.01 s  ClockTime = 1 s
+
+Time = 528
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000630491, Final residual = 7.97323e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00346424, Final residual = 5.39228e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00183764, Final residual = 9.82538e-07, No Iterations 10
+time step continuity errors : sum local = 4.9169e-06, global = 6.67795e-07, cumulative = 1.68122e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00176299, Final residual = 8.38299e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00321511, Final residual = 5.84245e-07, No Iterations 7
+ExecutionTime = 1.05 s  ClockTime = 1 s
+
+Time = 529
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000630909, Final residual = 7.97435e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00347843, Final residual = 5.40381e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00179487, Final residual = 7.56269e-07, No Iterations 10
+time step continuity errors : sum local = 3.78918e-06, global = 4.66716e-07, cumulative = 1.72789e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00175266, Final residual = 8.3448e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00320203, Final residual = 5.82443e-07, No Iterations 7
+ExecutionTime = 1.08 s  ClockTime = 1 s
+
+Time = 530
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000631229, Final residual = 7.97737e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0034928, Final residual = 5.41663e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00188189, Final residual = 7.62304e-07, No Iterations 10
+time step continuity errors : sum local = 3.82633e-06, global = 4.75294e-07, cumulative = 1.77542e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00174244, Final residual = 8.30927e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00318937, Final residual = 5.80688e-07, No Iterations 7
+ExecutionTime = 1.1 s  ClockTime = 1 s
+
+Time = 531
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000631518, Final residual = 7.97889e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00350709, Final residual = 5.42879e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00164546, Final residual = 3.21955e-07, No Iterations 12
+time step continuity errors : sum local = 1.61791e-06, global = 1.79673e-07, cumulative = 1.79339e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00173264, Final residual = 8.27277e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00317673, Final residual = 5.79126e-07, No Iterations 7
+ExecutionTime = 1.13 s  ClockTime = 1 s
+
+Time = 532
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000631928, Final residual = 7.98101e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00352158, Final residual = 5.44099e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00201336, Final residual = 6.11817e-07, No Iterations 10
+time step continuity errors : sum local = 3.07838e-06, global = 3.70776e-07, cumulative = 1.83046e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00172266, Final residual = 8.23583e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00316382, Final residual = 5.77321e-07, No Iterations 7
+ExecutionTime = 1.16 s  ClockTime = 1 s
+
+Time = 533
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000632397, Final residual = 7.98235e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00353584, Final residual = 5.45431e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00216246, Final residual = 6.60286e-07, No Iterations 10
+time step continuity errors : sum local = 3.32846e-06, global = 3.91995e-07, cumulative = 1.86966e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00171282, Final residual = 8.19968e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00315133, Final residual = 5.75587e-07, No Iterations 7
+ExecutionTime = 1.19 s  ClockTime = 2 s
+
+Time = 534
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00063273, Final residual = 7.98404e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00355115, Final residual = 5.46638e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00184428, Final residual = 9.19948e-07, No Iterations 11
+time step continuity errors : sum local = 4.64255e-06, global = -9.60865e-07, cumulative = 1.77358e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00170344, Final residual = 8.16416e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00313908, Final residual = 5.7406e-07, No Iterations 7
+ExecutionTime = 1.22 s  ClockTime = 2 s
+
+Time = 535
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000633092, Final residual = 7.98575e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00356618, Final residual = 5.47837e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00176767, Final residual = 8.93886e-07, No Iterations 10
+time step continuity errors : sum local = 4.51616e-06, global = 5.61467e-07, cumulative = 1.82972e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00169427, Final residual = 8.12896e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00312656, Final residual = 5.7238e-07, No Iterations 7
+ExecutionTime = 1.25 s  ClockTime = 2 s
+
+Time = 536
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000633586, Final residual = 7.98823e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00358094, Final residual = 5.49201e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00219855, Final residual = 6.15652e-07, No Iterations 10
+time step continuity errors : sum local = 3.11525e-06, global = 3.63822e-07, cumulative = 1.86611e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00168509, Final residual = 8.09212e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00311414, Final residual = 5.70594e-07, No Iterations 7
+ExecutionTime = 1.29 s  ClockTime = 2 s
+
+Time = 537
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000633983, Final residual = 7.9893e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00359592, Final residual = 5.50604e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00186641, Final residual = 9.05166e-07, No Iterations 10
+time step continuity errors : sum local = 4.58637e-06, global = 5.62201e-07, cumulative = 1.92233e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00167611, Final residual = 8.05813e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00310232, Final residual = 5.69107e-07, No Iterations 7
+ExecutionTime = 1.32 s  ClockTime = 2 s
+
+Time = 538
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000634442, Final residual = 7.99127e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00361147, Final residual = 5.51953e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00184926, Final residual = 8.73648e-07, No Iterations 10
+time step continuity errors : sum local = 4.43215e-06, global = 5.30521e-07, cumulative = 1.97538e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00166746, Final residual = 8.02437e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00309031, Final residual = 5.67564e-07, No Iterations 7
+ExecutionTime = 1.35 s  ClockTime = 2 s
+
+Time = 539
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000634898, Final residual = 7.99303e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00362693, Final residual = 5.53308e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00207072, Final residual = 6.31895e-07, No Iterations 10
+time step continuity errors : sum local = 3.20892e-06, global = 3.6869e-07, cumulative = 2.01225e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00165863, Final residual = 7.98844e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00307815, Final residual = 5.65777e-07, No Iterations 7
+ExecutionTime = 1.38 s  ClockTime = 2 s
+
+Time = 540
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00063534, Final residual = 7.99488e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0036421, Final residual = 5.54755e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00201086, Final residual = 7.15642e-07, No Iterations 10
+time step continuity errors : sum local = 3.6401e-06, global = 4.51044e-07, cumulative = 2.05735e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00164983, Final residual = 7.95506e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00306638, Final residual = 5.64269e-07, No Iterations 7
+ExecutionTime = 1.41 s  ClockTime = 2 s
+
+Time = 541
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000635877, Final residual = 7.99578e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00365736, Final residual = 5.56088e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00187548, Final residual = 3.05387e-07, No Iterations 11
+time step continuity errors : sum local = 1.5549e-06, global = -7.45181e-09, cumulative = 2.05661e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00164152, Final residual = 7.92243e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00305503, Final residual = 5.62833e-07, No Iterations 7
+ExecutionTime = 1.44 s  ClockTime = 2 s
+
+Time = 542
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000636553, Final residual = 7.9985e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0036735, Final residual = 5.5748e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00233748, Final residual = 5.72689e-07, No Iterations 10
+time step continuity errors : sum local = 2.9188e-06, global = 3.88695e-07, cumulative = 2.09548e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00163303, Final residual = 7.88876e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00304338, Final residual = 5.61213e-07, No Iterations 7
+ExecutionTime = 1.47 s  ClockTime = 2 s
+
+Time = 543
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000637064, Final residual = 7.99951e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00368927, Final residual = 5.58957e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00242286, Final residual = 5.74019e-07, No Iterations 10
+time step continuity errors : sum local = 2.93043e-06, global = 3.54913e-07, cumulative = 2.13097e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00162471, Final residual = 7.85495e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00303175, Final residual = 5.59543e-07, No Iterations 7
+ExecutionTime = 1.49 s  ClockTime = 2 s
+
+Time = 544
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000637481, Final residual = 8.00047e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00370477, Final residual = 5.60465e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00214531, Final residual = 7.70451e-07, No Iterations 10
+time step continuity errors : sum local = 3.93649e-06, global = 4.71186e-07, cumulative = 2.17809e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00161645, Final residual = 7.82459e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00302073, Final residual = 5.58259e-07, No Iterations 7
+ExecutionTime = 1.52 s  ClockTime = 2 s
+
+Time = 545
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000638187, Final residual = 8.00209e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0037201, Final residual = 5.61947e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00195944, Final residual = 8.07499e-07, No Iterations 10
+time step continuity errors : sum local = 4.12984e-06, global = 2.33065e-06, cumulative = 2.41115e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00160854, Final residual = 7.79349e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00300966, Final residual = 5.56748e-07, No Iterations 7
+ExecutionTime = 1.55 s  ClockTime = 2 s
+
+Time = 546
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000638912, Final residual = 8.00419e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00373645, Final residual = 5.63414e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00239767, Final residual = 6.28328e-07, No Iterations 10
+time step continuity errors : sum local = 3.21625e-06, global = 3.69518e-07, cumulative = 2.4481e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00160056, Final residual = 7.75993e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00299843, Final residual = 5.55083e-07, No Iterations 7
+ExecutionTime = 1.58 s  ClockTime = 2 s
+
+Time = 547
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000639487, Final residual = 8.00478e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00375243, Final residual = 5.64845e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00233585, Final residual = 6.07195e-07, No Iterations 10
+time step continuity errors : sum local = 3.11286e-06, global = 3.45404e-07, cumulative = 2.48264e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00159256, Final residual = 7.73061e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00298741, Final residual = 5.53762e-07, No Iterations 7
+ExecutionTime = 1.61 s  ClockTime = 2 s
+
+Time = 548
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000640081, Final residual = 8.00616e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00376821, Final residual = 5.6637e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00193551, Final residual = 8.97645e-07, No Iterations 11
+time step continuity errors : sum local = 4.60542e-06, global = -9.17864e-07, cumulative = 2.39086e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00158502, Final residual = 7.70125e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.0029771, Final residual = 5.52384e-07, No Iterations 7
+ExecutionTime = 1.64 s  ClockTime = 2 s
+
+Time = 549
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000640847, Final residual = 8.00743e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00378424, Final residual = 5.68009e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0019275, Final residual = 9.11868e-07, No Iterations 10
+time step continuity errors : sum local = 4.68068e-06, global = 5.38179e-07, cumulative = 2.44467e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0015775, Final residual = 7.66951e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.0029664, Final residual = 5.5083e-07, No Iterations 7
+ExecutionTime = 1.67 s  ClockTime = 2 s
+
+Time = 550
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000641689, Final residual = 8.0094e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00380009, Final residual = 5.69583e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00225192, Final residual = 9.97185e-07, No Iterations 10
+time step continuity errors : sum local = 5.12452e-06, global = 5.79166e-07, cumulative = 2.50259e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00156993, Final residual = 7.63987e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00295552, Final residual = 5.49452e-07, No Iterations 7
+ExecutionTime = 1.71 s  ClockTime = 2 s
+
+Time = 551
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000642351, Final residual = 8.01012e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00381609, Final residual = 5.71114e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00208399, Final residual = 6.98364e-07, No Iterations 10
+time step continuity errors : sum local = 3.5931e-06, global = 3.56395e-07, cumulative = 2.53823e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00156243, Final residual = 7.6116e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00294551, Final residual = 5.48149e-07, No Iterations 7
+ExecutionTime = 1.73 s  ClockTime = 2 s
+
+Time = 552
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00064312, Final residual = 8.01086e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00383275, Final residual = 5.72595e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00198767, Final residual = 9.4675e-07, No Iterations 10
+time step continuity errors : sum local = 4.87434e-06, global = 5.39241e-07, cumulative = 2.59215e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00155537, Final residual = 7.58268e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00293537, Final residual = 5.46683e-07, No Iterations 7
+ExecutionTime = 1.76 s  ClockTime = 2 s
+
+Time = 553
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00064399, Final residual = 8.0119e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00384878, Final residual = 5.74185e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0021077, Final residual = 7.38036e-07, No Iterations 10
+time step continuity errors : sum local = 3.80192e-06, global = 4.08268e-07, cumulative = 2.63298e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00154821, Final residual = 7.55282e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00292479, Final residual = 5.45401e-07, No Iterations 7
+ExecutionTime = 1.79 s  ClockTime = 2 s
+
+Time = 554
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000644802, Final residual = 8.01366e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00386374, Final residual = 5.75875e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00219622, Final residual = 7.66021e-07, No Iterations 10
+time step continuity errors : sum local = 3.95139e-06, global = 4.42689e-07, cumulative = 2.67725e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00154107, Final residual = 7.52572e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00291494, Final residual = 5.44011e-07, No Iterations 7
+ExecutionTime = 1.82 s  ClockTime = 2 s
+
+Time = 555
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000645538, Final residual = 8.01392e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00388035, Final residual = 5.77523e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00189092, Final residual = 9.99284e-07, No Iterations 10
+time step continuity errors : sum local = 5.1576e-06, global = 7.61434e-07, cumulative = 2.75339e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00153425, Final residual = 7.49794e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00290514, Final residual = 5.42731e-07, No Iterations 7
+ExecutionTime = 1.85 s  ClockTime = 2 s
+
+Time = 556
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000646518, Final residual = 8.01491e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00389772, Final residual = 5.79103e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00217488, Final residual = 7.80469e-07, No Iterations 10
+time step continuity errors : sum local = 4.0305e-06, global = 4.34484e-07, cumulative = 2.79684e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00152753, Final residual = 7.47035e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00289506, Final residual = 5.4149e-07, No Iterations 7
+ExecutionTime = 1.88 s  ClockTime = 2 s
+
+Time = 557
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000647383, Final residual = 8.01563e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00391289, Final residual = 5.80626e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00226739, Final residual = 7.84988e-07, No Iterations 10
+time step continuity errors : sum local = 4.05926e-06, global = 4.36272e-07, cumulative = 2.84047e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00152075, Final residual = 7.44202e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00288562, Final residual = 5.40255e-07, No Iterations 7
+ExecutionTime = 1.91 s  ClockTime = 2 s
+
+Time = 558
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000648173, Final residual = 8.01756e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00392818, Final residual = 5.8229e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00189619, Final residual = 8.16164e-07, No Iterations 10
+time step continuity errors : sum local = 4.22231e-06, global = 4.15449e-07, cumulative = 2.88201e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00151418, Final residual = 7.41607e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00287576, Final residual = 5.38895e-07, No Iterations 7
+ExecutionTime = 1.94 s  ClockTime = 2 s
+
+Time = 559
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000649133, Final residual = 8.01754e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00394568, Final residual = 5.8409e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00206445, Final residual = 7.54716e-07, No Iterations 10
+time step continuity errors : sum local = 3.90593e-06, global = 3.87514e-07, cumulative = 2.92077e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00150754, Final residual = 7.39037e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00286622, Final residual = 5.37754e-07, No Iterations 7
+ExecutionTime = 1.97 s  ClockTime = 2 s
+
+Time = 560
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000650097, Final residual = 8.01803e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00396207, Final residual = 5.85784e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00224954, Final residual = 7.96183e-07, No Iterations 10
+time step continuity errors : sum local = 4.12644e-06, global = 4.53545e-07, cumulative = 2.96612e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00150117, Final residual = 7.36358e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00285724, Final residual = 5.36684e-07, No Iterations 7
+ExecutionTime = 2 s  ClockTime = 2 s
+
+Time = 561
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000651007, Final residual = 8.01886e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00397746, Final residual = 5.87303e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00189692, Final residual = 9.83247e-07, No Iterations 10
+time step continuity errors : sum local = 5.09786e-06, global = 5.65069e-07, cumulative = 3.02263e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.001495, Final residual = 7.33705e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00284781, Final residual = 5.35361e-07, No Iterations 7
+ExecutionTime = 2.03 s  ClockTime = 2 s
+
+Time = 562
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000652029, Final residual = 8.02084e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00399374, Final residual = 5.88944e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0022831, Final residual = 7.70148e-07, No Iterations 10
+time step continuity errors : sum local = 3.99421e-06, global = 4.4989e-07, cumulative = 3.06762e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00148866, Final residual = 7.31261e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00283823, Final residual = 5.34152e-07, No Iterations 7
+ExecutionTime = 2.05 s  ClockTime = 2 s
+
+Time = 563
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000652975, Final residual = 8.02072e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00401032, Final residual = 5.90786e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00254132, Final residual = 8.05829e-07, No Iterations 10
+time step continuity errors : sum local = 4.18562e-06, global = 5.00909e-07, cumulative = 3.11771e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00148285, Final residual = 7.28737e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00282974, Final residual = 5.33232e-07, No Iterations 7
+ExecutionTime = 2.09 s  ClockTime = 2 s
+
+Time = 564
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000653956, Final residual = 8.02138e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00402681, Final residual = 5.92522e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00207608, Final residual = 7.56406e-07, No Iterations 10
+time step continuity errors : sum local = 3.93064e-06, global = 3.71896e-07, cumulative = 3.1549e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0014772, Final residual = 7.26109e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00282091, Final residual = 5.32075e-07, No Iterations 7
+ExecutionTime = 2.12 s  ClockTime = 2 s
+
+Time = 565
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000655043, Final residual = 8.02243e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00404288, Final residual = 5.94192e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00206615, Final residual = 7.42999e-07, No Iterations 10
+time step continuity errors : sum local = 3.86162e-06, global = 3.42169e-07, cumulative = 3.18911e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00147132, Final residual = 7.23706e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00281167, Final residual = 5.30741e-07, No Iterations 7
+ExecutionTime = 2.15 s  ClockTime = 2 s
+
+Time = 566
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000656074, Final residual = 8.02356e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0040581, Final residual = 5.95829e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00221705, Final residual = 8.57145e-07, No Iterations 10
+time step continuity errors : sum local = 4.46041e-06, global = 4.61033e-07, cumulative = 3.23522e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00146577, Final residual = 7.21387e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00280273, Final residual = 5.29869e-07, No Iterations 7
+ExecutionTime = 2.17 s  ClockTime = 2 s
+
+Time = 567
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000657063, Final residual = 8.02343e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00407492, Final residual = 5.97541e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00188916, Final residual = 4.113e-07, No Iterations 12
+time step continuity errors : sum local = 2.14108e-06, global = 2.20384e-07, cumulative = 3.25726e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00146067, Final residual = 7.18878e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00279469, Final residual = 5.28853e-07, No Iterations 7
+ExecutionTime = 2.2 s  ClockTime = 3 s
+
+Time = 568
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000658251, Final residual = 8.02387e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00409236, Final residual = 5.99422e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00227039, Final residual = 9.59542e-07, No Iterations 10
+time step continuity errors : sum local = 4.99641e-06, global = 4.91361e-07, cumulative = 3.30639e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00145545, Final residual = 7.16419e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00278594, Final residual = 5.27653e-07, No Iterations 7
+ExecutionTime = 2.23 s  ClockTime = 3 s
+
+Time = 569
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000659359, Final residual = 8.02464e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00410762, Final residual = 6.01208e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00251856, Final residual = 8.64841e-07, No Iterations 11
+time step continuity errors : sum local = 4.50952e-06, global = -8.7891e-07, cumulative = 3.2185e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00145039, Final residual = 7.14202e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00277696, Final residual = 5.26589e-07, No Iterations 7
+ExecutionTime = 2.27 s  ClockTime = 3 s
+
+Time = 570
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000660452, Final residual = 8.02541e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00412291, Final residual = 6.02822e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00206645, Final residual = 3.79565e-07, No Iterations 12
+time step continuity errors : sum local = 1.97969e-06, global = 2.05192e-07, cumulative = 3.23902e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00144581, Final residual = 7.11981e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00276904, Final residual = 5.25721e-07, No Iterations 7
+ExecutionTime = 2.3 s  ClockTime = 3 s
+
+Time = 571
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000661611, Final residual = 8.0247e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00413998, Final residual = 6.04538e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002061, Final residual = 8.40131e-07, No Iterations 10
+time step continuity errors : sum local = 4.38303e-06, global = 3.69721e-07, cumulative = 3.27599e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00144114, Final residual = 7.09687e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00276092, Final residual = 5.2465e-07, No Iterations 7
+ExecutionTime = 2.33 s  ClockTime = 3 s
+
+Time = 572
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000662805, Final residual = 8.02497e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00415673, Final residual = 6.06408e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00264851, Final residual = 9.12481e-07, No Iterations 10
+time step continuity errors : sum local = 4.76542e-06, global = 5.37101e-07, cumulative = 3.3297e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0014366, Final residual = 7.07499e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00275216, Final residual = 5.23605e-07, No Iterations 7
+ExecutionTime = 2.36 s  ClockTime = 3 s
+
+Time = 573
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000663859, Final residual = 8.026e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00417221, Final residual = 6.08223e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00214228, Final residual = 9.79122e-07, No Iterations 10
+time step continuity errors : sum local = 5.11661e-06, global = 6.07047e-07, cumulative = 3.39041e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00143239, Final residual = 7.05492e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00274406, Final residual = 5.22622e-07, No Iterations 7
+ExecutionTime = 2.39 s  ClockTime = 3 s
+
+Time = 574
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00066504, Final residual = 8.0268e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00418774, Final residual = 6.0995e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0022503, Final residual = 9.76132e-07, No Iterations 11
+time step continuity errors : sum local = 5.10337e-06, global = -9.83548e-07, cumulative = 3.29205e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00142819, Final residual = 7.03536e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00273613, Final residual = 5.21691e-07, No Iterations 7
+ExecutionTime = 2.42 s  ClockTime = 3 s
+
+Time = 575
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000666237, Final residual = 8.02614e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00420439, Final residual = 6.11624e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00257949, Final residual = 9.01503e-07, No Iterations 10
+time step continuity errors : sum local = 4.71546e-06, global = 5.03956e-07, cumulative = 3.34245e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00142416, Final residual = 7.01458e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00272784, Final residual = 5.20683e-07, No Iterations 7
+ExecutionTime = 2.45 s  ClockTime = 3 s
+
+Time = 576
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000667303, Final residual = 8.02706e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00422079, Final residual = 6.13453e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00233802, Final residual = 9.12525e-07, No Iterations 10
+time step continuity errors : sum local = 4.77775e-06, global = 6.29284e-07, cumulative = 3.40538e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00142031, Final residual = 6.99503e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00271986, Final residual = 5.19781e-07, No Iterations 7
+ExecutionTime = 2.48 s  ClockTime = 3 s
+
+Time = 577
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000668444, Final residual = 8.02909e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00423637, Final residual = 6.15289e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00227705, Final residual = 8.40656e-07, No Iterations 10
+time step continuity errors : sum local = 4.40237e-06, global = 4.27347e-07, cumulative = 3.44811e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0014165, Final residual = 6.97791e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00271192, Final residual = 5.18761e-07, No Iterations 7
+ExecutionTime = 2.51 s  ClockTime = 3 s
+
+Time = 578
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000669681, Final residual = 8.02979e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00425166, Final residual = 6.1707e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00243552, Final residual = 8.40624e-07, No Iterations 10
+time step continuity errors : sum local = 4.40381e-06, global = 3.85076e-07, cumulative = 3.48662e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00141273, Final residual = 6.96004e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00270409, Final residual = 5.17809e-07, No Iterations 7
+ExecutionTime = 2.54 s  ClockTime = 3 s
+
+Time = 579
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000670695, Final residual = 8.02884e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00426778, Final residual = 6.18774e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00233095, Final residual = 9.07835e-07, No Iterations 10
+time step continuity errors : sum local = 4.76065e-06, global = 4.18615e-07, cumulative = 3.52848e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0014095, Final residual = 6.94116e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00269632, Final residual = 5.17022e-07, No Iterations 7
+ExecutionTime = 2.57 s  ClockTime = 3 s
+
+Time = 580
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000671739, Final residual = 8.02877e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00428384, Final residual = 6.20466e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00227025, Final residual = 9.38985e-07, No Iterations 11
+time step continuity errors : sum local = 4.92559e-06, global = -9.23248e-07, cumulative = 3.43615e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0014061, Final residual = 6.92513e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00268911, Final residual = 5.16011e-07, No Iterations 7
+ExecutionTime = 2.6 s  ClockTime = 3 s
+
+Time = 581
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000672969, Final residual = 8.0307e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00429959, Final residual = 6.22377e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00263251, Final residual = 9.23209e-07, No Iterations 10
+time step continuity errors : sum local = 4.84516e-06, global = 4.34465e-07, cumulative = 3.4796e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00140277, Final residual = 6.9104e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00268146, Final residual = 5.15029e-07, No Iterations 7
+ExecutionTime = 2.63 s  ClockTime = 3 s
+
+Time = 582
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000674038, Final residual = 8.02979e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00431449, Final residual = 6.2416e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00233543, Final residual = 9.20248e-07, No Iterations 10
+time step continuity errors : sum local = 4.83382e-06, global = 4.05291e-07, cumulative = 3.52013e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00139978, Final residual = 6.89417e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00267406, Final residual = 5.14301e-07, No Iterations 7
+ExecutionTime = 2.66 s  ClockTime = 3 s
+
+Time = 583
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000675051, Final residual = 8.02838e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00433067, Final residual = 6.2585e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00230412, Final residual = 8.8586e-07, No Iterations 10
+time step continuity errors : sum local = 4.65477e-06, global = 4.01808e-07, cumulative = 3.56031e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00139708, Final residual = 6.87815e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00266816, Final residual = 5.1349e-07, No Iterations 7
+ExecutionTime = 2.69 s  ClockTime = 3 s
+
+Time = 584
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000676257, Final residual = 8.02793e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00434691, Final residual = 6.27546e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00282921, Final residual = 9.69438e-07, No Iterations 10
+time step continuity errors : sum local = 5.09605e-06, global = 5.13035e-07, cumulative = 3.61161e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00139429, Final residual = 6.86517e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00266133, Final residual = 5.12386e-07, No Iterations 7
+ExecutionTime = 2.72 s  ClockTime = 3 s
+
+Time = 585
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000677231, Final residual = 8.02721e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0043619, Final residual = 6.2942e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0028377, Final residual = 9.2687e-07, No Iterations 11
+time step continuity errors : sum local = 4.87856e-06, global = -1.00607e-06, cumulative = 3.51101e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00139157, Final residual = 6.85221e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00265424, Final residual = 5.11691e-07, No Iterations 7
+ExecutionTime = 2.75 s  ClockTime = 3 s
+
+Time = 586
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000678282, Final residual = 8.02649e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00437666, Final residual = 6.31208e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0026385, Final residual = 8.88564e-07, No Iterations 10
+time step continuity errors : sum local = 4.67815e-06, global = 4.22066e-07, cumulative = 3.55321e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00138923, Final residual = 6.83865e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00264899, Final residual = 5.11001e-07, No Iterations 7
+ExecutionTime = 2.78 s  ClockTime = 3 s
+
+Time = 587
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000679311, Final residual = 8.02364e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00439257, Final residual = 6.32885e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0024623, Final residual = 8.88788e-07, No Iterations 10
+time step continuity errors : sum local = 4.67997e-06, global = 4.13946e-07, cumulative = 3.59461e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00138696, Final residual = 6.82525e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.0026432, Final residual = 5.10113e-07, No Iterations 7
+ExecutionTime = 2.81 s  ClockTime = 3 s
+
+Time = 588
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000680371, Final residual = 8.02187e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00440801, Final residual = 6.34513e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00275828, Final residual = 8.93189e-07, No Iterations 10
+time step continuity errors : sum local = 4.70747e-06, global = 4.31303e-07, cumulative = 3.63774e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00138488, Final residual = 6.81553e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00263683, Final residual = 5.09151e-07, No Iterations 7
+ExecutionTime = 2.84 s  ClockTime = 3 s
+
+Time = 589
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000681364, Final residual = 8.02076e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0044228, Final residual = 6.36299e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00258843, Final residual = 9.63612e-07, No Iterations 10
+time step continuity errors : sum local = 5.0832e-06, global = 4.67067e-07, cumulative = 3.68445e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00138273, Final residual = 6.80493e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00263159, Final residual = 5.08642e-07, No Iterations 7
+ExecutionTime = 2.87 s  ClockTime = 3 s
+
+Time = 590
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000682331, Final residual = 8.01947e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00443702, Final residual = 6.38081e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00253497, Final residual = 8.99888e-07, No Iterations 10
+time step continuity errors : sum local = 4.74873e-06, global = 4.54732e-07, cumulative = 3.72992e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0013811, Final residual = 6.79362e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00262709, Final residual = 5.07909e-07, No Iterations 7
+ExecutionTime = 2.89 s  ClockTime = 3 s
+
+Time = 591
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000683236, Final residual = 8.01605e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00445327, Final residual = 6.39759e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00275429, Final residual = 9.55738e-07, No Iterations 11
+time step continuity errors : sum local = 5.04551e-06, global = -8.36429e-07, cumulative = 3.64628e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137935, Final residual = 6.78437e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00262162, Final residual = 5.07004e-07, No Iterations 7
+ExecutionTime = 2.92 s  ClockTime = 3 s
+
+Time = 592
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000684201, Final residual = 8.014e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00446791, Final residual = 6.41358e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00278637, Final residual = 9.47062e-07, No Iterations 11
+time step continuity errors : sum local = 5.00576e-06, global = -8.79292e-07, cumulative = 3.55835e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137786, Final residual = 6.77707e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00261659, Final residual = 5.0635e-07, No Iterations 7
+ExecutionTime = 2.96 s  ClockTime = 3 s
+
+Time = 593
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00068509, Final residual = 8.0123e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.0044818, Final residual = 6.42961e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00244781, Final residual = 9.3226e-07, No Iterations 10
+time step continuity errors : sum local = 4.92835e-06, global = 4.20241e-07, cumulative = 3.60037e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137654, Final residual = 6.76879e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00261269, Final residual = 5.05809e-07, No Iterations 7
+ExecutionTime = 2.99 s  ClockTime = 3 s
+
+Time = 594
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000686006, Final residual = 8.00892e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00449586, Final residual = 6.44742e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00227337, Final residual = 9.58673e-07, No Iterations 10
+time step continuity errors : sum local = 5.07016e-06, global = 4.59523e-07, cumulative = 3.64632e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137554, Final residual = 6.76061e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00260832, Final residual = 5.05062e-07, No Iterations 7
+ExecutionTime = 3.02 s  ClockTime = 3 s
+
+Time = 595
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000686824, Final residual = 8.00426e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00451132, Final residual = 6.46362e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00255492, Final residual = 9.40935e-07, No Iterations 10
+time step continuity errors : sum local = 4.98044e-06, global = 4.89665e-07, cumulative = 3.69529e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137441, Final residual = 6.75519e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00260372, Final residual = 5.04409e-07, No Iterations 7
+ExecutionTime = 3.05 s  ClockTime = 3 s
+
+Time = 596
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000687582, Final residual = 8.00133e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00452518, Final residual = 6.47855e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00241099, Final residual = 9.43528e-07, No Iterations 10
+time step continuity errors : sum local = 4.99858e-06, global = 4.96185e-07, cumulative = 3.74491e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137345, Final residual = 6.74946e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00260043, Final residual = 5.03836e-07, No Iterations 7
+ExecutionTime = 3.08 s  ClockTime = 3 s
+
+Time = 597
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000688355, Final residual = 7.99891e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00453805, Final residual = 6.49361e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00215895, Final residual = 9.13583e-07, No Iterations 10
+time step continuity errors : sum local = 4.84373e-06, global = 4.88172e-07, cumulative = 3.79373e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137292, Final residual = 6.74354e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00259684, Final residual = 5.03252e-07, No Iterations 7
+ExecutionTime = 3.11 s  ClockTime = 3 s
+
+Time = 598
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000689217, Final residual = 7.99295e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00455217, Final residual = 6.5107e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00251767, Final residual = 9.66733e-07, No Iterations 10
+time step continuity errors : sum local = 5.12708e-06, global = 4.54789e-07, cumulative = 3.8392e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137248, Final residual = 6.73734e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00259289, Final residual = 5.02688e-07, No Iterations 7
+ExecutionTime = 3.14 s  ClockTime = 3 s
+
+Time = 599
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000689823, Final residual = 7.98589e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00456564, Final residual = 6.52515e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00265634, Final residual = 9.7251e-07, No Iterations 10
+time step continuity errors : sum local = 5.16416e-06, global = 4.82766e-07, cumulative = 3.88748e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.0013722, Final residual = 6.73273e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00259024, Final residual = 5.02109e-07, No Iterations 7
+ExecutionTime = 3.16 s  ClockTime = 3 s
+
+Time = 600
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00069039, Final residual = 7.98227e-07, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.00457852, Final residual = 6.53894e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00239884, Final residual = 9.41741e-07, No Iterations 10
+time step continuity errors : sum local = 5.00551e-06, global = 4.80761e-07, cumulative = 3.93556e-05
+smoothSolver:  Solving for epsilon, Initial residual = 0.00137195, Final residual = 6.72851e-07, No Iterations 6
+smoothSolver:  Solving for k, Initial residual = 0.00258723, Final residual = 5.01604e-07, No Iterations 7
+ExecutionTime = 3.23 s  ClockTime = 4 s
+
+streamLine streamlines write:
+    seeded 10 particles
+    Tracks:10
+    Total samples:9730
+    Writing data to "/media/suraj/My4TBHD1/git_workspace/ANL/RLLib_Theta/openfoam/multiple_velocity_dynamic_relaxation/postProcessing/sets/streamlines/600"
+End
+

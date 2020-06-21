@@ -1,0 +1,3 @@
+Nodes used: 1
+Available resources:
+{'object_store_memory': 142.0, 'GPU': 1.0, 'memory': 411.0, 'CPU': 20.0}
