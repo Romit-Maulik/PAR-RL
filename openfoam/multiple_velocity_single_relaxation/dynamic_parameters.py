@@ -77,7 +77,7 @@ class dynamic_parameters(gym.Env):
         number_steps.writeFile()
         
         relax_p_low = 0.4
-        relax_u_low = 0.4
+        relax_u_low = 0.5
         relax_p_high = 0.7
         relax_u_high = 0.7
 
@@ -254,8 +254,8 @@ if __name__ == '__main__':
     done = False
     
     # action parameters for every 200 time steps
-    actions_p = [0.2,0.4,0.4,0.4,0.4,0.4]
-    actions_u = [0.2,0.8,0.8,0.8,0.8,0.8]
+    actions_p = [0.8,0.4,0.4,0.4,0.4,0.4]
+    actions_u = [0.8,0.8,0.8,0.8,0.8,0.8]
     k = 0    
     while k < 1:
         dp.reset()

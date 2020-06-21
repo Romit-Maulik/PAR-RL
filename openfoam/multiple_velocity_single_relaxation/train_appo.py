@@ -62,21 +62,21 @@ if __name__ == "__main__":
     connect_time = time()
     register_time = time()
 
-    config = appo.DEFAULT_CONFIG.copy()
-#    config = ppo.DEFAULT_CONFIG.copy()
+#    config = appo.DEFAULT_CONFIG.copy()
+    config = ppo.DEFAULT_CONFIG.copy()
 #    config = a3c.DEFAULT_CONFIG.copy()
 #    config = a3c.DEFAULT_CONFIG.copy()
     config["log_level"] = "WARN"
     config["num_gpus"] = 0
     config["num_workers"] = 1  #int(ray.available_resources()['CPU'])
-    config["lr"] = 2.5e-4
+#    config["lr"] = 2.5e-4
 #    config["horizon"] = 4000
-#    config["train_batch_size"] = 4000
-    config["min_iter_time_s"] = 10
+    config["sgd_minibatch_size"] = 10  # Total SGD batch size across all devices for SGD. This defines the minibatch size of each SGD epoch
+    config["train_batch_size"] = 10
+#    config["min_iter_time_s"] = 10
 #    config["batch_mode"] = "complete_episodes"
 #    config["reduce_results"] = False
-#    config["vf_clip_param"] = 10000
-#    config["sgd_minibatch_size"] = 1  # Total SGD batch size across all devices for SGD. This defines the minibatch size of each SGD epoch
+    config["vf_clip_param"] = 10000
 #    config["num_sgd_iter"] = 4          # Number of SGD epochs to execute per train batch
 #    config["model"]["fcnet_hiddens"] = [64,64]
 #    config["model"]["use_lstm"] = True
@@ -88,8 +88,8 @@ if __name__ == "__main__":
     config["env_config"] = env_params
 
     # Trainer
-    trainer = appo.APPOTrainer(config=config, env="myenv")
-#    trainer = ppo.PPOTrainer(config=config, env="myenv")
+#    trainer = appo.APPOTrainer(config=config, env="myenv")
+    trainer = ppo.PPOTrainer(config=config, env="myenv")
 #    trainer = a3c.A3CTrainer(config=config, env="myenv")
 #    trainer = a2c.A2CTrainer(config=config, env="myenv")
     trainer_time = time()
