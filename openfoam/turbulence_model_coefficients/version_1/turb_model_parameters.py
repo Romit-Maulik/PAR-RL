@@ -140,7 +140,7 @@ class turb_model_parameters(gym.Env):
         
         # Define the unbounded state-space
         if self.states_type == 1:
-            high1 = np.array([np.finfo(np.float32).max])
+            high1 = np.array([np.finfo(np.float64).max])
         elif self.states_type == 2:
             high1 = np.array([np.finfo(np.float64).max,np.finfo(np.float64).max,np.finfo(np.float64).max,
                           np.finfo(np.float64).max,np.finfo(np.float64).max])
@@ -148,7 +148,7 @@ class turb_model_parameters(gym.Env):
         self.observation_space = spaces.Box(-high1, high1, dtype=np.float64)
         
         # penalty for divergence
-        self.high_penalty = 20
+        self.high_penalty = 10
         
         self.seed()
             
@@ -207,7 +207,7 @@ class turb_model_parameters(gym.Env):
 #        )
         
         if self.states_type == 1:
-            self.state = np.array([self.a1[0]]) 
+            self.state = np.array([self.vx]) 
         elif self.states_type == 2:
             None
                     
@@ -319,12 +319,23 @@ class turb_model_parameters(gym.Env):
             cf_vtk = -2.0*wss_back_lw_points[:,0]/(self.vx**2)
             x_vtk = back_lw_points[:,0]/self.h
             
+            x_slicing = self.x_expt >= 1
+            self.x_expt = self.x_expt[x_slicing]
+            self.cf_expt = self.cf_expt[x_slicing]
+            
             cf_probe_expt = np.interp(self.x_expt,x_vtk,cf_vtk)
             
-            reward = -np.linalg.norm(self.cf_expt - cf_probe_expt)*1000
-            
+            if self.reward_type == 1:
+                reward = -np.linalg.norm(self.cf_expt - cf_probe_expt)*1
+            elif self.reward_type == 2:
+                ones = np.ones(self.cf_expt.shape[0])
+                relative_error_trial = self.cf_expt/cf_probe_expt
+                relative_error_trial = (relative_error_trial - ones)**2
+                relative_error_trial[relative_error_trial>1.0] = 1.0
+                reward = -np.sum(relative_error_trial)
+                
         if self.states_type == 1:
-            self.state = np.array([self.a1[0]]) 
+            self.state = np.array([self.vx]) 
         elif self.states_type == 2:
             None
                 
@@ -370,24 +381,26 @@ if __name__ == '__main__':
     env_config['res_p_tol'] =  5.0e-2
     env_config['res_k_tol'] =  1.0e-3
     env_config['res_eps_tol'] =  1.0e-3
-    env_config['reward_type'] = 1 # 1: terminal, 2: at each time step
+    env_config['reward_type'] = 2 # 1: terminal, 2: at each time step
     env_config['states_type'] = 1 # 1: single state, 2: k states history
     dp = turb_model_parameters(env_config)   
     
     done = False
 
-    actions_a1 = [0.31]
+    actions_a1 = [0.938,0.293]
 
     k = 0    
     start = time.time()
     state_0 = dp.reset()
     reward = 0
     print(k, ' ', state_0, ' ', reward, ' ', done)
-    while not done:
-        action = actions_a1
-        state, reward, done, dict_empty = dp.step(action)
-#        if k < 5:
-        k = k + 1
-        print(k, ' ', state, ' ', reward, ' ', done)
-    
-    print('CPU Time = ', time.time() - start)
+    for i in range(1):
+        while not done:
+            state_0 = dp.reset()
+            action = [actions_a1[i]]
+            state, reward, done, dict_empty = dp.step(action)
+            k = k + 1
+            print(k, ' ', state, ' ', reward, ' ', done)
+        
+        print('CPU Time = ', time.time() - start)
+        done = False

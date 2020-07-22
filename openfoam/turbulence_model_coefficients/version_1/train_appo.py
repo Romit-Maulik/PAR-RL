@@ -29,7 +29,7 @@ from ray.tune.registry import register_env
 from ray.tune.logger import pretty_print
 from time import time
 
-from dynamic_parameters import dynamic_parameters
+from turb_model_parameters import turb_model_parameters
 
 import matplotlib.pyplot as plt
 
@@ -43,7 +43,7 @@ tf = try_import_tf()
 Custom environment
 '''
 
-register_env("myenv", lambda config: dynamic_parameters(config))
+register_env("myenv", lambda config: turb_model_parameters(config))
 
 
 if __name__ == "__main__":
@@ -76,7 +76,7 @@ if __name__ == "__main__":
 #    config["horizon"] = 4000
 #    config["sgd_minibatch_size"] = 10  # Total SGD batch size across all devices for SGD. This defines the minibatch size of each SGD epoch
 #    config["sample_batch_size"] = 20
-    config["train_batch_size"] = 200
+    config["train_batch_size"] = 20
     config["min_iter_time_s"] = 1200
     config["learner_queue_timeout"] = 30000 # default is 300, needs to be increased for slow environments
     config["collect_metrics_timeout"] = 180
@@ -88,22 +88,22 @@ if __name__ == "__main__":
 #    config["model"]["use_lstm"] = True
     
     # Environmental parameters
-    env_params = {}
-    env_params['update_frequency'] = 100 # update frequency for relaxation factors
-    env_params['write_interval'] = 10 # write interval for states to be computed
-    env_params['max_steps'] = 5000 # maximum number of time steps
-    env_params['pid'] = os.getpid()
-    env_params['single_velocity'] = False #use random vellocity if False
+     env_params = {}
+    env_params['write_interval'] = 500 # write interval for states to be computed 
+    env_params['end_time'] = 2000 # maximum number of time steps
+    env_params['a1'] = [0.31]
+    env_params['vx'] = 44.2
+    env_params['h'] = 0.0127
     env_params['test'] = False
-    env_params['vx_low'] = 35.0
-    env_params['vx_high'] = 65.0
-    env_params['res_ux_tol'] =  1.0e-3
-    env_params['res_uy_tol'] =  1.0e-3
+    env_params['a1_low'] = 0.25
+    env_params['a1_high'] = 0.5
+    env_params['res_ux_tol'] =  5.0e-4
+    env_params['res_uy_tol'] =  5.0e-4
     env_params['res_p_tol'] =  5.0e-2
     env_params['res_k_tol'] =  1.0e-3
     env_params['res_eps_tol'] =  1.0e-3
-    env_params['reward_type'] = 2 # 1: terminal, 2: at each time step
-    env_params['states_type'] = 1 # 1: single state, 2: k states history
+    env_params['reward_type'] = 2 # 1: L2 norm, 2: normalized square
+    env_params['states_type'] = 1 # 1: single state, 
     config["env_config"] = env_params
 
     # Trainer
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     with open(file_results,'wb',0) as f:
 #        for i in range(ncount):
         i = 0
-        while result['episodes_total'] <= 2000:
+        while result['episodes_total'] <= 1000:
             # Perform one iteration of training the policy with APPO
             o_string = 'Performing iteration: '+str(i)+'\n'
             o_string = o_string.encode('utf-8')

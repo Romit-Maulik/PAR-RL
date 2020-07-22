@@ -100,15 +100,15 @@ if __name__ == "__main__":
     env_params['vx'] = 44.2
     env_params['h'] = 0.0127
     env_params['test'] = False
-    env_params['a1_low'] = 0.2
-    env_params['a1_high'] = 2.0
+    env_params['a1_low'] = 0.25
+    env_params['a1_high'] = 0.5
     env_params['res_ux_tol'] =  5.0e-4
     env_params['res_uy_tol'] =  5.0e-4
     env_params['res_p_tol'] =  5.0e-2
     env_params['res_k_tol'] =  1.0e-3
     env_params['res_eps_tol'] =  1.0e-3
-    env_params['reward_type'] = 1 # 1: terminal, 2: at each time step
-    env_params['states_type'] = 1 # 1: single state, 2: k states history
+    env_params['reward_type'] = 2 # 1: L2 norm, 2: normalized square
+    env_params['states_type'] = 1 # 1: single state, 
     config["env_config"] = env_params
 
     # Trainer
