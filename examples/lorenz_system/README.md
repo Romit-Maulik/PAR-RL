@@ -2,7 +2,7 @@
 
 - **Results:**
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
-![](misc/mean_reward.png)
+![0.5](misc/mean_reward.png)
 
 - **Research Articles:**  
 
