@@ -5,7 +5,7 @@
 <p align="center">
 	<img src="misc/mean_reward.png" width="512">
 </p>
-	- The trained agent is able to successfully mantain the chaos in the Lorenz zystem. In the below Figure, the black line presents the uncontrolled trajectory and the blue line is for the controlled trajectory of the Lorenz system.    
+	- he trained agent is able to successfully mantain the chaos in the Lorenz zystem. In the below Figure, the black line presents the uncontrolled trajectory and the blue line is for the controlled trajectory of the Lorenz system.       
 <p align="center">
 	<img src="misc/results_summary.png" width="768">
 </p>
