@@ -1,8 +1,6 @@
 # Lorenz system
 - **Problem formulation**
 
-- **Running the code**
-
 - **Results:**
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
 	<p align="center">
@@ -13,6 +11,10 @@
 	<p align="center">
 		<img src="misc/results_summary.png" width="768">
 	</p>
+
+- **Directory layout**
+
+- **Running the code**
 
 - **Research Articles:**  
 
