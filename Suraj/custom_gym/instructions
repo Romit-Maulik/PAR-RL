@@ -1,4 +1,0 @@
-Instructions:
-1. Install environemnt ==> pip install -e . (in this directory) 
-2. Install gmsh ==> sudo apt install gmsh
-3. Run test.py ==> this will generate the mesh and the parameters of mesh can be changed in generate_mesh.py file (in mesh folder),  

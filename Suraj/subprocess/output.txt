@@ -1,5 +1,0 @@
-total 12
-drwxr-xr-x 2 suraj suraj 4096 May 11 18:59 .
-drwxr-xr-x 4 suraj suraj 4096 May 11 17:40 ..
--rw-r--r-- 1 suraj suraj    0 May 11 19:00 output.txt
--rw-r--r-- 1 suraj suraj  474 May 11 19:00 sp_demo.py
