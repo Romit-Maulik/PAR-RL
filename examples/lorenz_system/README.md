@@ -1,7 +1,6 @@
 # Lorenz system
 - **Problem formulation**
-	<img src="https://render.githubusercontent.com/render/math?math=s_k=x,y,z,>
-	![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+	![](https://latex.codecogs.com/gif.latex?s_k%3Dx%2Cy%2Cz)
 	
 - **Results:**
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
