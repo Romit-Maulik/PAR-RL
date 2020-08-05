@@ -1,5 +1,6 @@
 # Lorenz system
-- **Problem formulation**
+**Problem formulation**
+
 The MDP problem for this test case is formulated as below
 	- The state of the system consists of the coordinates of the Lorenz sysytem and their first order derivative.   
 	<p align="center">
@@ -15,8 +16,9 @@ The MDP problem for this test case is formulated as below
 	<p align="center">
 		<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20%5Cbegin%7Balign*%7D%20r_t%20%26%3D%20%5Cbegin%7Bcases%7D%2010%2C%20%26%5Cquad%20V%28t%29%20%3E%20V_0%2C%5C%5C%20-10.%20%26%5Cquad%20V%28t%29%20%5Cle%20V_0%2C%20%5Cend%7Bcases%7D%20%5C%5C%20r_%7Bterminal%7D%20%26%3D%20%5Cbegin%7Bcases%7D%20-100%2C%20%26%5Cquad%20%5Cbar%7Br_t%7D%20%3C%20-2%2C%5C%5C%200%2C%20%26%5Cquad%20%5Cbar%7Br_t%7D%20%3E%20-2.%20%5Cend%7Bcases%7D%20%5Cend%7Balign*%7D">
 	</p>
-	
-- **Results:**
+**Results:**
+The agent is trained for 50 episodes and each episode is divided into 4000 time steps.
+
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
 	<p align="center">
 		<img src="misc/mean_reward.png" width="512">
