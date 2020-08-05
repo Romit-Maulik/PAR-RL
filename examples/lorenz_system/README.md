@@ -19,21 +19,21 @@ The MDP problem for this test case is formulated as below
 **Results:**
 The agent is trained for 50 episodes and each episode is divided into 4000 time steps.
 
-	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
+- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
 	<p align="center">
 		<img src="misc/mean_reward.png" width="512">
 	</p>
 	
-	- The trained agent is able to successfully mantain the chaos in the Lorenz zystem. In the below Figure, the black line presents the uncontrolled trajectory and the blue line is for the controlled trajectory of the Lorenz system.       
+- The trained agent is able to successfully mantain the chaos in the Lorenz zystem. In the below Figure, the black line presents the uncontrolled trajectory and the blue line is for the controlled trajectory of the Lorenz system.       
 	<p align="center">
 		<img src="misc/results_summary.png" width="768">
 	</p>
 
-- **Directory layout**
+**Directory layout**
 
-- **Running the code**
+**Running the code**
 
-- **Research Articles:**  
+**Research Articles:**  
 
 	[Restoring chaos using deep reinforcement learning](https://aip.scitation.org/doi/abs/10.1063/5.0002047?journalCode=cha)
 
