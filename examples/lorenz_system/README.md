@@ -1,5 +1,5 @@
 # Lorenz system
-**<u>Problem formulation<u>**
+**<ins>Problem formulation<ins>**
 
 The MDP problem for this test case is formulated as below
 - The state of the system consists of the coordinates of the Lorenz sysytem and their first order derivative.   
