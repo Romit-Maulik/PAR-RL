@@ -10,6 +10,8 @@ The MDP problem for the RL is formulated as below
 	<p align="center">
 		<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20a_k%3D%5CDelta%20%5Csigma%2C%20%5CDelta%20%5Crho%2C%20%5CDelta%20%5Cbeta">
 	</p>
+	
+	- The stepwise reward is assigned based on the magnitude of the velocity ![](https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20V%3D%5Csqrt%7B%28x%5E2&plus;y%5E2&plus;z%5E2%29%7D)
 - **Results:**
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
 	<p align="center">
