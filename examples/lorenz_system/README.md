@@ -5,6 +5,7 @@ The MDP problem for the RL is formulated as below
 	<p align="center">
 		<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20s_k%3Dx%2Cy%2Cz%2C%5Cdot%7Bx%7D%2C%5Cdot%7By%7D%2C%5Cdot%7Bz%7D">
 	</p>
+	
 	- The agent chooses the perturbation in the parameters of the Lorenz system as action to keep the system chaotic.
 	<p align="center">
 		<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20a_k%3D%5CDelta%20%5Csigma%2C%20%5CDelta%20%5Crho%2C%20%5CDelta%20%5Cbeta">
