@@ -1,7 +1,7 @@
 # Lorenz system
 - **Problem formulation**
 	
-	![](https://latex.codecogs.com/gif.latex?s_k%3Dx%2Cy%2Cz)
+	![](https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20s_k%3Dx%2Cy%2Cz%2C%5Cdot%7Bx%7D%2C%5Cdot%7By%7D%2C%5Cdot%7Bz%7D)
 	
 - **Results:**
 	- The progress of training for different number of workers is shown in the Figure below. The plot shows the reward averaged over last 5 episodes (can be defined with `config[metrics_smoothing_episodes]`).  
