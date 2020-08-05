@@ -1,6 +1,7 @@
 # Lorenz system
 - **Problem formulation**
-	
+The MDP problem for the RL is formulated as below
+	- The state of the system consists of the coordinates of the Lorenz sysytem and their first order derivative.   
 	![](https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20s_k%3Dx%2Cy%2Cz%2C%5Cdot%7Bx%7D%2C%5Cdot%7By%7D%2C%5Cdot%7Bz%7D)
 	
 - **Results:**
