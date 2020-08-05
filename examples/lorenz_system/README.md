@@ -1,5 +1,6 @@
 # Lorenz system
 - **Problem formulation**
+	
 	![](https://latex.codecogs.com/gif.latex?s_k%3Dx%2Cy%2Cz)
 	
 - **Results:**
