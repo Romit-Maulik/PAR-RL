@@ -1,0 +1,18 @@
+/bin/sh: /soft/datascience/conda/miniconda3/4.5.12/lib/libreadline.so.7: no version information available (required by /bin/sh)
+rm: cannot remove 'baseCase/log.*': No such file or directory
+rm: cannot remove 'baseCase/*.txt': No such file or directory
+sh)
+/bin/sh: /soft/datascience/conda/miniconda3/4.5.12/lib/libreadline.so.7: no version information available (required by /bin/sh)
+rm: /bin/sh: /soft/datascience/conda/miniconda3/4.5.12/lib/libreadline.so.7: no version information available (required by /bin/sh)
+cannot remove 'baseCase/VTK': No such file or directory
+rm: cannot remove 'baseCase/VTK': No such file or directory
+rm: cannot remove 'baseCase/VTK': No such file or directory
+rm: cannot remove 'baseCase/VTK': No such file or directory
+rm: cannot remove 'baseCase/VTK': No such file or directory
+rm: cannot remove 'baseCase/VTK': No such file or directoryrm: 
+cannot remove 'baseCase/VTK': No such file or directory
+/bin/sh: /soft/datascience/conda/miniconda3/4.5.12/lib/libreadline.so.7: no version information available (required by /bin/sh)
+rm: cannot remove 'baseCase/0.*': No such file or directory
+rm: cannot remove 'baseCase/[1-9]*': No such file or directory
+/bin/sh: /soft/datascience/conda/miniconda3/4.5.12/lib/libreadline.so.7: no version information available (required by /bin/sh)
+rm: cannot remove 'baseCase/VTK': No such file or directory
