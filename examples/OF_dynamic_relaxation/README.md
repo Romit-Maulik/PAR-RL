@@ -27,16 +27,16 @@ The MDP problem for this test case is formulated as below
 
 - We implemet proxymal policy optimization (PPO) and asynchronous proxymal policy optimization (APPO) for this test case. The PPO agent is trained for 2000 episodes and the APPO agent is trained for 3500 eisodes for different number of workers. 
 <p align="center">
-	<img src="misc/mean_reward_of.png" width="512">
+	<img src="misc/mean_reward_of.png" width="640">
 </p>
 
 - Once the agent is trained, it is tested for three different values of inlet velocities, V = 25.0, 50.0, 75.0 m/s. The boxplot and errorbar plot for the PPO algorithm is shown below.
 <p align="center">
-	<img src="misc/subplots_of_ppo.png" width="512">
+	<img src="misc/subplots_of_ppo.png" width="640">
 </p>
 The boxplot and errorbar plot for the APPO algorithm is shown below.
 <p align="center">
-	<img src="misc/subplots_of_appo.png" width="512">
+	<img src="misc/subplots_of_appo.png" width="640">
 </p>
 
 ## Running the code
