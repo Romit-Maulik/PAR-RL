@@ -33,6 +33,34 @@ The MDP problem for this test case is formulated as below
 
 ## Running OpenFoam with RLLib
 
+- The OpenFOAM case is setup using a set of files that contains the information about mesh, boundary conditions, solver, turbulent model properties, etc. The basic directory structure of OpenFOAM case is described below
+```
+.
+baseCase
+├── system
+│   ├── controlDict
+│   ├── fvSchemes
+│   ├── fvSolution
+│   └── blockMeshDict
+├── constant
+│   ├── polyMesh
+│   ├── transportProperties
+│   └── turbulenceProperties
+└── time directories
+```
+
+- The `blockMeshDict` file in the `system` folder contains the mesh details. At each time step new airfoil shape needs to be generated and hence the `blockMeshDict` file needs to be updated for each time step. We use `blockMeshDictGenerator.xlsx` file to generate `blockMeshDict` file by specifying the coordinates of an airfoil in its input sheet (The details of blockMeshDictGenerator.xlsx sheet can be found [here](https://www.phanquocthien.org/mesh-geometry/blockmesh/airfoil)). We use data frame in pandas to copy data from exel sheet to the `blockMeshDict`. Once the `blockMeshDict` file is copied in the `system` folder, meshing can be done with subprocess as follow 
+```
+mesh = 'blockMesh'
+now = strftime("%m.%d.%Y-%H.%M.%S", gmtime())
+meshLogFile= f'log.{mesh}-{now}'
+        
+# to run on theta       
+proc = subprocess.Popen([f'$FOAM_APPBIN/{mesh} {solveroptions} {self.casename} >> {self.casename}/{meshLogFile}'],
+                        shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)        
+proc.wait()
+(stdout, stderr) = proc.communicate()
+```
 
 ## Running the code
 The job can be submitted on Theta either in the `debug` or `default` mode. Job submission scripts are provided for both `debug` or `default` mode. The user has to specify the project name and RLLib environment in job submission scripts before submitting it. To submit the job in `debug` mode on Theta execute 
