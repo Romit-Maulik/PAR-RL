@@ -32,7 +32,7 @@ The agent is trained for 50 episodes and each episode is divided into 4000 time 
 
 **<ins>Running the code<ins>**
 	
-The training can be started by running `train_appo.py` on local machine. The number of workers can be set using the `num_workers` parameter in the config dictionary. The job can be submitted on Theta either in the `debug` or `default` mode. Job submission script is provided for both `debug` or `default` mode. To submit the job in `debug` mode on Theta execute 
+The training can be started by running `train_appo.py` on local machine. The number of workers can be set using the `num_workers` parameter in the config dictionary. The job can be submitted on Theta either in the `debug` or `default` mode. Job submission scripts are provided for both `debug` or `default` mode. To submit the job in `debug` mode on Theta execute 
 ```
 qsub ray_python_debug.sh
 ```
