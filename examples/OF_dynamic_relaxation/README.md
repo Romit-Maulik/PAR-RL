@@ -56,6 +56,9 @@ baseCase
 │   └── turbulenceProperties
 └── time directories
 ```
+
+- For this test case, each CFD simulation is one environment. To collect data from multiple environments for training the RL agent, we need to create multiple instance of the baseCase and run each CFD simulation on different processor. The RLLib handles distribution of running CFD simulation by itslef. We use [pyFOAM] (https://openfoamwiki.net/index.php/Contrib/PyFoam) to create multiple instances if the base CFD case.
+
 ## Running the code
 
 ## Relevant research articles
