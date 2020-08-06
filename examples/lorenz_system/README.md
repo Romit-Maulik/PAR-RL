@@ -31,7 +31,8 @@ The agent is trained for 50 episodes and each episode is divided into 4000 time 
 	</p>
 
 **<ins>Directory layout<ins>**
-	.
+    
+    .
     ├── start_ray.py    
     ├── train_appo.py   
     ├── lorenz.py  
