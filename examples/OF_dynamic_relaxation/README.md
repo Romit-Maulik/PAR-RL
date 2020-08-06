@@ -57,7 +57,19 @@ baseCase
 └── time directories
 ```
 
-- For this test case, each CFD simulation is one environment. To collect data from multiple environments for training the RL agent, we need to create multiple instance of the baseCase and run each CFD simulation on different processor. The RLLib handles distribution of running CFD simulation by itslef. We use the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) to create multiple instances if the base CFD case.
+- For this test case, each CFD simulation is one environment. To collect data from multiple environments for training the RL agent, we need to create multiple instance of the baseCase and run each CFD simulation on different processor. We use the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) library to create multiple instances of the base CFD case. Each case is identified by the `worker_index` which is passed to the environment constructor. 
+
+```
+self.worker_index = env_config.worker_index
+
+self.casename = 'baseCase_'+str(self.worker_index)
+orig = SolutionDirectory(origcase,archive=None,paraviewLink=False)
+case=orig.cloneCase(self.casename )
+
+```
+
+- The RLLib handles distribution of running CFD simulation by itslef.
+
 
 ## Running the code
 
