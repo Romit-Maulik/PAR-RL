@@ -7,7 +7,7 @@ Scaling RLLib for generic simulation environments on Theta. Built on [setup](htt
 3. Ray 0.7.6 - Install with `pip install ray[rllib]==0.7.6`
 4. Numpy 1.16.1
 
-## How to setup your own RLLib environment
+## How to setup your own RLLib environment on Theta
 
 The user can setup a seprate environment for RLLib and all the requirements as follows:
 
