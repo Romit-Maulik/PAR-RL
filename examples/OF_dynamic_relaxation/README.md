@@ -43,7 +43,6 @@ The boxplot and errorbar plot for the APPO algorithm is shown below.
 
 - The OpenFOAM case is setup using a set of files that contains the information about mesh, boundary conditions, solver, turbulent model properties, etc. The basic directory structure of OpenFOAM case is described below
 
-$ tree
 .
 ├── dir1
 │   ├── file11.ext
