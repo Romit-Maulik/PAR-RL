@@ -119,3 +119,5 @@ qsub ray_python_debug.sh
 ```
 
 ## Relevant research articles
+[A fuzzy logic algorithm for acceleration of convergence in solving turbulent flow and heat transfer problems](https://www.tandfonline.com/doi/full/10.1080/10407790490487677?casa_token=i_8q5xQgvW8AAAAA%3Ab66y5HtPgflD1Du8xN1jaREaB6EaBC7xMsonk3HJO_qtxGv0csyZGU5nkUXfJlEnykMh9g5WJzMks9w)
+
