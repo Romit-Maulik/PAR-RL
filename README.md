@@ -7,6 +7,15 @@ Scaling RLLib for generic simulation environments on Theta. Built on [setup](htt
 3. Ray 0.7.6 - Install with `pip install ray[rllib]==0.7.6`
 4. Numpy 1.16.1
 
+## How to create your own conda environment
+
+The user can setup a seprate environment for RLLib and all the requirements as follows:
+
+1. In the terminal client enter the following where *yourenvname* is the name you want to call your environment, and replace *x.x* with the Python version you wish to use. We have tested with 3.6.8 version of the Python.
+```
+conda create -n yourenvname python=x.x 
+```
+
 # How to run
 
 The idea is as follows:
