@@ -28,6 +28,6 @@ module load intelpython36
 export PATH=/soft/libraries/mpi/mvapich2/gcc/bin/:$PATH
 
 #Loading your RLLib environment
-source activate <your_environment_name>
+source activate <yourenvname>
 
 aprun -n $COBALT_JOBSIZE -N 1 --cc none python start_ray.py
