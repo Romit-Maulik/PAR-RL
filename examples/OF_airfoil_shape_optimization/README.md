@@ -1,7 +1,7 @@
 # Shape optimization
 In this test case, we use single step PPO algorithm to optimize aerodynamic shape. The framework is developed for shape optimization of NACA 0012 airfoil with an objective to maximize lift to drag ratio. 
 
-## To do: Validate CFD model with experimentall data 
+## To do: Validate CFD model with experimental data 
 
 ## Problem formulation
 The MDP problem for this test case is formulated as below
