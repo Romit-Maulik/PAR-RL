@@ -2,8 +2,8 @@
 #COBALT -t 60
 #COBALT -n 4
 #COBALT -q debug-cache-quad
-#COBALT -A datascience
-#COBALT -M spawar@anl.gov
+#COBALT -A <project name>
+#COBALT -M <email address>
 #COBALT --attrs enable_ssh=1:ssds=required:ssd_size=128
 
 echo "Running Cobalt Job $COBALT_JOBID."
@@ -38,6 +38,8 @@ ulimit -c 0
 module load intelpython36
 #export PATH=/soft/datascience/anaconda3/bin:$PATH
 export PATH=/soft/libraries/mpi/mvapich2/gcc/bin/:$PATH
-source activate rllib_env1_fenics
+
+#Loading your RLLib environment
+source activate <yourenvname>
 
 aprun -n $COBALT_JOBSIZE -N 1 --cc none python start_ray.py
