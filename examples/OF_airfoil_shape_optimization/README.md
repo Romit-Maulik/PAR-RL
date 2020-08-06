@@ -55,8 +55,7 @@ baseCase
 mesh = 'blockMesh'
 now = strftime("%m.%d.%Y-%H.%M.%S", gmtime())
 meshLogFile= f'log.{mesh}-{now}'
-        
-# to run on theta       
+     
 proc = subprocess.Popen([f'$FOAM_APPBIN/{mesh} {solveroptions} {self.casename} >> {self.casename}/{meshLogFile}'],
                         shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)        
 proc.wait()
