@@ -21,7 +21,7 @@ The MDP problem for this test case is formulated as below
 ## Results
 - The agent is trained using the PPO agorithm. The Figure below shows that the maximum, minimum, and mean reward has converged to a single distribution. The right plot shows that the skin friction coefficient for CFD simulation with closure coefficients selected by an RL agent is similar to the base turbulent model.
 	<p align="center">
-		<img src="misc/results.png" width="640">
+		<img src="misc/results.png" width="768">
 	</p>
 
 - There Figure below shows that there is a good agreement between experimental data for velocity and CFD simulation with learned closure coefficients.
