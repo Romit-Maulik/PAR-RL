@@ -8,7 +8,7 @@ In this test case, we try to check the feasibility of RL to dynamically update u
 ## Problem formulation
 
 The MDP problem for this test case is formulated as below
-- The state of the system is the sume of average value of the square of the velocity at the inlet boundary and in the internal mesh.   
+- The state of the system is the sum of average value of the square of the velocity at the inlet boundary and in the internal mesh.   
 	<p align="center">
 		<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20s_k%3D%5Cfrac%7B1%7D%7BN_b%7D%5Csum%20U_b%5E2%20&plus;%20%5Cfrac%7B1%7D%7BN_m%7D%5Csum%20U_m%5E2">
 	</p>
