@@ -36,3 +36,7 @@ qsub ray_python_debug.sh
 ```
 
 ## Relevant research articles
+[On the Use of Optimization Techniques for Turbulence Model Calibration](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20190025296.pdf)
+[A data-driven adaptive Reynolds-averaged Navier–Stokes k–ω model for turbulent flow](https://www.sciencedirect.com/science/article/pii/S0021999117303789)
+[Optimization of Parameter Values in the Turbulence Model Aided by Data Assimilation](https://arc.aiaa.org/doi/abs/10.2514/1.J054109?journalCode=aiaaj)
+[Efficient hyperparameter optimization through model-based reinforcement learning](https://www.sciencedirect.com/science/article/pii/S0925231220310523)
