@@ -1,4 +1,5 @@
 # Lorenz system
+In this test case, the chaos is mantained in the Lorenz system by controlling its parameters based on the magnitude of the velocity. 
 
 ## Problem formulation
 
