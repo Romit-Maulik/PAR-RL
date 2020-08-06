@@ -62,14 +62,23 @@ baseCase
 ```
 self.worker_index = env_config.worker_index
 
+# make a copy of the baseCase using pyFOAM
 self.casename = 'baseCase_'+str(self.worker_index)
 orig = SolutionDirectory(origcase,archive=None,paraviewLink=False)
 case=orig.cloneCase(self.casename )
 
 ```
 
-- The RLLib handles distribution of running CFD simulation by itslef.
+- We run the OpenFOAM CFD simulation using the subprocess command. The RLLib handles distribution of running CFD simulation on different processors by itslef.
+```
+now = strftime("%m.%d.%Y-%H.%M.%S", gmtime())
+solverLogFile= f'log.{solver}-{now}'
 
+proc = subprocess.Popen([f'$FOAM_APPBIN/{solver} {solveroptions} {self.casename} >> {self.casename}/{solverLogFile}'],
+                        shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+proc.wait()
+(stdout, stderr) = proc.communicate()
+```
 
 ## Running the code
 
