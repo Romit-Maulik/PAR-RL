@@ -69,6 +69,19 @@ case=orig.cloneCase(self.casename )
 
 ```
 
+- The parameters in different dictrionaries in OpenFOAM case can be easily changed with the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) library as follow. 
+```
+relax_p, relax_u = action 
+        
+relaxP = ParsedParameterFile(path.join(self.casename,"system", "fvSolution"))
+relaxP["relaxationFactors"]["fields"]["p"] = relax_p
+relaxP.writeFile()
+
+relaxU = ParsedParameterFile(path.join(self.casename,"system", "fvSolution"))
+relaxU["relaxationFactors"]["equations"]["U"] = relax_u
+relaxU.writeFile()
+```
+
 - We run the OpenFOAM CFD simulation using the subprocess command. The RLLib handles distribution of running CFD simulation on different processors by itslef.
 ```
 now = strftime("%m.%d.%Y-%H.%M.%S", gmtime())
