@@ -39,6 +39,7 @@ The agent is trained for 50 episodes and each episode is divided into 4000 time 
     └── README.md
 
 **<ins>Running the code<ins>**
+The training can be started by running `train_appo.py` on local machine. 
 
 **<ins>Research Articles<ins>**  
 
