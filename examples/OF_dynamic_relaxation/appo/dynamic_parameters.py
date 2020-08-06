@@ -274,7 +274,8 @@ class dynamic_parameters(gym.Env):
         Um = mesh.cell_arrays['U']
         Um = np.array(Um)
         Um = (np.sum(np.square(Um),axis=1))
-        U2 = np.average(np.square(Ub))*3 + np.average(Um)
+        Ub = (np.sum(np.square(Ub),axis=1))
+        U2 = np.average(Ub) + np.average(Um)
         
         if self.states_type == 1:
             self.state = np.array([U2]) 
@@ -441,7 +442,8 @@ class dynamic_parameters(gym.Env):
             else:
                 if self.states_type == 1:
                     Um = (np.sum(np.square(Um),axis=1))
-                    U2 = np.average(np.square(Ub))*3 + np.average(Um)
+                    Ub = (np.sum(np.square(Ub),axis=1))
+                    U2 = np.average(Ub) + np.average(Um)
                     self.state = np.array([U2])
                 elif self.states_type == 2:
                     if done != True:
