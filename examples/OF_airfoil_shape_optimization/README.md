@@ -74,5 +74,6 @@ qsub ray_python_debug.sh
 
 ## Relevant research articles
 [Direct shape optimization through deep reinforcement learning](https://arxiv.org/abs/1908.09885)
+
 [Optimization and passive flow control using single-step deep reinforcement learning](https://arxiv.org/abs/2006.02979)
 
