@@ -23,7 +23,7 @@ The MDP problem for this test case is formulated as below
 ## Results
 - The agent is trained using the PPO agorithm for 3000 episodes. The histroy of instantaneous, moving average maximum, and moving average mean reward is shown in the below Figure.
 	<p align="center">
-		<img src="misc/reward.png" width="1024">
+		<img src="misc/reward.png" width="640">
 	</p>
 
 - There Figure below shows the shape of original NACA 0012 airfoil and optimizes airfoil along with control points for each geometry.
