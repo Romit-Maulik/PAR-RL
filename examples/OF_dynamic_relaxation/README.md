@@ -58,7 +58,6 @@ baseCase
 ```
 
 - For this test case, each CFD simulation is one environment. To collect data from multiple environments for training the RL agent, we need to create multiple instance of the baseCase and run each CFD simulation on different processor. We use the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) library to create multiple instances of the base CFD case. Each case is identified by the `worker_index` which is passed to the environment constructor. 
-
 ```
 self.worker_index = env_config.worker_index
 
@@ -69,7 +68,7 @@ case=orig.cloneCase(self.casename )
 
 ```
 
-- The parameters in different dictrionaries in OpenFOAM case can be easily changed with the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) library as follow. 
+- The parameters in different dictrionaries in OpenFOAM case can be easily changed with the [pyFOAM](https://openfoamwiki.net/index.php/Contrib/PyFoam) library as follow
 ```
 relax_p, relax_u = action 
         
@@ -91,6 +90,26 @@ proc = subprocess.Popen([f'$FOAM_APPBIN/{solver} {solveroptions} {self.casename}
                         shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 proc.wait()
 (stdout, stderr) = proc.communicate()
+```
+
+- The residuals from the OpenFOAM log file is extracted into a text file using the bash script `extract_residual.sh` as follow
+```
+subprocess.run(f'./extract_residual.sh {self.casename}/{solverLogFile} {self.casename} {self.worker_index}',
+               shell=True,stderr=subprocess.STDOUT)
+```
+
+- The velocity field is extracted using the `foamToVTK` utility and then using [pyVista](https://docs.pyvista.org/) library to read velocity from the genearted VTK files. 
+```
+proc = subprocess.Popen([f'$FOAM_APPBIN/foamToVTK {solveroptions} {self.casename} >> {self.casename}/logr.vtkoutput'],
+                         shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+proc.wait()
+(stdout, stderr) = proc.communicate()
+
+inlet = vtki.PolyData(f'./{self.casename}/VTK/inlet/inlet_{itercount}.vtk')
+Ub = inlet.cell_arrays['U']
+
+mesh = vtki.UnstructuredGrid(f'./{self.casename}/VTK/{self.casename}_{itercount}.vtk')
+Um = mesh.cell_arrays['U']
 ```
 
 ## Running the code
