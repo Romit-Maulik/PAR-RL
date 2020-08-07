@@ -100,6 +100,7 @@ subprocess.run(f'./extract_residual.sh {self.casename}/{solverLogFile} {self.cas
 
 - The velocity field is extracted using the `foamToVTK` utility and then using [pyVista](https://docs.pyvista.org/) library to read velocity from the genearted VTK files. 
 ```
+import pyvista as vtki
 proc = subprocess.Popen([f'$FOAM_APPBIN/foamToVTK {solveroptions} {self.casename} >> {self.casename}/logr.vtkoutput'],
                          shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 proc.wait()
