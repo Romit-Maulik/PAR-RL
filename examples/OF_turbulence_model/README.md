@@ -26,7 +26,7 @@ The MDP problem for this test case is formulated as below
 
 - There Figure below shows pressure coefficient and skin-friction coefficient on the lower wall upstream of the step computed with k-w SST turbulent model using base and RL-tuned closure coefficients..
 	<p align="center">
-		<img src="misc/cp_cf.png" width="640">
+		<img src="misc/cp_cf.png" width="1024">
 	</p>
 
 - There Figure below shows that there is a good agreement between experimental data for velocity and CFD simulation with learned closure coefficients.
