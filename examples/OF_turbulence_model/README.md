@@ -21,13 +21,19 @@ The MDP problem for this test case is formulated as below
 ## Results
 - The agent is trained using the PPO agorithm. The Figure below shows that the maximum, minimum, and mean reward has converged to a single distribution. The right plot shows that the skin friction coefficient for CFD simulation with closure coefficients selected by an RL agent is similar to the base turbulent model.
 	<p align="center">
-		<img src="misc/results_kw.png" width="1024">
+		<img src="misc/results_kw.png" width="512">
+	</p>
+
+- There Figure below shows pressure coefficient and skin-friction coefficient on the lower wall upstream of the step computed with k-w SST turbulent model using base and RL-tuned closure coefficients..
+	<p align="center">
+		<img src="misc/cp_cf.png" width="640">
 	</p>
 
 - There Figure below shows that there is a good agreement between experimental data for velocity and CFD simulation with learned closure coefficients.
 	<p align="center">
 		<img src="misc/velocity_profile.png" width="640">
 	</p>
+
 
 ## Running the code
 The job can be submitted on Theta either in the `debug` or `default` mode. Job submission scripts are provided for both `debug` or `default` mode. The user has to specify the project name and RLLib environment in job submission scripts before submitting it. To submit the job in `debug` mode on Theta execute 
