@@ -134,19 +134,16 @@ def master():
     head_redis_address = f'{head_ip}:{REDIS_PORT}'
 
     logging.info(f'Head started at: {head_redis_address}')
-
     logging.info(f'Ready to broadcast head_redis_address: {head_redis_address}')
 
     head_redis_address = comm.bcast(head_redis_address, root=0)
 
     logging.info('Broadcast done...')
-
     logging.info('Waiting for workers to start...')
 
     comm.barrier() # waiting for ray_workers to start
 
     logging.info('Workers are all running!')
-
     logging.info('Ready to start driver!')
 
     return head_redis_address
