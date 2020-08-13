@@ -1,7 +1,0 @@
-Breakdown of times in this experiment
-Time to connect: 0.4420132637023926
-Time to register environment: 9.5367431640625e-07
-Time to setup PPO trainer: 1.52024245262146
-Time for total iterations: 514.4645380973816
-Time to save checkpoint: 0.003524303436279297
-Total time to solution: 516.4303193092346
