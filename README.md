@@ -1,10 +1,13 @@
-# RLLib_Theta
+# PAR-RL
 
 <p align="center">
 		<img src="docs/logo_with_title.png" width="512">
 	</p>
   
-Scaling RLLib for generic simulation environments on Theta. Built on [setup](https://github.com/ytopt-team/tuster) initiated by Romain Egele for YTOPT.
+Scaling RLLib for generic simulation environments on Theta at Argonne Leadership Computing Facility.
+
+## Core-team
+[Suraj Pawar](https://surajp92.github.io/) & [Romit Maulik](https://romit-maulik.github.io/)
 
 ## Dependencies
 1. Tensorflow 1.14.0
