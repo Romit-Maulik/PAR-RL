@@ -1,7 +1,7 @@
 # RLLib_Theta
 
 <p align="center">
-		<img src="docs/logo_with_title.png" width="512">
+		<img src="docs/logo_and_title.png" width="512">
 	</p>
   
 Scaling RLLib for generic simulation environments on Theta. Built on [setup](https://github.com/ytopt-team/tuster) initiated by Romain Egele for YTOPT.
