@@ -74,7 +74,7 @@ ray.init(address=args.ray_address)
 ```
 which lets you call the script (in our following MWE this will be `train_ppo.py`) as `python train_ppo.py --ray-address head_redis_address`. An important point here is that this must be called on the head node alone and the RL workers will be automatically distributed (the beauty of Ray/RLLib). 
 
-4. All this business can be packaged quite effectively using `start_ray.py` which uses subprocess to call `train_ppo.py`.
+4. All this business can be packaged quite effectively using `start_ray.py` which uses subprocess to call `train_ppo.py`. For an example see [here](https://github.com/Romit-Maulik/PAR-RL/blob/master/cartpole/start_ray.py).
 
 5. This distributed RL runs without any trouble at all on my laptop for 4 workers and can be called by running `mpirun -np 4 python start_ray.py`
 
