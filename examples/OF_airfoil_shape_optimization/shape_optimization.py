@@ -3,9 +3,7 @@ Created on Tue Jun  2 13:36:55 2020
 
 @author: suraj
 
-Custom environment to update the relaxationfactor for OpenFoam simulation.
-OpenFoam simulation is for backward facing step with velocity inlet as the 
-boundary condition
+Custom environment to optimize the shape of an airfoil using OpenFoam CFD solver
 
 """
 
