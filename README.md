@@ -1,10 +1,13 @@
-# RLLib_Theta
+# PAR-RL
 
 <p align="center">
 		<img src="docs/logo_with_title.png" width="512">
 	</p>
   
-Scaling RLLib for generic simulation environments on Theta. Built on [setup](https://github.com/ytopt-team/tuster) initiated by Romain Egele for YTOPT.
+Scaling RLLib for generic simulation environments on Theta at Argonne Leadership Computing Facility.
+
+## Core-team
+[Suraj Pawar](https://surajp92.github.io/) & [Romit Maulik](https://romit-maulik.github.io/)
 
 ## Dependencies
 1. Tensorflow 1.14.0
@@ -71,7 +74,7 @@ ray.init(address=args.ray_address)
 ```
 which lets you call the script (in our following MWE this will be `train_ppo.py`) as `python train_ppo.py --ray-address head_redis_address`. An important point here is that this must be called on the head node alone and the RL workers will be automatically distributed (the beauty of Ray/RLLib). 
 
-4. All this business can be packaged quite effectively using `start_ray.py` which uses subprocess to call `train_ppo.py`.
+4. All this business can be packaged quite effectively using `start_ray.py` which uses subprocess to call `train_ppo.py`. For an example see [here](https://github.com/Romit-Maulik/PAR-RL/blob/master/cartpole/start_ray.py).
 
 5. This distributed RL runs without any trouble at all on my laptop for 4 workers and can be called by running `mpirun -np 4 python start_ray.py`
 
