@@ -1,0 +1,47 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      nuTilda;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+#include        "../Inputs"
+dimensions      [0 2 -1 0 0 0 0];
+
+// Freestream nuTilda = 3*nuFluid
+// Wall nuTilda = 0
+// turbmodels.larc.nasa.gov/spalart.html (Retrieved August 20, 2020)
+
+internalField   uniform $NUTILDA;
+
+boundaryField
+{
+    farfield
+    {
+        type            freestream;
+        freestreamValue $internalField;
+        value           $internalField;
+    }
+
+    airfoil
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    leftAndRight
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //

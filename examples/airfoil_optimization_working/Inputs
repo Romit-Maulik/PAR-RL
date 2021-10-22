@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1906                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+// Based on : https://github.com/EdgarAMO/airfoil2D
+
+AOA		10;						// AOA
+UINF		52.1004;					// freestream velocity
+CHR		1.00;					// chord
+
+PI		3.14159265359;				
+UX		#calc"cos($AOA * $PI / 180) * $UINF";	// streamwise velocity
+UZ		#calc"sin($AOA * $PI / 180) * $UINF";	// cross-stream velocity
+
+	
+LX		#calc"-sin($AOA * $PI / 180)";
+LZ		#calc" cos($AOA * $PI / 180)";
+DX		#calc" cos($AOA * $PI / 180)";
+DZ		#calc" sin($AOA * $PI / 180)";
+
+//COFR	#calc"-0.75 * $CHR";	
+
+RHOINF		1;
+NU		8.6834E-6;
+RE		#calc"$UINF * $CHR / $NU";		//Reynolds number based on the chord length
+	
+
+// SIMULATION PARAMETERS (Turbulence modeling), 
+//spalart allmaras : requires \nut and \nutilda
+
+NUT		#calc"0.009 * $NU";	//Turbulent Kinetic energy
+NUTILDA		#calc"3* $NU";
+ 
+
+
+// TKE:	1.5 * (U * I) ** 2
+// epsilon:	(Cm ^ 0.75) * (k ^ 1.5) / D
+// omega:	sqrt(k) / ((Cm ^ 0.25) * D)
+// nut:	Cm * (k ^ 2) / epsilon
+// nuT:	nuTilda
+			
+//k			#calc"(3./2.) * pow($U * $I, 2)";
+//epsilon  	#calc"pow(0.09, 0.75) * pow($k, 1.5) / (0.08 * $CHR)";
+//omega	    #calc"sqrt($k) / (pow(0.09, 0.25) * 0.08 * $CHR)";
+//nut   		#calc"0.09 * pow($k, 2) / $epsilon";
+//nuT			$nut;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

@@ -1,0 +1,208 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         15000;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   5000;
+
+purgeWrite      2;
+
+writeFormat     binary;
+
+writePrecision  15;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   8;
+
+runTimeModifiable false;
+
+
+functions
+{
+    fieldMinMax1
+    {
+        type            fieldMinMax;
+        libs            (fieldFunctionObjects);
+        writeToFile     no;
+        log             yes;
+        location        yes;
+        mode            magnitude;
+        fields          (p U);
+    }
+
+    zeroGradient1
+    {
+        type            zeroGradient;
+        libs            (fieldFunctionObjects);
+        fields          (U);
+        result          @@nearWall;
+        log             yes;
+        timeStart       12000;
+        executeControl  writeTime;
+        writeControl    writeTime;
+    }
+
+    wallShearStress1
+    {
+        type            wallShearStress;
+        libs            (fieldFunctionObjects);
+        patches         (airfoil);
+        writePrecision  10;
+        writeToFile     yes;
+        log             yes;
+        timeStart       12000;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    writeTime;
+    }
+
+    yPlus1
+    {
+        type            yPlus;
+        libs            (fieldFunctionObjects);
+        writePrecision  10;
+        writeToFile     yes;
+        log             yes;
+        writeControl    writeTime;
+    }
+
+    pressure1
+    {
+        type            pressure;
+        libs            (fieldFunctionObjects);
+        mode            staticCoeff;
+        UInf            VELOCITY;
+        rhoInf          RHOINF;
+        pInf            0;
+        result          cp;
+        log             yes;
+        timeStart       12000;
+        executeControl  writeTime;
+        writeControl    writeTime;
+    }
+
+    forceCoeffs1
+    {
+        type            forceCoeffs;
+        libs            (forces);
+        patches         (airfoil);
+        rho             rhoInf;
+        rhoInf          RHOINF;
+        CofR            (0 0 0);
+        liftDir         LIFTDIR;
+        dragDir         DRAGDIR;
+        pitchAxis       (0 1 0);
+        magUInf         UINF;
+        lRef            1;
+        Aref            1;
+        writeControl    timeStep;
+        timeInterval    1;
+        log             yes;
+    }
+
+    valueAverage1
+    {
+        type            valueAverage;
+        libs            (fieldFunctionObjects);
+        functionObject  forceCoeffs1;
+        fields          (Cd Cl);
+        resetOnRestart  no;
+        writePrecision  10;
+        writeToFile     yes;
+        log             yes;
+        timeStart       12000;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    writeTime;
+    }
+
+    sample1
+    {
+        type            surfaces;
+        libs            (sampling);
+        interpolationScheme cellPoint;
+        surfaceFormat   vtk;
+        fields
+        (
+            U
+            p
+            UnearWall
+            yPlus
+            cp
+            wallShearStress
+        );
+        surfaces
+        (
+            airfoil
+            {
+                type            patch;
+                patches         (airfoil);
+                interpolate     true;
+            }
+        );
+        writeControl    onEnd;
+        executeControl  onEnd;
+    }
+
+    sets1
+    {
+        type                sets;
+        libs                (sampling);
+        interpolationScheme cellPoint;
+        setFormat           raw;
+        fields
+        (
+            UnearWall
+            yPlus
+            cp
+            wallShearStress
+        );
+        _planes
+        {
+                type        patchEdge;
+                axis        xyz;
+                patches     (airfoil);
+                surfaceType searchablePlane;
+                planeType   pointAndNormal;
+                origin      (0 -0.5 0);
+        }
+        sets
+        (
+            // Intersections of patches with plane
+            planeAA   { ${_planes}  pointAndNormalDict { point  (0 -0.5 0); normal  (0 1 0); } }
+        );
+        writeControl        onEnd;
+        executeControl      onEnd;
+    }
+}
+
+
+// ************************************************************************* //
