@@ -7,7 +7,7 @@
 Scaling RLLib for generic simulation environments on Theta at Argonne Leadership Computing Facility.
 
 ## Core-team
-[Suraj Pawar](https://surajp92.github.io/) & [Romit Maulik](https://romit-maulik.github.io/)
+[Suraj Pawar](https://surajp92.github.io/), [Sahil Bhola](https://scholar.google.com/citations?user=ggpPX6cAAAAJ&hl=en), & [Romit Maulik](https://romit-maulik.github.io/)
 
 ## Dependencies
 1. Tensorflow 1.14.0
